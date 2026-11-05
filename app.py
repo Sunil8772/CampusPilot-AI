@@ -267,9 +267,129 @@ elif page == "Availability":
             )
 
 
+
 elif page == "My Bookings":
-    st.title("📅 My Bookings")
-    st.info("Member 2 will integrate booking records here.")
+
+    st.title("📅 My Campus Bookings")
+
+    st.write(
+        "View and track your classroom, event venue, "
+        "guest house and parking booking requests."
+    )
+
+    st.divider()
+
+    # Sample bookings for frontend demonstration only
+    bookings = [
+        {
+            "Booking ID": "BK-1001",
+            "Resource": "Classroom EB1-101",
+            "Type": "Classroom",
+            "Date": "2026-11-12",
+            "Time": "14:00 - 16:00",
+            "Status": "Approved"
+        },
+        {
+            "Booking ID": "BK-1002",
+            "Resource": "Amphitheatre 1",
+            "Type": "Amphitheatre",
+            "Date": "2026-11-14",
+            "Time": "10:00 - 12:00",
+            "Status": "Pending"
+        },
+        {
+            "Booking ID": "BK-1003",
+            "Resource": "Guest House Room 2",
+            "Type": "Guest House",
+            "Date": "2026-11-16",
+            "Time": "Check-in",
+            "Status": "Rejected"
+        }
+    ]
+
+    # Summary metrics
+    total = len(bookings)
+    approved = sum(
+        1 for b in bookings if b["Status"] == "Approved"
+    )
+    pending = sum(
+        1 for b in bookings if b["Status"] == "Pending"
+    )
+    rejected = sum(
+        1 for b in bookings if b["Status"] == "Rejected"
+    )
+
+    st.subheader("📊 Booking Summary")
+
+    col1, col2, col3, col4 = st.columns(4)
+
+    col1.metric("Total Requests", total)
+    col2.metric("Approved", approved)
+    col3.metric("Pending", pending)
+    col4.metric("Rejected", rejected)
+
+    st.divider()
+
+    # Booking filters
+    st.subheader("📋 Booking History")
+
+    selected_status = st.selectbox(
+        "Filter by Status",
+        ["All", "Approved", "Pending", "Rejected"]
+    )
+
+    if selected_status == "All":
+        filtered_bookings = bookings
+    else:
+        filtered_bookings = [
+            b for b in bookings
+            if b["Status"] == selected_status
+        ]
+
+    if filtered_bookings:
+
+        for booking in filtered_bookings:
+
+            with st.container(border=True):
+
+                col1, col2 = st.columns([3, 1])
+
+                with col1:
+                    st.markdown(
+                        f"### {booking['Resource']}"
+                    )
+                    st.write(
+                        f"**Booking ID:** {booking['Booking ID']}"
+                    )
+                    st.write(
+                        f"**Date:** {booking['Date']}"
+                    )
+                    st.write(
+                        f"**Time:** {booking['Time']}"
+                    )
+
+                with col2:
+                    st.write("**Status**")
+
+                    if booking["Status"] == "Approved":
+                        st.success("Approved")
+
+                    elif booking["Status"] == "Pending":
+                        st.warning("Pending")
+
+                    else:
+                        st.error("Rejected")
+
+    else:
+        st.info("No bookings found for this status.")
+
+    st.divider()
+
+    st.caption(
+        "Demo records only. Member 2 will connect this page "
+        "to actual booking records from the database."
+    )
+
 
 elif page == "Admin Panel":
     st.title("🛡️ Admin Panel")
