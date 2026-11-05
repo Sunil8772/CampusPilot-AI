@@ -15,24 +15,60 @@ st.set_page_config(
 st.sidebar.title("🏫 CampusPilot AI")
 st.sidebar.caption("Smart Campus Management")
 
+
+# ----------------------------------
+# ROLE-BASED NAVIGATION
+# ----------------------------------
+
 role = st.sidebar.selectbox(
     "Login as",
     ["Student", "Faculty", "Admin"]
 )
 
-page = st.sidebar.radio(
-    "Navigation",
-    [
+# Navigation options according to role
+if role == "Student":
+
+    navigation_options = [
+        "Dashboard",
+        "AI Assistant",
+        "Availability",
+        "My Bookings"
+    ]
+
+elif role == "Faculty":
+
+    navigation_options = [
+        "Dashboard",
+        "AI Assistant",
+        "Availability",
+        "My Bookings"
+    ]
+
+else:
+
+    navigation_options = [
         "Dashboard",
         "AI Assistant",
         "Availability",
         "My Bookings",
         "Admin Panel"
     ]
+
+page = st.sidebar.radio(
+    "Navigation",
+    navigation_options,
+    key=f"navigation_{role}"
 )
 
 st.sidebar.divider()
+
 st.sidebar.info(f"Demo role: {role}")
+
+# Extra protection for Admin Panel
+if page == "Admin Panel" and role != "Admin":
+    st.error("Access denied! Admin permissions required.")
+    st.stop()
+
 
 # -------------------------------
 # DASHBOARD
