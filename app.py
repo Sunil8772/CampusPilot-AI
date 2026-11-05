@@ -676,9 +676,6 @@ elif page == "Admin Panel":
   
 
     st.divider()
-
-    st.subheader("📝 Audit Logs")
-    
     # ----------------------------------
     # RESOURCE MANAGEMENT
     # ----------------------------------
@@ -868,6 +865,110 @@ elif page == "Admin Panel":
         "Demonstration data only. Member 2 will connect "
         "resource management to PostgreSQL."
     )
+    
+    # ----------------------------------
+    # REPORTS AND ANALYTICS
+    # ----------------------------------
+
+    st.divider()
+
+    st.subheader("📊 Reports & Analytics")
+
+    st.write(
+        "Monitor campus resource usage and booking activity."
+    )
+
+    # Synthetic demonstration data
+    st.markdown("### Booking Statistics")
+
+    col1, col2, col3, col4 = st.columns(4)
+
+    col1.metric("Total Bookings", 45)
+    col2.metric("Approved", 30)
+    col3.metric("Pending", 10)
+    col4.metric("Rejected", 5)
+
+    st.divider()
+
+    # Resource demand chart
+    st.markdown("### 🏫 Resource-wise Booking Demand")
+
+    resource_chart_data = {
+        "Resource Type": [
+            "Classroom",
+            "Amphitheatre",
+            "Lab",
+            "Guest House",
+            "Parking"
+        ],
+        "Bookings": [18, 8, 7, 5, 7]
+    }
+
+    st.bar_chart(
+        resource_chart_data,
+        x="Resource Type",
+        y="Bookings",
+        x_label="Resource Type",
+        y_label="Number of Bookings"
+    )
+
+    st.divider()
+
+    # Booking status chart
+    st.markdown("### 📋 Booking Status Overview")
+
+    status_chart_data = {
+        "Status": [
+            "Approved",
+            "Pending",
+            "Rejected"
+        ],
+        "Count": [30, 10, 5]
+    }
+
+    st.bar_chart(
+        status_chart_data,
+        x="Status",
+        y="Count",
+        x_label="Booking Status",
+        y_label="Number of Requests"
+    )
+
+    st.divider()
+
+    # Resource utilisation
+    st.markdown("### 📈 Resource Utilisation")
+
+    utilisation_data = {
+        "Resource": [
+            "Classrooms",
+            "Amphitheatres",
+            "Labs",
+            "Guest House",
+            "Parking"
+        ],
+        "Utilisation (%)": [75, 60, 80, 45, 55]
+    }
+
+    for item in utilisation_data["Resource"]:
+        index = utilisation_data["Resource"].index(item)
+
+        st.write(
+            f"**{item} — "
+            f"{utilisation_data['Utilisation (%)'][index]}%**"
+        )
+
+        st.progress(
+            utilisation_data["Utilisation (%)"][index] / 100
+        )
+
+    st.caption(
+        "All figures are synthetic demonstration data. "
+        "Member 2 will connect these reports to actual "
+        "booking and resource database records."
+    )
+
+    st.subheader("📝 Audit Logs")
 
     st.info(
         "Booking approvals, rejections and other "
