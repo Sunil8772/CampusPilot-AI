@@ -1,5 +1,6 @@
 
 import streamlit as st
+from datetime import time
 
 st.set_page_config(
     page_title="CampusPilot AI",
@@ -167,9 +168,104 @@ elif page == "AI Assistant":
         st.rerun()
 
 
+
 elif page == "Availability":
-    st.title("🔍 Resource Availability")
-    st.info("Member 1 will integrate the availability engine here.")
+
+    st.title("🔍 Campus Resource Availability")
+
+    st.write(
+        "Search for campus resources based on your "
+        "requirements, date, time and capacity."
+    )
+
+    st.divider()
+
+    st.subheader("📋 Search Requirements")
+
+    with st.form("availability_form"):
+
+        resource_type = st.selectbox(
+            "Select Resource Type",
+            [
+                "Classroom",
+                "Amphitheatre",
+                "Lab",
+                "Guest House",
+                "Parking"
+            ]
+        )
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            booking_date = st.date_input("Required Date")
+
+            start_time = st.time_input(
+                "Start Time",
+                value=time(14, 0)
+            )
+
+        with col2:
+            capacity = st.number_input(
+                "Number of People / Vehicles",
+                min_value=1,
+                max_value=500,
+                value=50
+            )
+
+            end_time = st.time_input(
+                "End Time",
+                value=time(16, 0)
+            )
+
+        purpose = st.text_area(
+            "Purpose of Booking",
+            placeholder="Example: Faculty workshop"
+        )
+
+        submitted = st.form_submit_button(
+            "🔍 Search Availability",
+            use_container_width=True
+        )
+
+    if submitted:
+
+        if start_time >= end_time:
+            st.error("End time must be later than start time.")
+
+        elif not purpose.strip():
+            st.warning("Please enter the purpose of booking.")
+
+        else:
+            request = {
+                "resource_type": resource_type,
+                "date": str(booking_date),
+                "start_time": start_time.strftime("%H:%M"),
+                "end_time": end_time.strftime("%H:%M"),
+                "capacity": int(capacity),
+                "purpose": purpose.strip()
+            }
+
+            st.session_state["availability_request"] = request
+
+            st.success("Your search request has been captured!")
+
+            st.subheader("📌 Your Search Request")
+
+            st.write(f"**Resource:** {resource_type}")
+            st.write(f"**Date:** {booking_date}")
+            st.write(
+                f"**Time:** {request['start_time']} - "
+                f"{request['end_time']}"
+            )
+            st.write(f"**Capacity:** {capacity}")
+            st.write(f"**Purpose:** {purpose}")
+
+            st.info(
+                "The real availability engine will be "
+                "connected by Member 1."
+            )
+
 
 elif page == "My Bookings":
     st.title("📅 My Bookings")
