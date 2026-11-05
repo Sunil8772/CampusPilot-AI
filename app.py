@@ -678,6 +678,196 @@ elif page == "Admin Panel":
     st.divider()
 
     st.subheader("📝 Audit Logs")
+    
+    # ----------------------------------
+    # RESOURCE MANAGEMENT
+    # ----------------------------------
+
+    st.divider()
+
+    st.subheader("🏫 Resource Management")
+
+    st.write(
+        "Add, view and manage campus classrooms, "
+        "labs, event venues, guest house rooms and parking."
+    )
+
+    # Initialize demo resources
+    if "campus_resources" not in st.session_state:
+        st.session_state.campus_resources = [
+            {
+                "id": "R001",
+                "name": "EB1-101",
+                "type": "Classroom",
+                "location": "EB1",
+                "capacity": 60,
+                "status": "Active"
+            },
+            {
+                "id": "R002",
+                "name": "Amphitheatre 1",
+                "type": "Amphitheatre",
+                "location": "Main Campus",
+                "capacity": 200,
+                "status": "Active"
+            },
+            {
+                "id": "R003",
+                "name": "Computer Lab 1",
+                "type": "Lab",
+                "location": "Academic Block",
+                "capacity": 40,
+                "status": "Active"
+            }
+        ]
+
+    resources = st.session_state.campus_resources
+
+    # Add new resource
+    with st.container(border=True):
+
+        st.markdown("### ➕ Add New Resource")
+
+        with st.form("add_resource_form"):
+
+            col1, col2 = st.columns(2)
+
+            with col1:
+                resource_name = st.text_input(
+                    "Resource Name",
+                    placeholder="Example: EB1-102"
+                )
+
+                resource_type = st.selectbox(
+                    "Resource Type",
+                    [
+                        "Classroom",
+                        "Amphitheatre",
+                        "Lab",
+                        "Guest House",
+                        "Parking"
+                    ]
+                )
+
+            with col2:
+                location = st.text_input(
+                    "Location",
+                    placeholder="Example: Academic Block"
+                )
+
+                capacity = st.number_input(
+                    "Capacity (people, beds or slots)",
+                    min_value=1,
+                    max_value=1000,
+                    value=50
+                )
+
+            add_resource = st.form_submit_button(
+                "➕ Add Resource",
+                use_container_width=True
+            )
+
+            if add_resource:
+
+                if not resource_name.strip():
+                    st.error("Please enter a resource name.")
+
+                elif not location.strip():
+                    st.error("Please enter the resource location.")
+
+                elif any(
+                    r["name"].lower() == resource_name.strip().lower()
+                    for r in resources
+                ):
+                    st.error("This resource already exists.")
+
+                else:
+                    new_resource = {
+                        "id": f"R{len(resources) + 1:03d}",
+                        "name": resource_name.strip(),
+                        "type": resource_type,
+                        "location": location.strip(),
+                        "capacity": int(capacity),
+                        "status": "Active"
+                    }
+
+                    st.session_state.campus_resources.append(
+                        new_resource
+                    )
+
+                    st.success("Resource added successfully!")
+                    st.rerun()
+
+    st.divider()
+
+    # View resources
+    st.subheader("📋 Campus Resource Inventory")
+
+    filter_type = st.selectbox(
+        "Filter by Resource Type",
+        [
+            "All",
+            "Classroom",
+            "Amphitheatre",
+            "Lab",
+            "Guest House",
+            "Parking"
+        ],
+        key="resource_filter"
+    )
+
+    if filter_type == "All":
+        filtered_resources = resources
+    else:
+        filtered_resources = [
+            r for r in resources
+            if r["type"] == filter_type
+        ]
+
+    st.write(f"**Total resources displayed:** {len(filtered_resources)}")
+
+    if filtered_resources:
+
+        for resource in filtered_resources:
+
+            with st.container(border=True):
+
+                col1, col2 = st.columns([3, 1])
+
+                with col1:
+                    st.markdown(f"### {resource['name']}")
+                    st.write(f"**Resource ID:** {resource['id']}")
+                    st.write(f"**Type:** {resource['type']}")
+                    st.write(f"**Location:** {resource['location']}")
+                    st.write(f"**Capacity:** {resource['capacity']}")
+
+                with col2:
+                    st.write("**Status**")
+
+                    if resource["status"] == "Active":
+                        st.success("Active")
+                    else:
+                        st.error("Inactive")
+
+                    if st.button(
+                        "Deactivate" if resource["status"] == "Active"
+                        else "Activate",
+                        key=f"toggle_{resource['id']}"
+                    ):
+                        resource["status"] = (
+                            "Inactive"
+                            if resource["status"] == "Active"
+                            else "Active"
+                        )
+                        st.rerun()
+
+    else:
+        st.info("No resources found.")
+
+    st.caption(
+        "Demonstration data only. Member 2 will connect "
+        "resource management to PostgreSQL."
+    )
 
     st.info(
         "Booking approvals, rejections and other "
