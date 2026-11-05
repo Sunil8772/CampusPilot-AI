@@ -534,6 +534,146 @@ elif page == "Admin Panel":
             st.info(
                 "Member 2 will integrate resource management."
             )
+    
+    # ----------------------------------
+    # TIMETABLE MANAGEMENT
+    # ----------------------------------
+
+    st.subheader("📅 Timetable Management")
+
+    st.write(
+        "Upload and manage semester-wise campus timetables."
+    )
+
+    with st.container(border=True):
+
+        st.markdown("### 📤 Upload New Timetable")
+
+        col1, col2 = st.columns(2)
+
+        with col1:
+            semester = st.selectbox(
+                "Select Semester",
+                [1, 2, 3, 4, 5, 6, 7, 8],
+                key="timetable_semester"
+            )
+
+        with col2:
+            academic_year = st.text_input(
+                "Academic Year",
+                value="2026-27",
+                key="timetable_academic_year"
+            )
+
+        uploaded_file = st.file_uploader(
+            "Upload Timetable",
+            type=["pdf", "xlsx", "xls", "csv"],
+            help="Supported formats: PDF, Excel and CSV",
+            key="timetable_file"
+        )
+
+        if uploaded_file is not None:
+
+            st.success("File selected successfully!")
+
+            st.write(f"**File name:** {uploaded_file.name}")
+            st.write(
+                f"**File size:** "
+                f"{uploaded_file.size / 1024:.2f} KB"
+            )
+
+            if st.button(
+                "📥 Submit Timetable for Parsing",
+                use_container_width=True,
+                key="submit_timetable"
+            ):
+
+                if not academic_year.strip():
+                    st.error("Please enter the academic year.")
+
+                elif "-" not in academic_year:
+                    st.error(
+                        "Enter academic year in format 2026-27."
+                    )
+
+                else:
+                    st.session_state["timetable_upload"] = {
+                        "file_name": uploaded_file.name,
+                        "semester": semester,
+                        "academic_year": academic_year.strip(),
+                        "file_size": uploaded_file.size,
+                        "status": "Uploaded - awaiting parser integration"
+                    }
+
+                    st.success(
+                        "Timetable upload details saved successfully!"
+                    )
+
+        else:
+            st.info("Please select a timetable file to continue.")
+
+    st.divider()
+
+    # ----------------------------------
+    # UPLOAD STATUS AND REVIEW
+    # ----------------------------------
+
+    st.subheader("📋 Timetable Import Status")
+
+    timetable_upload = st.session_state.get(
+        "timetable_upload"
+    )
+
+    if timetable_upload:
+
+        with st.container(border=True):
+
+            st.write(
+                f"**File:** {timetable_upload['file_name']}"
+            )
+
+            st.write(
+                f"**Semester:** "
+                f"{timetable_upload['semester']}"
+            )
+
+            st.write(
+                f"**Academic Year:** "
+                f"{timetable_upload['academic_year']}"
+            )
+
+            st.warning(
+                "Waiting for Member 1's timetable parser. "
+                "Extracted records and validation results "
+                "will appear here after integration."
+            )
+
+            st.write(
+                f"**Status:** {timetable_upload['status']}"
+            )
+
+    else:
+        st.info("No timetable has been submitted yet.")
+
+    st.divider()
+
+    # ----------------------------------
+    # TIMETABLE VERSION HISTORY
+    # ----------------------------------
+
+    st.subheader("🗂️ Timetable Version History")
+
+    st.info(
+        "Member 2 will connect the database here to display "
+        "published timetable versions, upload dates and "
+        "the active version for each semester."
+    )
+
+    st.caption(
+        "Only validated and admin-reviewed timetables "
+        "should be published. Previous versions must be preserved."
+    )
+  
 
     st.divider()
 
