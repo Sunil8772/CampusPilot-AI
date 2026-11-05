@@ -391,9 +391,164 @@ elif page == "My Bookings":
     )
 
 
+
 elif page == "Admin Panel":
-    st.title("🛡️ Admin Panel")
-    st.info("Admin controls and approvals will be integrated here.")
+
+    st.title("🛡️ Campus Administration Dashboard")
+
+    st.write(
+        "Manage booking requests, campus resources "
+        "and timetable operations."
+    )
+
+    st.divider()
+
+    # Demo booking data
+    if "admin_bookings" not in st.session_state:
+        st.session_state.admin_bookings = [
+            {
+                "id": "BK-2001",
+                "user": "FAC-001",
+                "resource": "Classroom EB1-101",
+                "date": "2026-11-12",
+                "time": "14:00 - 16:00",
+                "status": "Pending"
+            },
+            {
+                "id": "BK-2002",
+                "user": "FAC-002",
+                "resource": "Amphitheatre 1",
+                "date": "2026-11-14",
+                "time": "10:00 - 12:00",
+                "status": "Pending"
+            },
+            {
+                "id": "BK-2003",
+                "user": "FAC-003",
+                "resource": "Guest House Room 2",
+                "date": "2026-11-16",
+                "time": "Check-in",
+                "status": "Approved"
+            }
+        ]
+
+    bookings = st.session_state.admin_bookings
+
+    # Dashboard metrics
+    total = len(bookings)
+    pending = sum(
+        b["status"] == "Pending" for b in bookings
+    )
+    approved = sum(
+        b["status"] == "Approved" for b in bookings
+    )
+    rejected = sum(
+        b["status"] == "Rejected" for b in bookings
+    )
+
+    st.subheader("📊 Booking Overview")
+
+    c1, c2, c3, c4 = st.columns(4)
+
+    c1.metric("Total Requests", total)
+    c2.metric("Pending", pending)
+    c3.metric("Approved", approved)
+    c4.metric("Rejected", rejected)
+
+    st.divider()
+
+    # Booking approvals
+    st.subheader("📋 Booking Approval Requests")
+
+    pending_bookings = [
+        b for b in bookings if b["status"] == "Pending"
+    ]
+
+    if pending_bookings:
+
+        for booking in pending_bookings:
+
+            with st.container(border=True):
+
+                st.markdown(f"### {booking['resource']}")
+
+                st.write(f"Booking ID: {booking['id']}")
+                st.write(f"Requested by: {booking['user']}")
+                st.write(f"Date: {booking['date']}")
+                st.write(f"Time: {booking['time']}")
+
+                col1, col2 = st.columns(2)
+
+                with col1:
+                    if st.button(
+                        "✅ Approve",
+                        key=f"approve_{booking['id']}",
+                        use_container_width=True
+                    ):
+                        booking["status"] = "Approved"
+                        st.session_state[
+                            "admin_action_message"
+                        ] = f"{booking['id']} approved."
+                        st.rerun()
+
+                with col2:
+                    if st.button(
+                        "❌ Reject",
+                        key=f"reject_{booking['id']}",
+                        use_container_width=True
+                    ):
+                        booking["status"] = "Rejected"
+                        st.session_state[
+                            "admin_action_message"
+                        ] = f"{booking['id']} rejected."
+                        st.rerun()
+
+    else:
+        st.success("No pending booking requests.")
+
+    if st.session_state.get("admin_action_message"):
+        st.info(st.session_state.admin_action_message)
+
+    st.divider()
+
+    # Management sections
+    st.subheader("⚙️ Campus Management")
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        with st.container(border=True):
+            st.markdown("### 📅 Timetable Management")
+            st.write("Upload and review semester timetables.")
+
+            st.info(
+                "Member 1 and Member 2 will integrate "
+                "timetable parsing and publishing."
+            )
+
+    with col2:
+        with st.container(border=True):
+            st.markdown("### 🏫 Resource Management")
+            st.write("Manage classrooms, labs and parking.")
+
+            st.info(
+                "Member 2 will integrate resource management."
+            )
+
+    st.divider()
+
+    st.subheader("📝 Audit Logs")
+
+    st.info(
+        "Booking approvals, rejections and other "
+        "administrative actions will be recorded "
+        "in the database by Member 2."
+    )
+
+    st.caption(
+        "Demonstration dashboard. Approval actions currently "
+        "update sample session data only, not the database."
+    )
 
 st.divider()
 st.caption("CampusPilot AI | JKLU AI Buildathon 2026")
