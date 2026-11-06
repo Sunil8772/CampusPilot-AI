@@ -15,7 +15,7 @@ def normalize_room(room):
 
     return room_aliases.get(room, room)
 
-DATA_FILE = Path("../data/timetables/Master_Timetable.csv")
+DATA_FILE = Path("data/timetables/Master_Timetable.csv")
 
 DAY_START = "09:00"
 DAY_END = "17:00"
