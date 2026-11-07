@@ -31,7 +31,7 @@ print("4. Check Classroom Availability")
 print("5. Find Available Classrooms")
 print("6. Find Rooms During Student Free Time")
 
-choice = input("\nChoose option (1-5): ")
+choice = input("\nChoose option (1-6): ")
 
 
 # --------------------------------
@@ -122,10 +122,20 @@ elif choice == "5":
     start_time = input("Start time (HH:MM): ")
     end_time = input("End time (HH:MM): ")
 
-    find_available_rooms(
+    available_rooms = find_available_rooms(
         day, start_time, end_time
     )
 
+    print(f"\nAvailable classrooms on {day}")
+    print(f"Time: {start_time} - {end_time}\n")
+
+    if not available_rooms:
+        print("No available classrooms found.")
+    else:
+        for room in available_rooms:
+            print("FREE:", room)
+
+            
 elif choice == "6":
     program, semester, section, day, batch = get_student_details()
 

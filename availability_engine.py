@@ -10,6 +10,10 @@ def normalize_room(room):
     # Standardize confirmed formatting variations
     room_aliases = {
         "TB109": "TB-109",
+        "TB114": "TB-114",
+        "TB105": "TB-105",
+        "TB106": "TB-106",
+        "TB05": "TB-105",
         "IET AMPHI": "IET AMPHITHEATRE"
     }
 
@@ -267,16 +271,7 @@ def find_available_rooms(day, start_time, end_time):
             occupied_rooms.add(room)
 
     available_rooms = sorted(all_rooms - occupied_rooms)
-
-    print(f"\nAvailable classrooms on {day}")
-    print(f"Time: {start_time} - {end_time}\n")
-
-    if not available_rooms:
-        print("No available classrooms found.")
-        return
-
-    for room in available_rooms:
-        print("FREE:", room)
+    return available_rooms
 
 def find_room_for_student_free_time(
     program, semester, section, day,
