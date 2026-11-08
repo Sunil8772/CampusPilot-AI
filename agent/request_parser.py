@@ -13,14 +13,15 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Define the exact JSON structure you need Gemini to return
 class BookingRequest(BaseModel):
-    intent: str = Field(description="The user's goal, e.g., 'book_resource', 'cancel_booking', 'check_availability'")
+    course_id: Optional[str] = Field(description="The ID of the course, e.g., CS101")
+    intent: str = Field(description="Must be exactly one of: 'book_room', 'check_timetable', or 'check_room'. Do NOT use any other words.")
     resource_type: List[str] = Field(description="List of requested resources, e.g., ['classroom', 'guest house', 'parking']")
     date: Optional[str] = Field(description="Event date in YYYY-MM-DD format")
     start_time: Optional[str] = Field(description="Start time in HH:MM 24-hour format")
     end_time: Optional[str] = Field(description="End time in HH:MM 24-hour format")
     capacity: Optional[int] = Field(description="Number of participants")
     purpose: Optional[str] = Field(description="The name or purpose of the event")
-    missing_fields: List[str] = Field(description="List of strictly required fields (date, start_time, end_time, capacity) that the user forgot to provide")
+    missing_fields: List[str] = Field(description="If intent is check_timetable or check_room, leave this empty. If book_room, list missing fields.")
 
 def parse_user_request(user_message: str) -> str:
     """
@@ -28,11 +29,15 @@ def parse_user_request(user_message: str) -> str:
     matching the BookingRequest schema.
     """
     prompt = f"""
-    Extract the booking details from the following user request. 
-    If a critical piece of information (date, time, capacity) is missing, note it in 'missing_fields'.
-    
-    User request: "{user_message}"
-    """
+        Extract the details from the following user request. 
+        
+        CRITICAL RULES:
+        1. You must figure out the user's intent. The 'intent' MUST be exactly one of: 'book_room', 'check_timetable', or 'check_room'.
+        2. If the intent is 'book_room' and a critical piece of information (date, time, capacity) is missing, note it in 'missing_fields'.
+        3. If the intent is 'check_timetable', do not ask for booking fields like capacity.
+        
+        User request: "{user_message}"
+        """
     
     response = client.models.generate_content(
        model='gemini-3.8-flash',
@@ -59,3 +64,4 @@ if __name__ == "__main__":
     msg_incomplete = "Book a classroom tomorrow."
     print("Test 2 (Incomplete - should flag missing fields):")
     print(parse_user_request(msg_incomplete))
+    

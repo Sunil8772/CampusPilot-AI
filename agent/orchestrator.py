@@ -1,32 +1,35 @@
 import json
 from agent.request_parser import parse_user_request
 from database.db_manager import save_booking
-# Later today, you will add: from tools import check_timetable, check_room
+from agent.tools import check_timetable, check_room_availability 
 
 def process_message(prompt):
-    """
-    Takes the user's prompt from the UI, gets the structured JSON from Gemini,
-    and decides what action to take (ask for missing fields or save booking).
-    """
     try:
-        # Fetch and forcefully clean Gemini's response
         raw_response = parse_user_request(prompt)
         clean_json = raw_response.strip().replace("```json", "").replace("```", "")
+        parsed_data = json.loads(clean_json)
+        
+        intent = parsed_data.get("intent", "book_room") 
 
-        # Load data
-        booking_data = json.loads(clean_json)
-        missing = booking_data.get("missing_fields", [])
-
-        if missing:
-            missing_str = ", ".join(missing).replace("_", " ")
-            bot_reply = f"I still need a few details: {missing_str}"
-        else:
-            save_booking(booking_data)
-            bot_reply = "Perfect! Your classroom is officially booked and saved to the database."
+        # Check intent FIRST, before asking for missing booking fields
+        if intent == "check_timetable":
+            result = check_timetable(parsed_data.get("course_id"), parsed_data.get("date"))
+            return result["message"]
             
-        return bot_reply
-
+        elif intent == "check_room":
+            result = check_room_availability(parsed_data.get("room_id"), parsed_data.get("date"), "10:00")
+            return f"Room status: {result['status']}"
+            
+        else: # If intent is book_room, then we check for missing fields
+            missing = parsed_data.get("missing_fields", [])
+            if missing:
+                missing_str = ", ".join(missing).replace("_", " ")
+                return f"I still need a few details: {missing_str}"
+            else:
+                save_booking(parsed_data)
+                return "Perfect! Your classroom is officially booked and saved to the database."
+            
     except Exception as e:
-        # Expose the exact failure point
         error_type = type(e).__name__
         return f"SYSTEM CRASH ({error_type}): {e}"
+    
