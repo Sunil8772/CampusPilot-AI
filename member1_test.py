@@ -1,0 +1,1 @@
+print("Member 1 is conected to CampusPilot AI")
