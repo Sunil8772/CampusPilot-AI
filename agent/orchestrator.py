@@ -1,35 +1,38 @@
-import json
 from agent.request_parser import parse_user_request
-from database.db_manager import save_booking
-from agent.tools import check_timetable, check_room_availability 
+from agent.tools import check_resource_availability
+from agent.recommendations import format_availability_result
 
-def process_message(prompt):
+REQUIRED_BOOKING_FIELDS = ("date", "start_time", "end_time", "capacity", "purpose", "resource_types")
+
+def process_user_request(user_message, user_id=None):
+    """Understand and validate the request, then check availability only.
+    No booking is created or approved by the AI agent.
+    """
     try:
-        raw_response = parse_user_request(prompt)
-        clean_json = raw_response.strip().replace("```json", "").replace("```", "")
-        parsed_data = json.loads(clean_json)
-        
-        intent = parsed_data.get("intent", "book_room") 
-
-        # Check intent FIRST, before asking for missing booking fields
+        parsed = parse_user_request(user_message)
+        data = parsed.model_dump()
+        intent = data["intent"]
+        if intent not in ("check_availability", "check_timetable", "book_resources"):
+            return {"status": "needs_clarification", "message": "Please clarify whether you want to check availability or request a booking."}
+        missing = list(data.get("missing_fields") or [])
+        if intent == "book_resources":
+            for field in REQUIRED_BOOKING_FIELDS:
+                if data.get(field) in (None, "", []):
+                    if field not in missing:
+                        missing.append(field)
+        if missing:
+            return {"status": "needs_clarification", "parsed_request": data,
+                    "message": "Please provide: " + ", ".join(x.replace("_", " ") for x in missing) + "."}
         if intent == "check_timetable":
-            result = check_timetable(parsed_data.get("course_id"), parsed_data.get("date"))
-            return result["message"]
-            
-        elif intent == "check_room":
-            result = check_room_availability(parsed_data.get("room_id"), parsed_data.get("date"), "10:00")
-            return f"Room status: {result['status']}"
-            
-        else: # If intent is book_room, then we check for missing fields
-            missing = parsed_data.get("missing_fields", [])
-            if missing:
-                missing_str = ", ".join(missing).replace("_", " ")
-                return f"I still need a few details: {missing_str}"
-            else:
-                save_booking(parsed_data)
-                return "Perfect! Your classroom is officially booked and saved to the database."
-            
-    except Exception as e:
-        error_type = type(e).__name__
-        return f"SYSTEM CRASH ({error_type}): {e}"
-    
+            return {"status": "needs_clarification", "parsed_request": data,
+                    "message": "Please provide program, semester, section and the day/time range for a timetable check."}
+        results = []
+        for resource_type in data["resource_types"]:
+            request = dict(data, resource_type=resource_type)
+            result = check_resource_availability(request)
+            results.append({"resource_type": resource_type, "result": result,
+                            "summary": format_availability_result(result, resource_type)})
+        return {"status": "availability_checked", "parsed_request": data, "results": results,
+                "message": "Availability results are shown below. Nothing has been booked; submit a request and wait for admin approval."}
+    except Exception as exc:
+        return {"status": "error", "message": f"{type(exc).__name__}: {exc}"}
