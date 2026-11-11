@@ -3,6 +3,8 @@ import streamlit as st
 from datetime import time
 from agent.orchestrator import process_user_request
 from agent.tools import check_resource_availability
+from services.permissions import upsert_user
+from services.booking import get_user_bookings
 
 st.set_page_config(
     page_title="CampusPilot AI",
@@ -327,127 +329,86 @@ elif page == "Availability":
 elif page == "My Bookings":
 
     st.title("📅 My Campus Bookings")
-
     st.write(
-        "View and track your classroom, event venue, "
-        "guest house and parking booking requests."
+        "View and track booking requests saved in the CampusPilot PostgreSQL database."
     )
-
     st.divider()
 
-    # Sample bookings for frontend demonstration only
-    bookings = [
-        {
-            "Booking ID": "BK-1001",
-            "Resource": "Classroom EB1-101",
-            "Type": "Classroom",
-            "Date": "2026-11-12",
-            "Time": "14:00 - 16:00",
-            "Status": "Approved"
-        },
-        {
-            "Booking ID": "BK-1002",
-            "Resource": "Amphitheatre 1",
-            "Type": "Amphitheatre",
-            "Date": "2026-11-14",
-            "Time": "10:00 - 12:00",
-            "Status": "Pending"
-        },
-        {
-            "Booking ID": "BK-1003",
-            "Resource": "Guest House Room 2",
-            "Type": "Guest House",
-            "Date": "2026-11-16",
-            "Time": "Check-in",
-            "Status": "Rejected"
+    # Demo identities only. This is not authentication; replace with verified login
+    # before exposing the application publicly.
+    demo_profiles = {
+        "Student": ("demo-student", "CampusPilot Demo Student", "student-demo@example.local", "student"),
+        "Faculty": ("demo-faculty", "CampusPilot Demo Faculty", "faculty-demo@example.local", "faculty"),
+        "Admin": ("demo-admin", "CampusPilot Demo Admin", "admin@example.local", "admin"),
+    }
+
+    try:
+        external_id, full_name, email, db_role = demo_profiles[role]
+        demo_user = upsert_user(external_id, full_name, email, db_role)
+        bookings = get_user_bookings(demo_user["id"])
+
+        status_filter = st.selectbox(
+            "Filter by Status",
+            ["All", "Pending", "Approved", "Rejected", "Cancelled"],
+            key="my_bookings_status_filter",
+        )
+        status_counts = {
+            status: sum(1 for booking in bookings if booking["status"] == status)
+            for status in ("pending", "approved", "rejected", "cancelled")
         }
-    ]
 
-    # Summary metrics
-    total = len(bookings)
-    approved = sum(
-        1 for b in bookings if b["Status"] == "Approved"
-    )
-    pending = sum(
-        1 for b in bookings if b["Status"] == "Pending"
-    )
-    rejected = sum(
-        1 for b in bookings if b["Status"] == "Rejected"
-    )
+        st.subheader("📊 Booking Summary")
+        c1, c2, c3, c4 = st.columns(4)
+        c1.metric("Total Requests", len(bookings))
+        c2.metric("Approved", status_counts["approved"])
+        c3.metric("Pending", status_counts["pending"])
+        c4.metric("Rejected", status_counts["rejected"])
 
-    st.subheader("📊 Booking Summary")
-
-    col1, col2, col3, col4 = st.columns(4)
-
-    col1.metric("Total Requests", total)
-    col2.metric("Approved", approved)
-    col3.metric("Pending", pending)
-    col4.metric("Rejected", rejected)
-
-    st.divider()
-
-    # Booking filters
-    st.subheader("📋 Booking History")
-
-    selected_status = st.selectbox(
-        "Filter by Status",
-        ["All", "Approved", "Pending", "Rejected"]
-    )
-
-    if selected_status == "All":
-        filtered_bookings = bookings
-    else:
-        filtered_bookings = [
-            b for b in bookings
-            if b["Status"] == selected_status
+        visible = bookings if status_filter == "All" else [
+            booking for booking in bookings
+            if booking["status"] == status_filter.lower()
         ]
 
-    if filtered_bookings:
+        st.subheader("📋 Booking History")
+        if not visible:
+            st.info("No database bookings found for this demo profile and filter.")
+        else:
+            for booking in visible:
+                start_dt = booking["start_datetime"]
+                end_dt = booking["end_datetime"]
+                with st.container(border=True):
+                    left, right = st.columns([3, 1])
+                    with left:
+                        st.markdown(f"### {booking['resource_name']}")
+                        st.write(f"**Booking ID:** {booking['id']}")
+                        st.write(f"**Type:** {booking['resource_type'].replace('_', ' ').title()}")
+                        st.write(f"**Date:** {start_dt.strftime('%Y-%m-%d')}")
+                        st.write(f"**Time:** {start_dt.strftime('%H:%M')} – {end_dt.strftime('%H:%M')}")
+                        st.write(f"**Purpose:** {booking['purpose']}")
+                        st.write(f"**Requested capacity:** {booking['requested_capacity']}")
+                        if booking.get("decision_reason"):
+                            st.write(f"**Decision note:** {booking['decision_reason']}")
+                    with right:
+                        st.write("**Status**")
+                        status = booking["status"]
+                        if status == "approved":
+                            st.success(status.title())
+                        elif status == "pending":
+                            st.warning(status.title())
+                        elif status == "rejected":
+                            st.error(status.title())
+                        else:
+                            st.info(status.title())
 
-        for booking in filtered_bookings:
+        st.caption(
+            "These records are read from PostgreSQL. The selected role is a demo profile, "
+            "not a secure login identity."
+        )
+    except Exception as exc:
+        st.error(f"Could not load bookings from PostgreSQL: {type(exc).__name__}: {exc}")
+        st.info("Check DATABASE_URL, run init_db.py and ensure the demo profile exists.")
 
-            with st.container(border=True):
-
-                col1, col2 = st.columns([3, 1])
-
-                with col1:
-                    st.markdown(
-                        f"### {booking['Resource']}"
-                    )
-                    st.write(
-                        f"**Booking ID:** {booking['Booking ID']}"
-                    )
-                    st.write(
-                        f"**Date:** {booking['Date']}"
-                    )
-                    st.write(
-                        f"**Time:** {booking['Time']}"
-                    )
-
-                with col2:
-                    st.write("**Status**")
-
-                    if booking["Status"] == "Approved":
-                        st.success("Approved")
-
-                    elif booking["Status"] == "Pending":
-                        st.warning("Pending")
-
-                    else:
-                        st.error("Rejected")
-
-    else:
-        st.info("No bookings found for this status.")
-
-    st.divider()
-
-    st.caption(
-        "Demo records only. Member 2 will connect this page "
-        "to actual booking records from the database."
-    )
-
-
-
+    
 elif page == "Admin Panel":
 
     st.title("🛡️ Campus Administration Dashboard")
