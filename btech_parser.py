@@ -4,8 +4,9 @@ import csv
 from pathlib import Path
 from openpyxl import load_workbook
 
-INPUT_FILE = Path("../data/timetables/JKLU_Timetables.xlsx")
-OUTPUT_FILE = Path("../data/timetables/BTech_classes.csv")
+DATA_FOLDER = Path(__file__).resolve().parent / "data" / "timetables"
+INPUT_FILE = DATA_FOLDER / "JKLU_Timetables.xlsx"
+OUTPUT_FILE = DATA_FOLDER / "BTech_classes.csv"
 
 FIELDNAMES = [
     "Program", "Semester", "Section", "Day", "Start Time", "End Time",
