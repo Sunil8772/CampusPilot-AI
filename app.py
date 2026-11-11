@@ -4,7 +4,7 @@ from datetime import time
 from agent.orchestrator import process_user_request
 from agent.tools import check_resource_availability
 from services.permissions import upsert_user
-from services.booking import get_user_bookings
+from services.booking import get_user_bookings, create_booking_request
 
 st.set_page_config(
     page_title="CampusPilot AI",
@@ -316,6 +316,49 @@ elif page == "Availability":
                         ], use_container_width=True, hide_index=True)
                     else:
                         st.warning("No matching resources are available for this time.")
+
+                    if options:
+                        st.subheader("📝 Submit a Booking Request")
+                        selected_resource = st.selectbox(
+                            "Choose an available resource",
+                            options,
+                            format_func=lambda item: (
+                                f"{item.get('name')} — {item.get('location') or 'Location not listed'} "
+                                f"(capacity {item.get('capacity')})"
+                            ),
+                            key="booking_resource_choice",
+                        )
+                        if st.button("📨 Submit Booking Request", use_container_width=True):
+                            try:
+                                demo_profiles = {
+                                    "Student": ("demo-student", "CampusPilot Demo Student", "student-demo@example.local", "student"),
+                                    "Faculty": ("demo-faculty", "CampusPilot Demo Faculty", "faculty-demo@example.local", "faculty"),
+                                    "Admin": ("demo-admin", "CampusPilot Demo Admin", "admin@example.local", "admin"),
+                                }
+                                external_id, full_name, email, db_role = demo_profiles[role]
+                                demo_user = upsert_user(external_id, full_name, email, db_role)
+                                booking_result = create_booking_request({
+                                    "user_id": demo_user["id"],
+                                    "resource_id": selected_resource["id"],
+                                    "start_datetime": (
+                                        f"{booking_date.isoformat()}T{start_time.strftime('%H:%M')}:00+05:30"
+                                    ),
+                                    "end_datetime": (
+                                        f"{booking_date.isoformat()}T{end_time.strftime('%H:%M')}:00+05:30"
+                                    ),
+                                    "capacity": int(capacity),
+                                    "purpose": purpose.strip(),
+                                })
+                                if booking_result.get("success"):
+                                    st.success(
+                                        f"Booking request #{booking_result.get('booking_id')} submitted. "
+                                        "It is pending admin approval."
+                                    )
+                                else:
+                                    st.error(booking_result.get("message", "Booking request could not be submitted."))
+                            except Exception as exc:
+                                st.error(f"Booking request failed: {type(exc).__name__}: {exc}")
+
                 else:
                     st.error(result.get("message", "Availability check failed."))
             except Exception as exc:
