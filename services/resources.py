@@ -23,7 +23,8 @@ def add_resource(resource_code, name, resource_type, capacity=1, location=None,
     return result(True,"Resource created.",resource=row)
 
 def get_resources(resource_type=None, include_inactive=False):
-    sql = "SELECT * FROM resources WHERE (%s IS NULL OR resource_type=%s)"
+    # Explicitly cast nullable parameter so PostgreSQL can infer its type.
+    sql = "SELECT * FROM resources WHERE (%s::text IS NULL OR resource_type=%s)"
     params = [resource_type,resource_type]
     if not include_inactive:
         sql += " AND is_active=TRUE"
