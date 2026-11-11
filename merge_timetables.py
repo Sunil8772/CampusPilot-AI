@@ -2,7 +2,7 @@
 import csv
 from pathlib import Path
 
-DATA_FOLDER = Path("../data/timetables")
+DATA_FOLDER = Path(__file__).resolve().parent / "data" / "timetables"
 
 BTECH_FILE = DATA_FOLDER / "BTech_classes.csv"
 BBA_FILE = DATA_FOLDER / "BBA_classes.csv"
