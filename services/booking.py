@@ -93,7 +93,7 @@ def _decide_booking(booking_id,actor_id,status,reason=None):
                 last_day = (end_dt - timedelta(microseconds=1)).date()
                 while day_cursor <= last_day:
                     day_start = start_dt.time() if day_cursor == start_dt.date() else time.min
-                    day_end = end_dt.time() if day_cursor == last_day else time.max
+                    day_end = end_dt.time() if day_cursor == end_dt.date() else time.max
                     cur.execute(
                         """SELECT 1 FROM timetable_entries te
                            JOIN timetable_versions tv ON tv.id=te.version_id AND tv.is_published=TRUE
