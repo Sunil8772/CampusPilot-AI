@@ -3,8 +3,9 @@ import csv
 import re
 from pathlib import Path
 
-PDF_PATH = Path("../data/timetables/BBA_Timetable.pdf")
-OUTPUT_PATH = Path("../data/timetables/BBA_classes.csv")
+DATA_FOLDER = Path(__file__).resolve().parent / "data" / "timetables"
+PDF_PATH = DATA_FOLDER / "BBA_Timetable.pdf"
+OUTPUT_PATH = DATA_FOLDER / "BBA_classes.csv"
 
 DAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
 
