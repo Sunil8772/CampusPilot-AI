@@ -13,7 +13,7 @@ def find_available_resources(request):
     with get_cursor() as cur:
         cur.execute(
             """SELECT r.* FROM resources r
-               WHERE r.is_active=TRUE AND (%s IS NULL OR r.resource_type=%s)
+               WHERE r.is_active=TRUE AND (%s::text IS NULL OR r.resource_type=%s)
                  AND r.capacity >= %s
                  AND NOT EXISTS (
                    SELECT 1 FROM bookings b WHERE b.resource_id=r.id
