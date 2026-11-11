@@ -2,6 +2,7 @@
 import streamlit as st
 from datetime import time
 from agent.orchestrator import process_user_request
+from agent.tools import check_resource_availability
 
 st.set_page_config(
     page_title="CampusPilot AI",
@@ -290,24 +291,36 @@ elif page == "Availability":
             }
 
             st.session_state["availability_request"] = request
+            request["resource_type"] = resource_type.lower().replace(" ", "_")
 
-            st.success("Your search request has been captured!")
-
-            st.subheader("📌 Your Search Request")
-
+            st.subheader("📌 Availability Results")
             st.write(f"**Resource:** {resource_type}")
             st.write(f"**Date:** {booking_date}")
-            st.write(
-                f"**Time:** {request['start_time']} - "
-                f"{request['end_time']}"
-            )
-            st.write(f"**Capacity:** {capacity}")
+            st.write(f"**Time:** {request['start_time']} - {request['end_time']}")
+            st.write(f"**Capacity requested:** {capacity}")
             st.write(f"**Purpose:** {purpose}")
 
-            st.info(
-                "The real availability engine will be "
-                "connected by Member 1."
-            )
+            try:
+                with st.spinner("Checking PostgreSQL bookings and published timetable..."):
+                    result = check_resource_availability(request)
+                if result.get("success"):
+                    options = result.get("available_resources", [])
+                    if options:
+                        st.success(f"{len(options)} available option(s) found.")
+                        st.dataframe([
+                            {"Resource": r.get("name"), "Type": r.get("resource_type"),
+                             "Capacity": r.get("capacity"), "Location": r.get("location")}
+                            for r in options
+                        ], use_container_width=True, hide_index=True)
+                    else:
+                        st.warning("No matching resources are available for this time.")
+                else:
+                    st.error(result.get("message", "Availability check failed."))
+            except Exception as exc:
+                st.error(f"Availability service could not run: {type(exc).__name__}: {exc}")
+                st.info("Configure PostgreSQL, run init_db.py and seed_demo.py, then retry.")
+
+            st.caption("Availability check only. This does not create or confirm a booking.")
 
 
 
