@@ -1,3 +1,4 @@
+from datetime import timedelta, time
 from psycopg.errors import ExclusionViolation, ForeignKeyViolation
 from database.db import get_cursor
 from services.common import parse_datetime, result
@@ -81,6 +82,31 @@ def _decide_booking(booking_id,actor_id,status,reason=None):
             )
             if cur.fetchone():
                 return result(False,"The resource has a maintenance/blocked period.")
+
+            # Recheck the latest published timetable at approval time.
+            cur.execute("SELECT name,resource_code,resource_type FROM resources WHERE id=%s",
+                        (booking["resource_id"],))
+            resource = cur.fetchone()
+            if resource and resource["resource_type"] in ("classroom","lab","amphitheatre"):
+                start_dt, end_dt = booking["start_datetime"], booking["end_datetime"]
+                day_cursor = start_dt.date()
+                last_day = (end_dt - timedelta(microseconds=1)).date()
+                while day_cursor <= last_day:
+                    day_start = start_dt.time() if day_cursor == start_dt.date() else time.min
+                    day_end = end_dt.time() if day_cursor == last_day else time.max
+                    cur.execute(
+                        """SELECT 1 FROM timetable_entries te
+                           JOIN timetable_versions tv ON tv.id=te.version_id AND tv.is_published=TRUE
+                           WHERE te.day_of_week=%s
+                             AND upper(trim(te.room_name)) IN (upper(trim(%s)),upper(trim(%s)))
+                             AND te.start_time < %s AND te.end_time > %s
+                           LIMIT 1""",
+                        (day_cursor.weekday(), resource["name"], resource["resource_code"],
+                         day_end, day_start),
+                    )
+                    if cur.fetchone():
+                        return result(False,"The latest published timetable now conflicts with this booking. Please review availability.")
+                    day_cursor += timedelta(days=1)
         cur.execute(
             """UPDATE bookings SET status=%s,decision_by=%s,decision_at=NOW(),
                                   decision_reason=%s,updated_at=NOW()
