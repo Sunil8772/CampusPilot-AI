@@ -1,67 +1,26 @@
-import os
-from google import genai
-from google.genai import types
-from pydantic import BaseModel, Field
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from typing import Optional, List
-from dotenv import load_dotenv
+from pydantic import BaseModel, Field
+from agent.gemini_client import generate_json
+from agent.prompts import REQUEST_EXTRACTION_PROMPT
 
-# Load environment variables (API key)
-load_dotenv()
+class ParsedCampusRequest(BaseModel):
+    intent: str = Field(description="check_availability, check_timetable, or book_resources")
+    resource_types: List[str] = Field(default_factory=list)
+    date: Optional[str] = None
+    start_time: Optional[str] = None
+    end_time: Optional[str] = None
+    capacity: Optional[int] = None
+    purpose: Optional[str] = None
+    program: Optional[str] = None
+    semester: Optional[int] = None
+    section: Optional[str] = None
+    batch: Optional[str] = None
+    room_name: Optional[str] = None
+    missing_fields: List[str] = Field(default_factory=list)
 
-# Initialize the new standard Gemini client
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-
-# Define the exact JSON structure you need Gemini to return
-class BookingRequest(BaseModel):
-    course_id: Optional[str] = Field(description="The ID of the course, e.g., CS101")
-    intent: str = Field(description="Must be exactly one of: 'book_room', 'check_timetable', or 'check_room'. Do NOT use any other words.")
-    resource_type: List[str] = Field(description="List of requested resources, e.g., ['classroom', 'guest house', 'parking']")
-    date: Optional[str] = Field(description="Event date in YYYY-MM-DD format")
-    start_time: Optional[str] = Field(description="Start time in HH:MM 24-hour format")
-    end_time: Optional[str] = Field(description="End time in HH:MM 24-hour format")
-    capacity: Optional[int] = Field(description="Number of participants")
-    purpose: Optional[str] = Field(description="The name or purpose of the event")
-    missing_fields: List[str] = Field(description="If intent is check_timetable or check_room, leave this empty. If book_room, list missing fields.")
-
-def parse_user_request(user_message: str) -> str:
-    """
-    Takes a natural language prompt and returns a strict JSON string 
-    matching the BookingRequest schema.
-    """
-    prompt = f"""
-        Extract the details from the following user request. 
-        
-        CRITICAL RULES:
-        1. You must figure out the user's intent. The 'intent' MUST be exactly one of: 'book_room', 'check_timetable', or 'check_room'.
-        2. If the intent is 'book_room' and a critical piece of information (date, time, capacity) is missing, note it in 'missing_fields'.
-        3. If the intent is 'check_timetable', do not ask for booking fields like capacity.
-        
-        User request: "{user_message}"
-        """
-    
-    response = client.models.generate_content(
-       model='gemini-3.8-flash',
-        contents=prompt,
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json",
-            response_schema=BookingRequest,
-            temperature=0.1, # Keep temperature low for deterministic data extraction
-        ),
-    )
-    
-    return response.text
-
-# --- Test the Parser ---
-if __name__ == "__main__":
-    # Test Case 1: Complete Request (Your demo scenario)
-    msg_complete = "Organise an AI workshop for 60 students next Friday from 2 PM to 4 PM. Arrange one guest room for the speaker and parking for two cars."
-    print("Test 1 (Complete):")
-    print(parse_user_request(msg_complete))
-    
-    print("\n" + "-"*40 + "\n")
-    
-    # Test Case 2: Incomplete Request
-    msg_incomplete = "Book a classroom tomorrow."
-    print("Test 2 (Incomplete - should flag missing fields):")
-    print(parse_user_request(msg_incomplete))
-    
+def parse_user_request(user_message: str) -> ParsedCampusRequest:
+    today = datetime.now(ZoneInfo("Asia/Kolkata")).date().isoformat()
+    prompt = REQUEST_EXTRACTION_PROMPT.format(today=today, message=user_message)
+    return ParsedCampusRequest.model_validate_json(generate_json(prompt, ParsedCampusRequest))
