@@ -1,6 +1,7 @@
 
 import streamlit as st
 from datetime import time
+from agent.orchestrator import process_user_request
 
 st.set_page_config(
     page_title="CampusPilot AI",
@@ -183,19 +184,25 @@ elif page == "AI Assistant":
             "content": user_message
         })
 
-        # Temporary response until Member 3 connects Gemini
-        assistant_message = (
-            "Your request has been received! "
-            "The Gemini AI agent is not connected yet. "
-            "Member 3 will integrate the request "
-            "understanding and booking workflow."
-        )
+        with st.spinner("Gemini is understanding your request and checking campus systems..."):
+            agent_result = process_user_request(user_message, user_id=None)
 
+        assistant_message = agent_result.get("message", "I could not process that request.")
         st.session_state.chat_history.append({
             "role": "assistant",
             "content": assistant_message
         })
-
+        if agent_result.get("status") == "availability_checked":
+            for item in agent_result.get("results", []):
+                st.session_state.chat_history.append({
+                    "role": "assistant",
+                    "content": item.get("summary", "No availability summary.")
+                })
+        elif agent_result.get("status") == "error":
+            st.session_state.chat_history.append({
+                "role": "assistant",
+                "content": "Please check the local Gemini and PostgreSQL configuration. " + assistant_message
+            })
         st.rerun()
 
     # Clear chat
