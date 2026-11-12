@@ -221,16 +221,20 @@ elif page == "AI Assistant":
             "content": user_message
         })
 
-        # Pass recent user turns so Gemini can resolve follow-up answers
-        # such as "next Friday" after it asks for a missing date.
-        recent_user_turns = [
-            item["content"] for item in st.session_state.chat_history
-            if item["role"] == "user"
-        ][-5:]
-        conversation = "\n".join(f"User: {turn}" for turn in recent_user_turns)
+        # Keep only the turns belonging to the current clarification round.
+        # A fresh request must not inherit details from an older booking conversation.
+        previous_result = st.session_state.get("last_agent_result", {})
+        if previous_result.get("status") != "needs_clarification":
+            st.session_state["agent_request_turns"] = []
+        st.session_state.setdefault("agent_request_turns", []).append(user_message)
+        conversation = "\n".join(
+            f"User: {turn}" for turn in st.session_state["agent_request_turns"][-5:]
+        )
         with st.spinner("Gemini is understanding your request and checking campus systems..."):
             agent_result = process_user_request(conversation, user_id=None)
         st.session_state["last_agent_result"] = agent_result
+        if agent_result.get("status") != "needs_clarification":
+            st.session_state["agent_request_turns"] = []
 
         assistant_message = agent_result.get("message", "I could not process that request.")
         st.session_state.chat_history.append({
