@@ -1,10 +1,34 @@
 
+import os
 import streamlit as st
-from datetime import time
+from datetime import datetime, time
+from dotenv import load_dotenv
+
 from agent.orchestrator import process_user_request
 from agent.tools import check_resource_availability
+from services.common import CAMPUS_TZ
 from services.permissions import upsert_user
-from services.booking import get_user_bookings, create_booking_request
+from services.booking import (
+    get_user_bookings,
+    create_booking_request,
+    get_pending_bookings,
+    approve_booking,
+    reject_booking,
+    get_booking_by_id,
+)
+
+load_dotenv()
+
+DEMO_PROFILES = {
+    "Student": ("demo-student", "CampusPilot Demo Student", "student-demo@example.local", "student"),
+    "Faculty": ("demo-faculty", "CampusPilot Demo Faculty", "faculty-demo@example.local", "faculty"),
+    "Admin": ("demo-admin", "CampusPilot Demo Admin", "admin@example.local", "admin"),
+}
+
+
+def get_demo_user(selected_role):
+    """Return a fixed synthetic profile; this is not production authentication."""
+    return upsert_user(*DEMO_PROFILES[selected_role])
 
 st.set_page_config(
     page_title="CampusPilot AI",
@@ -24,10 +48,19 @@ st.sidebar.caption("Smart Campus Management")
 # ROLE-BASED NAVIGATION
 # ----------------------------------
 
+DEMO_MODE = os.getenv("CAMPUSPILOT_DEMO_MODE", "false").strip().lower() == "true"
+if not DEMO_MODE:
+    st.error(
+        "Demo mode is disabled. Set CAMPUSPILOT_DEMO_MODE=true in your local .env "
+        "to use synthetic buildathon profiles. Production use requires real authentication."
+    )
+    st.stop()
+
 role = st.sidebar.selectbox(
-    "Login as",
+    "Demo profile (synthetic only)",
     ["Student", "Faculty", "Admin"]
 )
+st.sidebar.warning("DEMO MODE — role selection is not authentication.")
 
 # Navigation options according to role
 if role == "Student":
@@ -187,8 +220,16 @@ elif page == "AI Assistant":
             "content": user_message
         })
 
+        # Pass recent user turns so Gemini can resolve follow-up answers
+        # such as "next Friday" after it asks for a missing date.
+        recent_user_turns = [
+            item["content"] for item in st.session_state.chat_history
+            if item["role"] == "user"
+        ][-5:]
+        conversation = "\n".join(f"User: {turn}" for turn in recent_user_turns)
         with st.spinner("Gemini is understanding your request and checking campus systems..."):
-            agent_result = process_user_request(user_message, user_id=None)
+            agent_result = process_user_request(conversation, user_id=None)
+        st.session_state["last_agent_result"] = agent_result
 
         assistant_message = agent_result.get("message", "I could not process that request.")
         st.session_state.chat_history.append({
@@ -207,6 +248,70 @@ elif page == "AI Assistant":
                 "content": "Please check the local Gemini and PostgreSQL configuration. " + assistant_message
             })
         st.rerun()
+
+    # Show real resources returned by the availability tool. For booking intent,
+    # require both resource selection and a separate explicit confirmation.
+    last_result = st.session_state.get("last_agent_result", {})
+    if last_result.get("status") == "availability_checked":
+        parsed = last_result.get("parsed_request", {})
+        resource_options = []
+        for group in last_result.get("results", []):
+            tool_result = group.get("result", {})
+            if tool_result.get("success"):
+                for resource in tool_result.get("available_resources", []):
+                    resource_options.append((group["resource_type"], resource))
+
+        if last_result.get("intent") == "book_resources" and resource_options:
+            st.divider()
+            st.subheader("📨 Submit a booking request")
+            with st.form("ai_booking_confirmation_form"):
+                selected = st.selectbox(
+                    "Choose one available resource",
+                    resource_options,
+                    format_func=lambda item: (
+                        f"{item[1].get('name')} — {item[0].replace('_', ' ').title()} "
+                        f"(capacity {item[1].get('capacity')}, {item[1].get('location') or 'location not listed'})"
+                    ),
+                )
+                confirmed = st.checkbox(
+                    "I confirm that I want to submit this selected resource as a booking request."
+                )
+                submit_request = st.form_submit_button(
+                    "Confirm and submit request",
+                    use_container_width=True,
+                )
+
+            if submit_request:
+                if not confirmed:
+                    st.warning("Please tick the confirmation box before submitting.")
+                else:
+                    try:
+                        demo_user = get_demo_user(role)
+                        selected_type, selected_resource = selected
+                        start_dt = datetime.fromisoformat(
+                            f"{parsed['date']}T{parsed['start_time']}:00+05:30"
+                        )
+                        end_dt = datetime.fromisoformat(
+                            f"{parsed['date']}T{parsed['end_time']}:00+05:30"
+                        )
+                        booking_result = create_booking_request({
+                            "user_id": demo_user["id"],
+                            "resource_id": selected_resource["id"],
+                            "start_datetime": start_dt.isoformat(),
+                            "end_datetime": end_dt.isoformat(),
+                            "capacity": int(parsed.get("capacity") or 1),
+                            "purpose": parsed.get("purpose") or "Campus resource request",
+                        })
+                        if booking_result.get("success"):
+                            st.success(
+                                f"Request #{booking_result['booking_id']} was submitted and is PENDING admin approval. "
+                                "This is not a confirmed booking."
+                            )
+                            st.session_state["last_agent_result"] = {}
+                        else:
+                            st.error(booking_result.get("message", "Booking request was not submitted."))
+                    except Exception as exc:
+                        st.error(f"Could not submit request: {type(exc).__name__}: {exc}")
 
     # Clear chat
     if st.button("🗑️ Clear Conversation"):
@@ -330,13 +435,7 @@ elif page == "Availability":
                         )
                         if st.button("📨 Submit Booking Request", use_container_width=True):
                             try:
-                                demo_profiles = {
-                                    "Student": ("demo-student", "CampusPilot Demo Student", "student-demo@example.local", "student"),
-                                    "Faculty": ("demo-faculty", "CampusPilot Demo Faculty", "faculty-demo@example.local", "faculty"),
-                                    "Admin": ("demo-admin", "CampusPilot Demo Admin", "admin@example.local", "admin"),
-                                }
-                                external_id, full_name, email, db_role = demo_profiles[role]
-                                demo_user = upsert_user(external_id, full_name, email, db_role)
+                                demo_user = get_demo_user(role)
                                 booking_result = create_booking_request({
                                     "user_id": demo_user["id"],
                                     "resource_id": selected_resource["id"],
@@ -379,15 +478,8 @@ elif page == "My Bookings":
 
     # Demo identities only. This is not authentication; replace with verified login
     # before exposing the application publicly.
-    demo_profiles = {
-        "Student": ("demo-student", "CampusPilot Demo Student", "student-demo@example.local", "student"),
-        "Faculty": ("demo-faculty", "CampusPilot Demo Faculty", "faculty-demo@example.local", "faculty"),
-        "Admin": ("demo-admin", "CampusPilot Demo Admin", "admin@example.local", "admin"),
-    }
-
     try:
-        external_id, full_name, email, db_role = demo_profiles[role]
-        demo_user = upsert_user(external_id, full_name, email, db_role)
+        demo_user = get_demo_user(role)
         bookings = get_user_bookings(demo_user["id"])
 
         status_filter = st.selectbox(
@@ -455,121 +547,96 @@ elif page == "My Bookings":
 elif page == "Admin Panel":
 
     st.title("🛡️ Campus Administration Dashboard")
-
-    st.write(
-        "Manage booking requests, campus resources "
-        "and timetable operations."
-    )
-
+    st.write("Review and decide real booking requests stored in PostgreSQL.")
+    st.caption("Synthetic demo admin profile. Backend admin-role checks are enforced for every decision.")
     st.divider()
 
-    # Demo booking data
-    if "admin_bookings" not in st.session_state:
-        st.session_state.admin_bookings = [
-            {
-                "id": "BK-2001",
-                "user": "FAC-001",
-                "resource": "Classroom EB1-101",
-                "date": "2026-11-12",
-                "time": "14:00 - 16:00",
-                "status": "Pending"
-            },
-            {
-                "id": "BK-2002",
-                "user": "FAC-002",
-                "resource": "Amphitheatre 1",
-                "date": "2026-11-14",
-                "time": "10:00 - 12:00",
-                "status": "Pending"
-            },
-            {
-                "id": "BK-2003",
-                "user": "FAC-003",
-                "resource": "Guest House Room 2",
-                "date": "2026-11-16",
-                "time": "Check-in",
-                "status": "Approved"
-            }
-        ]
+    try:
+        admin_user = get_demo_user("Admin")
+        pending_bookings = get_pending_bookings(admin_user["id"])
 
-    bookings = st.session_state.admin_bookings
+        if st.session_state.get("admin_action_message"):
+            st.success(st.session_state.pop("admin_action_message"))
 
-    # Dashboard metrics
-    total = len(bookings)
-    pending = sum(
-        b["status"] == "Pending" for b in bookings
-    )
-    approved = sum(
-        b["status"] == "Approved" for b in bookings
-    )
-    rejected = sum(
-        b["status"] == "Rejected" for b in bookings
-    )
+        st.subheader("📋 Pending Booking Requests")
+        st.metric("Pending requests", len(pending_bookings))
 
-    st.subheader("📊 Booking Overview")
+        if not pending_bookings:
+            st.info("There are no pending database booking requests.")
+        else:
+            for booking in pending_bookings:
+                with st.container(border=True):
+                    st.markdown(f"### {booking['resource_name']}")
+                    st.write(f"**Booking ID:** {booking['id']}")
+                    st.write(f"**Requested by:** {booking['full_name']} ({booking['email']})")
+                    st.write(f"**Resource type:** {booking['resource_type'].replace('_', ' ').title()}")
+                    st.write(f"**From:** {booking['start_datetime']}")
+                    st.write(f"**To:** {booking['end_datetime']}")
+                    st.write(f"**Capacity:** {booking['requested_capacity']}")
+                    st.write(f"**Purpose:** {booking['purpose']}")
 
-    c1, c2, c3, c4 = st.columns(4)
+                    reject_reason = st.text_input(
+                        "Reason (required when rejecting)",
+                        key=f"reject_reason_{booking['id']}",
+                    )
+                    approve_col, reject_col = st.columns(2)
+                    with approve_col:
+                        approve_clicked = st.button(
+                            "✅ Approve request",
+                            key=f"db_approve_{booking['id']}",
+                            use_container_width=True,
+                        )
+                    with reject_col:
+                        reject_clicked = st.button(
+                            "❌ Reject request",
+                            key=f"db_reject_{booking['id']}",
+                            use_container_width=True,
+                        )
 
-    c1.metric("Total Requests", total)
-    c2.metric("Pending", pending)
-    c3.metric("Approved", approved)
-    c4.metric("Rejected", rejected)
-
-    st.divider()
-
-    # Booking approvals
-    st.subheader("📋 Booking Approval Requests")
-
-    pending_bookings = [
-        b for b in bookings if b["status"] == "Pending"
-    ]
-
-    if pending_bookings:
-
-        for booking in pending_bookings:
-
-            with st.container(border=True):
-
-                st.markdown(f"### {booking['resource']}")
-
-                st.write(f"Booking ID: {booking['id']}")
-                st.write(f"Requested by: {booking['user']}")
-                st.write(f"Date: {booking['date']}")
-                st.write(f"Time: {booking['time']}")
-
-                col1, col2 = st.columns(2)
-
-                with col1:
-                    if st.button(
-                        "✅ Approve",
-                        key=f"approve_{booking['id']}",
-                        use_container_width=True
-                    ):
-                        booking["status"] = "Approved"
-                        st.session_state[
-                            "admin_action_message"
-                        ] = f"{booking['id']} approved."
+                    if approve_clicked:
+                        decision = approve_booking(booking["id"], admin_user["id"])
+                        if decision.get("success"):
+                            verified = get_booking_by_id(booking["id"], admin_user["id"])
+                            if verified and verified["status"] == "approved":
+                                st.session_state["admin_action_message"] = (
+                                    f"Booking #{booking['id']} is APPROVED in PostgreSQL."
+                                )
+                            else:
+                                st.session_state["admin_action_message"] = (
+                                    f"Approval response received, but database verification failed for booking #{booking['id']}."
+                                )
+                        else:
+                            st.session_state["admin_action_message"] = decision.get(
+                                "message", "Approval failed."
+                            )
                         st.rerun()
 
-                with col2:
-                    if st.button(
-                        "❌ Reject",
-                        key=f"reject_{booking['id']}",
-                        use_container_width=True
-                    ):
-                        booking["status"] = "Rejected"
-                        st.session_state[
-                            "admin_action_message"
-                        ] = f"{booking['id']} rejected."
-                        st.rerun()
+                    if reject_clicked:
+                        if not reject_reason.strip():
+                            st.warning("Enter a rejection reason first.")
+                        else:
+                            decision = reject_booking(
+                                booking["id"], admin_user["id"], reject_reason.strip()
+                            )
+                            if decision.get("success"):
+                                verified = get_booking_by_id(booking["id"], admin_user["id"])
+                                if verified and verified["status"] == "rejected":
+                                    st.session_state["admin_action_message"] = (
+                                        f"Booking #{booking['id']} is REJECTED in PostgreSQL."
+                                    )
+                                else:
+                                    st.session_state["admin_action_message"] = (
+                                        f"Rejection response received, but database verification failed for booking #{booking['id']}."
+                                    )
+                            else:
+                                st.session_state["admin_action_message"] = decision.get(
+                                    "message", "Rejection failed."
+                                )
+                            st.rerun()
 
-    else:
-        st.success("No pending booking requests.")
-
-    if st.session_state.get("admin_action_message"):
-        st.info(st.session_state.admin_action_message)
-
-    st.divider()
+    except Exception as exc:
+        st.error(f"Could not load or update database booking requests: {type(exc).__name__}: {exc}")
+        st.info("Check DATABASE_URL, run init_db.py and seed_demo.py, then retry.")
 
     # Management sections
     st.subheader("⚙️ Campus Management")
@@ -582,8 +649,8 @@ elif page == "Admin Panel":
             st.write("Upload and review semester timetables.")
 
             st.info(
-                "Member 1 and Member 2 will integrate "
-                "timetable parsing and publishing."
+                "Timetable parsing and database publishing are not yet connected to this page. "
+                "Only validated synthetic timetable rows should be published for the demo."
             )
 
     with col2:
@@ -592,7 +659,8 @@ elif page == "Admin Panel":
             st.write("Manage classrooms, labs and parking.")
 
             st.info(
-                "Member 2 will integrate resource management."
+                "Resource inventory management remains a demo-only section. "
+                "Booking approvals above use the PostgreSQL backend."
             )
     
     # ----------------------------------
