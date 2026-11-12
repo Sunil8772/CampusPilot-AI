@@ -1,0 +1,996 @@
+﻿Program,Semester,Section,Day,Start Time,End Time,Subject,Faculty,Room,Source PDF Page,Course Code,Class Type,Batch,Group,Section Home Room (PDF header),Verification Status
+BTech,1,A,Monday,09:00,09:50,Programming-1,Dr. Amar Nath Patra,TB106,,CS1139,P,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Monday,10:00,10:50,Programming-1,Dr. Amar Nath Patra,TB106,,CS1139,P,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Monday,13:00,13:50,Programming-1,Dr. Amar Nath Patra,EB1-101,,CS1139,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Monday,14:00,14:50,Calculus and Differential Equations,Dr. Anant Pratap Singh,EB1-101,,AS1109,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Tuesday,09:00,09:50,Fundamentals of E. & E. Engineering,Dr. Rashmi Kushwaha,TB-102/108,,EE1118,P,A2,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Tuesday,10:00,10:50,Fundamentals of E. & E. Engineering,Dr. Rashmi Kushwaha,TB-102/108,,EE1118,P,A2,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Tuesday,10:00,10:50,Calculus and Differential Equations,Ms. Shobha Mangal,EB1-101,,AS1109,T,A1,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Tuesday,11:00,11:50,Environmental Sc. & Sustainability,Dr. Shahnawaz Khan,EB1-101,,ES1115,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Tuesday,13:00,13:50,Design Thinking with AI,Dr. Devisha Tiwari,EB1-101,,AI0000,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Tuesday,14:00,14:50,Fundamentals of E. & E. Engineering,Dr. Rashmi Kushwaha,EB1-101,,EE1118,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Tuesday,15:00,15:50,Fundamentals of Prof. Communication,Mr. Vishwajeet Sehwag,EB1-101,,CC1110,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Tuesday,16:00,16:50,Project Based Learning,,EB1-101,,,,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Wednesday,09:00,09:50,Environmental Sc.& Sustainability,Dr. Shahnawaz Khan,EB1-101,,ES1115,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Wednesday,10:00,10:50,Calculus and Differential Equations,Dr. Anant Pratap Singh,EB1-101,,AS1109,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Wednesday,11:00,11:50,Design Thinking with AI,Dr. Devisha Tiwari,EB1-101,,AI0000,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Wednesday,14:00,14:50,Programming-1,Dr. Amar Nath Patra,EB1-101,,CS1139,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Wednesday,15:00,15:50,Fundamentals of E. & E. Engineering,Dr. Rashmi Kushwaha,TB-102/108,,EE1118,P,A1,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Wednesday,15:00,15:50,Calculus and Differential Equations,Dr. Anant Pratap Singh,EB1-101,,AS1109,T,A2,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Wednesday,16:00,16:50,Fundamentals of E. & E. Engineering,Dr. Rashmi Kushwaha,TB-102/108,,EE1118,P,A1,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Thursday,10:00,10:50,Fundamentals of E.& E. Engineering,Dr. Rashmi Kushwaha,EB1-101,,EE1118,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Thursday,11:00,11:50,Fundamentals of Prof. Communication,Mr. Vishwajeet Sehwag,EB1-101,,CC1110,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Thursday,13:00,13:50,Design Thinking with AI,Dr. Devisha Tiwari,EB1-101,,AI0000,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Thursday,14:00,14:50,Calculus and Differential Equations,Dr. Anant Pratap Singh,EB1-101,,AS1109,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Thursday,15:00,15:50,Coding Hours,,EB1-101,,,,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Thursday,16:00,16:50,Coding Hours,,EB1-101,,,,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Friday,09:00,09:50,Fundamentals of Prof. Communication,Mr. Vishwajeet Sehwag,EB1-101,,CC1110,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Friday,13:00,13:50,Programming-1,Dr. Amar Nath Patra,EB1-101,,CS1139,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,A,Friday,14:00,14:50,Fundamentals of E. & E. Engineering,Dr. Rashmi Kushwaha,EB1-101,,EE1118,L,,Design Thinking with AI Group,EB1-101,Needs Review
+BTech,1,B,Monday,10:00,10:50,Fundamentals of E. & E. Engineering,Dr. Rajnish Kumar,EB1-102,,EE1118,L,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Monday,11:00,11:50,Calculus and Differential Equations,Dr. Manushi Gupta,EB1-102,,AS1109,L,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Monday,13:00,13:50,Design Thinking with AI,DR. MANJU RANA,EB1-102,,AI0000,,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Monday,14:00,14:50,Programming-1,Dr. Ankush Soni,EB1-102,,CS1139,L,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Monday,15:00,15:50,Fundamentals of Prof. Communication,Mr. Vishwajeet Sehwag,EB1-102,,CC1110,L,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Tuesday,09:00,09:50,Programming-1,Dr. Ankush Soni,TB106,,CS1139,P,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Tuesday,10:00,10:50,Programming-1,Dr. Ankush Soni,TB106,,CS1139,P,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Tuesday,13:00,13:50,Fundamentals of Prof. Communication,Mr. Vishwajeet Sehwag,EB1-102,,CC1110,L,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Tuesday,14:00,14:50,Environmental Sc.& Sustainability,Dr. Shahnawaz Khan,EB1-102,,ES1115,L,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Tuesday,15:00,15:50,Fundamentals of E. & E. Engineering,Dr. Rajnish Kumar,TB-102/108,,EE1118,P,B1,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Tuesday,15:00,15:50,Calculus and Differential Equations,Dr. Shobha mangal,EB1-102,,AS1109,T,B2,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Tuesday,16:00,16:50,Fundamentals of E. & E. Engineering,Dr. Rajnish Kumar,TB-102/108,,EE1118,P,B1,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Wednesday,09:00,09:50,Programming-1,Dr. Ankush Soni,EB1-102,,CS1139,L,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Wednesday,10:00,10:50,Calculus and Differential Equations,Dr. Manushi Gupta,EB1-102,,AS1109,L,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Wednesday,11:00,11:50,Fundamentals of E. & E. Engineering,Dr. Rajnish Kumar,EB1-102,,EE1118,L,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Wednesday,13:00,13:50,Fundamentals of E. & E. Engineering,Dr. Rajnish Kumar,TB-102/112,,EE1118,P,B2,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Wednesday,14:00,14:50,Fundamentals of E. & E. Engineering,Dr. Rajnish Kumar,TB-102/112,,EE1118,P,B2,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Wednesday,14:00,14:50,Calculus and Differential Equations,Dr. Manushi Gupta,EB1-102,,AS1109,T,B1,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Wednesday,15:00,15:50,Design Thinking with AI,DR. MANJU RANA,EB1-102,,AI0000,,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Wednesday,16:00,16:50,Project Based Learning,,EB1-102,,,,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Thursday,09:00,09:50,Fundamentals of E. & E. Engineering,Dr. Rajnish Kumar,EB1-102,,EE1118,L,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Thursday,11:00,11:50,Calculus and Differential Equations,Dr. Manushi Gupta,EB1-102,,AS1109,L,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Thursday,13:00,13:50,Programming-1,Dr. Ankush Soni,EB1-102,,CS1139,L,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Thursday,15:00,15:50,Coding Hours,,EB1-102,,,,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Thursday,16:00,16:50,Coding Hours,,EB1-102,,,,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Friday,09:00,09:50,Design Thinking with AI,DR. MANJU RANA,EB1-102,,AI0000,,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Friday,11:00,11:50,Fundamentals of Prof. Communication,Mr. Vishwajeet Sehwag,EB1-102,,CC1110,L,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,B,Friday,14:00,14:50,Environmental Sc.& Sustainability,Dr. Shahnawaz Khan,EB1-102,,ES1115,L,,Design Thinking with AI Group,EB1-102,Needs Review
+BTech,1,C,Monday,09:00,09:50,Design Thinking with AI,Dr. Devisha Tiwari,EB1-103,,AI0000,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Monday,10:00,10:50,Fundamentals of E. & E. Engineering,Dr. Rashmi Kushwaha,EB1-103,,EE1118,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Monday,11:00,11:50,Programming-1,Dr. Amit Sinhal,EB1-103,,CS1139,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Monday,14:00,14:50,Environmental Sc.& Sustainability,Dr. Shahnawaz Khan,EB1-103,,ES1115,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Monday,15:00,15:50,Fundamentals of E. & E. Engineering,Dr. Rashmi Kushwaha,TB-102/108,,EE1118,P,C1,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Monday,15:00,15:50,Calculus and Differential Equations,Dr. Anshu Yadav,EB1-103,,AS1109,T,C2,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Monday,16:00,16:50,Fundamentals of E. & E. Engineering,Dr. Rashmi Kushwaha,TB-102/108,,EE1118,P,C1,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Tuesday,09:00,09:50,Fundamentals of Prof. Communication,Mr. Vishwajeet Sehwag,EB1-103,,CC1110,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Tuesday,11:00,11:50,Design Thinking with AI,Dr. Devisha Tiwari,EB1-103,,AI0000,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Tuesday,13:00,13:50,Programming-1,Dr. Amit Sinhal,EB1-103,,CS1139,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Tuesday,14:00,14:50,Calculus and Differential Equations,Dr. Anant Pratap Singh,EB1-103,,AS1109,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Wednesday,09:00,09:50,Programming-1,Dr. Amit Sinhal,TB106,,CS1139,P,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Wednesday,10:00,10:50,Programming-1,Dr. Amit Sinhal,TB106,,CS1139,P,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Wednesday,11:00,11:50,Fundamentals of E. & E. Engineering,Dr. Rashmi Kushwaha,EB1-103,,EE1118,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Wednesday,13:00,13:50,Fundamentals of Prof. Communication,Mr. Vishwajeet Sehwag,EB1-103,,CC1110,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Wednesday,14:00,14:50,Calculus and Differential Equations,Dr. Anant Pratap Singh,EB1-103,,AS1109,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Thursday,10:00,10:50,Calculus and Differential Equations,Dr. Anant Pratap Singh,EB1-103,,AS1109,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Thursday,11:00,11:50,Programming-1,Dr. Amit Sinhal,EB1-103,,CS1139,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Thursday,13:00,13:50,Fundamentals of E. & E. Engineering,Dr. Rashmi Kushwaha,TB-102/112,,EE1118,P,C2,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Thursday,14:00,14:50,Fundamentals of E. & E. Engineering,Dr. Rashmi Kushwaha,TB-102/112,,EE1118,P,C2,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Thursday,15:00,15:50,Coding Hours,,EB1-103,,,,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Thursday,16:00,16:50,Coding Hours,,EB1-103,,,,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Friday,09:00,09:50,Calculus and Differential Equations,Dr. Anant Pratap Singh,EB1-103,,AS1109,T,C1,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Friday,10:00,10:50,Fundamentals of E. & E. Engineering,Dr. Rashmi Kushwaha,EB1-103,,EE1118,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Friday,11:00,11:50,Environmental Sc.& Sustainability,Dr. Shahnawaz Khan,EB1-103,,ES1115,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Friday,13:00,13:50,Design Thinking with AI,Dr. Devisha Tiwari,EB1-103,,AI0000,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Friday,14:00,14:50,Fundamentals of Prof. Communication,Mr. Vishwajeet Sehwag,EB1-103,,CC1110,L,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,C,Friday,16:00,16:50,Project Based Learning,,EB1-103,,,,,Design Thinking with AI Group,EB1-103,Needs Review
+BTech,1,D,Monday,09:00,09:50,Fundamentals of Prof. Communication,Mr. Vishwajeet Sehwag,EB1-104,,CC1110,L,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Monday,11:00,11:50,Fundamentals of E. & E. Engineering,Dr. Megha Sahu,EB1-104,,EE1118,L,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Monday,13:00,13:50,Fundamentals of Prof. Communication,Mr. Vishwajeet Sehwag,EB1-104,,CC1110,L,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Monday,14:00,14:50,Design Thinking with AI,DR. MANJU RANA,EB1-104,,AI0000,,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Monday,15:00,15:50,Fundamentals of E. & E. Engineering,Dr. Megha Sahu,TB-102/108,,EE1118,P,D1,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Monday,15:00,15:50,Calculus and Differential Equations,Dr. Sushant Pokhriyal,EB1-104,,AS1109,T,D2,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Monday,16:00,16:50,Fundamentals of E. & E. Engineering,Dr. Megha Sahu,TB-102/108,,EE1118,P,D1,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Tuesday,09:00,09:50,Fundamentals of E. & E. Engineering,Dr. Megha Sahu,EB1-104,,EE1118,L,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Tuesday,10:00,10:50,Calculus and Differential Equations,Dr. Rabia Kamra,EB1-104,,AS1109,L,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Tuesday,11:00,11:50,Programming-1,Dr. Ankush Soni,EB1-104,,CS1139,L,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Tuesday,13:00,13:50,Fundamentals of E. & E. Engineering,Dr. Megha Sahu,TB-102/108,,EE1118,P,D2,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Tuesday,14:00,14:50,Fundamentals of E. & E. Engineering,Dr. Megha Sahu,TB-102/108,,EE1118,P,D2,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Tuesday,14:00,14:50,Calculus and Differential Equations,Dr. Rabia Kamra,EB1-104,,AS1109,T,D1,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Tuesday,16:00,16:50,Environmental Sc. & Sustainability,Dr. Shahnawaz Khan,EB1-104,,ES1115,L,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Wednesday,09:00,09:50,Design Thinking with AI,DR. MANJU RANA,EB1-104,,AI0000,,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Wednesday,10:00,10:50,Calculus and Differential Equations,Dr. Rabia Kamra,EB1-104,,AS1109,L,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Wednesday,11:00,11:50,Programming-1,Dr. Ankush Soni,EB1-104,,CS1139,L,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Wednesday,14:00,14:50,Environmental Sc. & Sustainability,Dr. Shahnawaz Khan,EB1-104,,ES1115,L,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Wednesday,15:00,15:50,Fundamentals of Prof. Communication,Mr. Vishwajeet Sehwag,EB1-104,,CC1110,L,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Thursday,09:00,09:50,Programming-1,Dr. Ankush Soni,TB106,,CS1139,P,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Thursday,10:00,10:50,Programming-1,Dr. Ankush Soni,TB106,,CS1139,P,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Thursday,11:00,11:50,Design Thinking with AI,DR. MANJU RANA,EB1-104,,AI0000,,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Thursday,14:00,14:50,Calculus and Differential Equations,Dr. Rabia Kamra,EB1-104,,AS1109,L,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Thursday,15:00,15:50,Coding Hours,,EB1-104,,,,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Thursday,16:00,16:50,Coding Hours,,EB1-104,,,,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Friday,10:00,10:50,Fundamentals of E. & E. Engineering,Dr. Megha Sahu,EB1-104,,EE1118,L,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Friday,13:00,13:50,Programming-1,Dr. Ankush Soni,EB1-104,,CS1139,L,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,D,Friday,16:00,16:50,Project Based Learning,,EB1-104,,,,,Design Thinking with AI Group,EB1-104,Needs Review
+BTech,1,E,Monday,09:00,09:50,Design Thinking with AI,DR. MANJU RANA,EB2-104,,AI0000,,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Monday,10:00,10:50,Programming-1,Mr. Mayank Kundalwal,EB2-104,,CS1139,L,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Monday,11:00,11:50,Environmental Sc. & Sustainability,Dr. Shahnawaz Khan,EB2-104,,ES1115,L,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Monday,13:00,13:50,Fundamentals of E. & E. Engineering,Dr. H. P. Agrawal,TB-102/112,,EE1118,P,E1,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Monday,14:00,14:50,Fundamentals of E. & E. Engineering,Dr. H. P. Agrawal,TB-102/112,,EE1118,P,E1,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Monday,14:00,14:50,Calculus and Differential Equation,Dr. Sushant Pokhriyal,EB2-104,,AS1109,T,E2,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Monday,16:00,16:50,Project Based Learning,,EB2-104,,,,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Tuesday,09:00,09:50,Calculus and Differential Equation,Dr. Sushant Pokhriyal,EB2-104,,AS1109,L,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Tuesday,10:00,10:50,Fundamentals of E. & E. Engineering,Dr. H. P. Agrawal,EB2-104,,EE1118,L,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Tuesday,11:00,11:50,Programming-1,Mr. Mayank Kundalwal,EB2-104,,CS1139,L,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Tuesday,13:00,13:50,Fundamentals of E. & E. Engineering,Dr. H. P. Agrawal,TB-102/108,,EE1118,P,E2,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Tuesday,13:00,13:50,Calculus and Differential Equation,Dr. Sushant Pokhriyal,EB2-104,,AS1109,T,E1,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Tuesday,14:00,14:50,Fundamentals of E. & E. Engineering,Dr. H. P. Agrawal,TB-102/108,,EE1118,P,E2,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Tuesday,15:00,15:50,Design Thinking with AI,DR. MANJU RANA,EB2-104,,AI0000,,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Wednesday,10:00,10:50,Fundamentals of Prof. Communication,Mr. Vishwajeet Sehwag,EB2-104,,CC1110,L,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Wednesday,11:00,11:50,Calculus and Differential Equation,Dr. Sushant Pokhriyal,EB2-104,,AS1109,L,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Wednesday,13:00,13:50,Fundamentals of E. & E. Engineering,Dr. H. P. Agrawal,EB2-104,,EE1118,L,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Wednesday,16:00,16:50,Environmental Sc. & Sustainability,Dr. Shahnawaz Khan,EB2-104,,ES1115,L,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Thursday,09:00,09:50,Fundamentals of E. & E. Engineering,Dr. H. P. Agrawal,EB2-104,,EE1118,L,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Thursday,10:00,10:50,Design Thinking with AI,DR. MANJU RANA,EB2-104,,AI0000,,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Thursday,13:00,13:50,Fundamentals of Prof. Communication,Mr. Vishwajeet Sehwag,EB2-104,,CC1110,L,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Thursday,14:00,14:50,Fundamentals of Prof. Communication,Mr. Vishwajeet Sehwag,EB2-104,,CC1110,L,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Thursday,15:00,15:50,Coding Hours,,EB2-104,,,,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Thursday,16:00,16:50,Coding Hours,,EB2-104,,,,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Friday,09:00,09:50,Programming-1,Dr. Surbhi Chhabra,TB106,,CS1139,P,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Friday,10:00,10:50,Programming-1,Dr. Surbhi Chhabra,TB106,,CS1139,P,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Friday,13:00,13:50,Programming-1,Mr. Mayank Kundalwal,EB2-104,,CS1139,L,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,E,Friday,14:00,14:50,Calculus and Differential Equation,Dr. Sushant Pokhriyal,EB2-104,,AS1109,L,,Design Thinking with AI Group,EB2-104,Needs Review
+BTech,1,F,Monday,09:00,09:50,Fundamentals of Prof. Communication,DR. AKSHAY,EB2-105,,CC1110,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Monday,11:00,11:50,Calculus and Differential Equations,Ms. Shobha Mangal,EB2-105,,AS1109,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Monday,13:00,13:50,Applied Physics,Dr. Abhinav Kumar Khorwal,EB2-105,,AS1108,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Monday,15:00,15:50,Programming-1,Dr. Amit Sinhal,TB106,,CS1139,P,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Monday,16:00,16:50,Programming-1,Dr. Amit Sinhal,TB106,,CS1139,P,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Tuesday,10:00,10:50,Programming-1,Dr. Amit Sinhal,EB2-105,,CS1139,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Tuesday,11:00,11:50,Calculus and Differential Equations,Ms. Shobha Mangal,EB2-105,,AS1109,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Tuesday,15:00,15:50,Fundamentals of Prof. Communication,DR. AKSHAY,EB2-105,,CC1110,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Tuesday,16:00,16:50,Fundamentals of E. & E. Engineering,Dr. Megha Sahu,EB2-105,,EE1118,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Wednesday,09:00,09:50,Applied Physics,Dr. Abhinav Kumar Khorwal,EB2-105,,AS1108,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Wednesday,10:00,10:50,Calculus and Differential Equations,Ms. Shobha Mangal,EB2-105,,AS1109,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Wednesday,11:00,11:50,Fundamentals of E. & E. Engineering,Dr. Megha Sahu,EB2-105,,EE1118,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Wednesday,13:00,13:50,Fundamentals of E. & E. Engineering,Dr. Megha Sahu,TB-102/108,,EE1118,P,F2,Physics Group,EB2-105,Needs Review
+BTech,1,F,Wednesday,14:00,14:50,Fundamentals of E. & E. Engineering,Dr. Megha Sahu,TB-102/108,,EE1118,P,F2,Physics Group,EB2-105,Needs Review
+BTech,1,F,Wednesday,15:00,15:50,Programming-1,Dr. Amit Sinhal,EB2-105,,CS1139,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Wednesday,16:00,16:50,Project Based Learning,,EB2-105,,,,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Thursday,09:00,09:50,Fundamentals of Prof. Communication,DR. AKSHAY,EB2-105,,CC1110,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Thursday,10:00,10:50,Fundamentals of E. & E. Engineering,Dr. Megha Sahu,EB2-105,,EE1118,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Thursday,11:00,11:50,Applied Physics,Dr. Abhinav Kumar Khorwal,EB2-105,,AS1108,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Thursday,13:00,13:50,Fundamentals of E. & E. Engineering,Dr. Megha Sahu,TB-102/112,,EE1118,P,F1,Physics Group,EB2-105,Needs Review
+BTech,1,F,Thursday,13:00,13:50,Calculus and Differential Equations,Ms. Shobha Mangal,EB2-105,,AS1109,T,F2,Physics Group,EB2-105,Needs Review
+BTech,1,F,Thursday,14:00,14:50,Fundamentals of E. & E. Engineering,Dr. Megha Sahu,TB-102/112,,EE1118,P,F1,Physics Group,EB2-105,Needs Review
+BTech,1,F,Thursday,15:00,15:50,Coding Hours,,EB2-105,,,,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Thursday,16:00,16:50,Coding Hours,,EB2-105,,,,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Friday,09:00,09:50,Into. to Indian Know. Systems,Mr. Aman Mishra,EB2-105,,IL1107,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Friday,10:00,10:50,Calculus and Differential Equations,Ms. Shobha Mangal,EB2-105,,AS1109,T,F1,Physics Group,EB2-105,Needs Review
+BTech,1,F,Friday,11:00,11:50,Programming-1,Dr. Amit Sinhal,EB2-105,,CS1139,L,,Physics Group,EB2-105,Needs Review
+BTech,1,F,Friday,13:00,13:50,Into. to Indian Know. Systems,Mr. Aman Mishra,EB2-105,,IL1107,L,,Physics Group,EB2-105,Needs Review
+BTech,1,G,Monday,09:00,09:50,Fundamentals of E. & E. Engineering,Dr. H. P. Agrawal,TB-102/108,,EE1118,P,G1,Physics Group,EB2-106,Needs Review
+BTech,1,G,Monday,10:00,10:50,Fundamentals of E. & E. Engineering,Dr. H. P. Agrawal,TB-102/108,,EE1118,P,G1,Physics Group,EB2-106,Needs Review
+BTech,1,G,Monday,10:00,10:50,Calculus and Differential Equations,Dr. Anshu Yadav,EB2-106,,AS1109,T,G2,Physics Group,EB2-106,Needs Review
+BTech,1,G,Monday,11:00,11:50,Calculus and Differential Equations,Dr. Anshu Yadav,EB2-106,,AS1109,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Monday,15:00,15:50,Fundamentals of E. & E. Engineering,Dr. Devika Kataria,EB2-106,,EE1118,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Tuesday,09:00,09:50,Programming-1,Mr. Mayank Kundalwal,EB2-106,,CS1139,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Tuesday,10:00,10:50,Fundamentals of Prof. Communication,DR. AKSHAY,EB2-106,,CC1110,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Tuesday,11:00,11:50,Calculus and Differential Equations,Dr. Anshu Yadav,EB2-106,,AS1109,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Tuesday,13:00,13:50,Applied Physics,Dr. Abhinav Kumar Khorwal,EB2-106,,AS1108,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Tuesday,15:00,15:50,Programming-1,Mr. Mayank Kundalwal,TB106,,CS1139,P,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Tuesday,16:00,16:50,Programming-1,Mr. Mayank Kundalwal,TB106,,CS1139,P,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Wednesday,09:00,09:50,Into. to Indian Know. Systems,Mr. Aman Mishra,EB2-106,,IL1107,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Wednesday,10:00,10:50,Programming-1,Mr. Mayank Kundalwal,EB2-106,,CS1139,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Wednesday,11:00,11:50,Fundamentals of E. & E. Engineering,Dr. Devika Kataria,EB2-106,,EE1118,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Wednesday,13:00,13:50,Applied Physics,Dr. Abhinav Kumar Khorwal,EB2-106,,AS1108,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Wednesday,14:00,14:50,Into. to Indian Know. Systems,Mr. Aman Mishra,EB2-106,,IL1107,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Wednesday,15:00,15:50,Fundamentals of Prof. Communication,DR. AKSHAY,EB2-106,,CC1110,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Wednesday,16:00,16:50,Project Based Learning,,EB2-106,,,,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Thursday,10:00,10:50,Calculus and Differential Equations,Dr. Anshu Yadav,EB2-106,,AS1109,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Thursday,11:00,11:50,Programming-1,Mr. Mayank Kundalwal,EB2-106,,CS1139,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Thursday,13:00,13:50,Applied Physics,Dr. Abhinav Kumar Khorwal,EB2-106,,AS1108,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Thursday,14:00,14:50,Fundamentals of E. & E. Engineering,Dr. Devika Kataria,EB2-106,,EE1118,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Thursday,15:00,15:50,Coding Hours,,EB2-106,,,,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Thursday,16:00,16:50,Coding Hours,,EB2-106,,,,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Friday,11:00,11:50,Fundamentals of Prof. Communication,DR. AKSHAY,EB2-106,,CC1110,L,,Physics Group,EB2-106,Needs Review
+BTech,1,G,Friday,13:00,13:50,Fundamentals of E. & E. Engineering,Dr. H. P. Agrawal,TB-102/112,,EE1118,P,G2,Physics Group,EB2-106,Needs Review
+BTech,1,G,Friday,14:00,14:50,Fundamentals of E. & E. Engineering,Dr. H. P. Agrawal,TB-102/112,,EE1118,P,G2,Physics Group,EB2-106,Needs Review
+BTech,1,G,Friday,14:00,14:50,Calculus and Differential Equations,Dr. Anshu Yadav,EB2-106,,AS1109,T,G1,Physics Group,EB2-106,Needs Review
+BTech,1,J,Monday,09:00,09:50,Applied Physics,Dr. Abhinav Kumar Khorwal,EB2-202,,AS1108,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Monday,10:00,10:50,Fundamentals of E. & E. Engineering,Dr. Devika Kataria,EB2-202,,EE1118,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Monday,13:00,13:50,Into. to Indian Know. Systems,Mr. Aman Mishra,EB2-202,,IL1107,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Monday,15:00,15:50,Fundamentals of Prof. Communication,DR. AKSHAY,EB2-202,,CC1110,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Monday,16:00,16:50,Fundamentals of Prof. Communication,DR. AKSHAY,EB2-202,,CC1110,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Tuesday,10:00,10:50,Programming-1,Dr. Surbhi Chhabra,EB2-202,,CS1139,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Tuesday,11:00,11:50,Applied Physics,Dr. Abhinav Kumar Khorwal,EB2-202,,AS1108,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Tuesday,13:00,13:50,Into. to Indian Know. Systems,Mr. Aman Mishra,EB2-202,,IL1107,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Tuesday,14:00,14:50,Calculus and Differential Equations,Ms. Shobha Mangal,EB2-202,,AS1109,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Tuesday,16:00,16:50,Project Based Learning,,EB2-202,,,,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Wednesday,09:00,09:50,Fundamentals of E. & E. Engineering,Dr. Devika Kataria,TB-102/108,,EE1118,P,J2,Physics Group,EB2-202,Needs Review
+BTech,1,J,Wednesday,09:00,09:50,Calculus and Differential Equations,Ms. Shobha Mangal,EB2-202,,AS1109,T,J1,Physics Group,EB2-202,Needs Review
+BTech,1,J,Wednesday,10:00,10:50,Fundamentals of E. & E. Engineering,Dr. Devika Kataria,TB-102/108,,EE1118,P,J2,Physics Group,EB2-202,Needs Review
+BTech,1,J,Wednesday,11:00,11:50,Programming-1,Dr. Surbhi Chhabra,EB2-202,,CS1139,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Wednesday,13:00,13:50,Calculus and Differential Equations,Ms. Shobha Mangal,EB2-202,,AS1109,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Wednesday,15:00,15:50,Programming-1,Dr. Surbhi Chhabra,TB106,,CS1139,P,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Wednesday,16:00,16:50,Programming-1,Dr. Surbhi Chhabra,TB106,,CS1139,P,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Thursday,10:00,10:50,Fundamentals of E. & E. Engineering,Dr. Devika Kataria,EB2-202,,EE1118,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Thursday,11:00,11:50,Calculus and Differential Equations,Ms. Shobha Mangal,EB2-202,,AS1109,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Thursday,14:00,14:50,Fundamentals of Prof. Communication,DR. AKSHAY,EB2-202,,CC1110,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Thursday,15:00,15:50,Coding Hours,,EB2-202,,,,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Thursday,16:00,16:50,Coding Hours,,EB2-202,,,,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Friday,10:00,10:50,Fundamentals of E. & E. Engineering,Dr. Devika Kataria,EB2-202,,EE1118,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Friday,11:00,11:50,Applied Physics,Dr. Abhinav Kumar Khorwal,EB2-202,,AS1108,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Friday,13:00,13:50,Programming-1,Dr. Surbhi Chhabra,EB2-202,,CS1139,L,,Physics Group,EB2-202,Needs Review
+BTech,1,J,Friday,15:00,15:50,Fundamentals of E. & E. Engineering,Dr. Devika Kataria,TB-102/108,,EE1118,P,J1,Physics Group,EB2-202,Needs Review
+BTech,1,J,Friday,15:00,15:50,Calculus and Differential Equations,Dr. Suprita Talnikar,EB2-202,,AS1109,T,J2,Physics Group,EB2-202,Needs Review
+BTech,1,J,Friday,16:00,16:50,Fundamentals of E. & E. Engineering,Dr. Devika Kataria,TB-102/108,,EE1118,P,J1,Physics Group,EB2-202,Needs Review
+BTech,1,I,Monday,09:00,09:50,Fundamentals of E. & E. Engineering,Mr. Divanshu Jain,EB2-204,,EE1118,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Monday,10:00,10:50,Calculus and Differential Equations,Dr. Rabia Kamra,EB2-204,,AS1109,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Monday,11:00,11:50,Applied Physics,Dr. Krishna Chaitanya Solasa,EB2-204,,AS1108,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Monday,13:00,13:50,Fundamentals of E. & E. Engineering,Mr. Divanshu Jain,TB-102/112,,EE1118,P,I1,Physics Group,EB2-204,Needs Review
+BTech,1,I,Monday,14:00,14:50,Fundamentals of E. & E. Engineering,Mr. Divanshu Jain,TB-102/112,,EE1118,P,I1,Physics Group,EB2-204,Needs Review
+BTech,1,I,Monday,14:00,14:50,Calculus and Differential Equations,Ms. Shobha Mangal,EB2-204,,AS1109,T,I2,Physics Group,EB2-204,Needs Review
+BTech,1,I,Monday,16:00,16:50,Project Based Learning,,EB2-204,,,,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Tuesday,09:00,09:50,Applied Physics,Dr. Krishna Chaitanya Solasa,EB2-204,,AS1108,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Tuesday,10:00,10:50,Fundamentals of E. & E. Engineering,Mr. Divanshu Jain,EB2-204,,EE1118,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Tuesday,11:00,11:50,Into. to Indian Know. Systems,Dr. Nitya Pawar,EB2-204,,IL1107,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Tuesday,13:00,13:50,Fundamentals of Prof. Communication,DR. AKSHAY,EB2-204,,CC1110,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Tuesday,15:00,15:50,Programming-1,Dr. Amar Nath Patra,EB2-204,,CS1139,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Wednesday,09:00,09:50,Fundamentals of Prof. Communication,Dr. Akshay,EB2-204,,CC1110,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Wednesday,10:00,10:50,Programming-1,Dr. Amar Nath Patra,EB2-204,,CS1139,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Wednesday,14:00,14:50,Calculus and Differential Equations,Dr. Rabia Kamra,EB2-204,,AS1109,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Thursday,09:00,09:50,Fundamentals of E. & E. Engineering,Mr. Divanshu Jain,TB-102/108,,EE1118,P,I2,Physics Group,EB2-204,Needs Review
+BTech,1,I,Thursday,10:00,10:50,Fundamentals of E. & E. Engineering,Mr. Divanshu Jain,TB-102/108,,EE1118,P,I2,Physics Group,EB2-204,Needs Review
+BTech,1,I,Thursday,10:00,10:50,Calculus and Differential Equations,Dr. Rabia Kamra,EB2-204,,AS1109,T,I1,Physics Group,EB2-204,Needs Review
+BTech,1,I,Thursday,11:00,11:50,Into. to Indian Know. Systems,Dr. Nitya Pawar,EB2-204,,IL1107,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Thursday,13:00,13:50,Fundamentals of E. & E. Engineering,Mr. Divanshu Jain,EB2-204,,EE1118,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Thursday,14:00,14:50,Programming-1,Dr. Amar Nath Patra,EB2-204,,CS1139,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Thursday,15:00,15:50,Coding Hours,,EB2-204,,,,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Thursday,16:00,16:50,Coding Hours,,EB2-204,,,,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Friday,09:00,09:50,Fundamentals of Prof. Communication,Dr. Akshay,EB2-204,,CC1110,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Friday,10:00,10:50,Calculus and Differential Equations,Dr. Rabia Kamra,EB2-204,,AS1109,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Friday,11:00,11:50,Applied Physics,Dr. Krishna Chaitanya Solasa,EB2-204,,AS1108,L,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Friday,15:00,15:50,Programming-1,Dr. Amar Nath Patra,TB106,,CS1139,P,,Physics Group,EB2-204,Needs Review
+BTech,1,I,Friday,16:00,16:50,Programming-1,Dr. Amar Nath Patra,TB106,,CS1139,P,,Physics Group,EB2-204,Needs Review
+BTech,1,H,Monday,09:00,09:50,Into. to Indian Know. Systems,Mr. Aman Mishra,EB2-205,,IL1107,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Monday,10:00,10:50,Fundamentals of E. & E. Engineering,Dr. Gaurav Mani Khanal,EB2-205,,EE1118,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Monday,11:00,11:50,Calculus and Differential Equations,DR. SUPRITA TALNIKAR,EB2-205,,AS1109,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Monday,13:00,13:50,Programming-1,Dr. Surbhi Chhabra,EB2-205,,CS1139,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Tuesday,10:00,10:50,Fundamentals of E. & E. Engineering,Dr. Gaurav Mani Khanal,EB2-205,,EE1118,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Tuesday,13:00,13:50,Calculus and Differential Equations,DR. SUPRITA TALNIKAR,EB2-205,,AS1109,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Tuesday,14:00,14:50,Programming-1,Dr. Surbhi Chhabra,EB2-205,,CS1139,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Tuesday,15:00,15:50,Applied Physics,Dr. Krishna Chaitanya Solasa,EB2-205,,AS1108,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Wednesday,09:00,09:50,Applied Physics,Dr. Krishna Chaitanya Solasa,EB2-205,,AS1108,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Wednesday,10:00,10:50,Fundamentals of E. & E. Engineering,Dr. Gaurav Mani Khanal,EB2-205,,EE1118,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Wednesday,11:00,11:50,Into. to Indian Know. Systems,Mr. Aman Mishra,EB2-205,,IL1107,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Wednesday,13:00,13:50,Fundamentals of Prof. Communication,Dr. Akshay,EB2-205,,CC1110,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Wednesday,15:00,15:50,Fundamentals of E. & E. Engineering,Dr. Rajnish Kumar,TB-102/108,,EE1118,P,H2,Physics Group,EB2-205,Needs Review
+BTech,1,H,Wednesday,16:00,16:50,Fundamentals of E. & E. Engineering,Dr. Rajnish Kumar,TB-102/108,,EE1118,P,H2,Physics Group,EB2-205,Needs Review
+BTech,1,H,Wednesday,16:00,16:50,Calculus and Differential Equations,DR. SUPRITA TALNIKAR,EB2-205,,AS1109,T,H1,Physics Group,EB2-205,Needs Review
+BTech,1,H,Thursday,09:00,09:50,Applied Physics,Dr. Krishna Chaitanya Solasa,EB2-205,,AS1108,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Thursday,10:00,10:50,Calculus and Differential Equations,DR. SUPRITA TALNIKAR,EB2-205,,AS1109,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Thursday,11:00,11:50,Fundamentals of Prof. Communication,Dr. Akshay,EB2-205,,CC1110,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Thursday,13:00,13:50,Programming-1,Dr. Surbhi Chhabra,TB106,,CS1139,P,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Thursday,14:00,14:50,Programming-1,Dr. Surbhi Chhabra,TB106,,CS1139,P,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Thursday,15:00,15:50,Coding Hours,,EB2-205,,,,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Thursday,16:00,16:50,Coding Hours,,EB2-205,,,,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Friday,11:00,11:50,Programming-1,Dr. Surbhi Chhabra,EB2-205,,CS1139,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Friday,13:00,13:50,Fundamentals of E. & E. Engineering,Dr. Rajnish Kumar,TB-102/112,,EE1118,P,H1,Physics Group,EB2-205,Needs Review
+BTech,1,H,Friday,13:00,13:50,Calculus and Differential Equations,DR. SUPRITA TALNIKAR,EB2-205,,AS1109,T,H2,Physics Group,EB2-205,Needs Review
+BTech,1,H,Friday,14:00,14:50,Fundamentals of E. & E. Engineering,Dr. Rajnish Kumar,TB-102/112,,EE1118,P,H1,Physics Group,EB2-205,Needs Review
+BTech,1,H,Friday,15:00,15:50,Fundamentals of Prof. Communication,Dr. Akshay,EB2-205,,CC1110,L,,Physics Group,EB2-205,Needs Review
+BTech,1,H,Friday,16:00,16:50,Project Based Learning,,EB2-205,,,,,Physics Group,EB2-205,Needs Review
+BTech,3,A,Monday,11:00,11:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,EB2-004,Needs Review
+BTech,3,A,Monday,12:00,12:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,EB2-004,Needs Review
+BTech,3,A,Monday,14:00,14:50,Discrete Mathematics,Dr. Manushi Gupta,EB2-004,,CS1142,L,,,EB2-004,Needs Review
+BTech,3,A,Monday,15:00,15:50,Database Management Systems,Dr. S Taruna,LRC007,,CS1133,P,A1,,EB2-004,Needs Review
+BTech,3,A,Monday,15:00,15:50,Discrete Mathematics,Dr. Manushi Gupta,EB2-004,,CS1142,T,A2,,EB2-004,Needs Review
+BTech,3,A,Monday,16:00,16:50,Database Management Systems,Dr. S Taruna,LRC007,,CS1133,P,A1,,EB2-004,Needs Review
+BTech,3,A,Tuesday,09:00,09:50,Perspectives on Contemporary Issues,Mr. Afreen Gani Faridi,EB2-004,,CC1103,L,,,EB2-004,Needs Review
+BTech,3,A,Tuesday,10:00,10:50,Database Management Systems,Dr. S Taruna,EB2-004,,CS1133,L,,,EB2-004,Needs Review
+BTech,3,A,Tuesday,11:00,11:50,Data Structure and Algorithms,Dr. Ashish Jain,TB106,,CS1131,P,,,EB2-004,Needs Review
+BTech,3,A,Tuesday,12:00,12:50,Data Structure and Algorithms,Dr. Ashish Jain,TB106,,CS1131,P,,,EB2-004,Needs Review
+BTech,3,A,Tuesday,14:00,14:50,Computer Organization & Architecture,DR. ROHIT SINGH,EB2-004,,CS1134,L,,,EB2-004,Needs Review
+BTech,3,A,Tuesday,15:00,15:50,Data Structure and Algorithms,Dr. Ashish Jain,EB2-004,,CS1131,L,,,EB2-004,Needs Review
+BTech,3,A,Wednesday,09:00,09:50,Database Management Systems,Dr. S Taruna,LRC007,,CS1133,P,A2,,EB2-004,Needs Review
+BTech,3,A,Wednesday,10:00,10:50,Database Management Systems,Dr. S Taruna,LRC007,,CS1133,P,A2,,EB2-004,Needs Review
+BTech,3,A,Wednesday,10:00,10:50,Discrete Mathematics,Dr. Sushant Pokhriyal,EB2-004,,CS1142,T,A1,,EB2-004,Needs Review
+BTech,3,A,Wednesday,11:00,11:50,Data Structure and Algorithms,Dr. Ashish Jain,EB2-004,,CS1131,L,,,EB2-004,Needs Review
+BTech,3,A,Wednesday,12:00,12:50,Discrete Mathematics,Dr. Manushi Gupta,EB2-004,,CS1142,L,,,EB2-004,Needs Review
+BTech,3,A,Wednesday,14:00,14:50,Computer Organization and Architecture,DR. ROHIT SINGH,EB2-004,,CS1134,L,,,EB2-004,Needs Review
+BTech,3,A,Wednesday,15:00,15:50,Database Management Systems,Dr. S Taruna,EB2-004,,CS1133,L,,,EB2-004,Needs Review
+BTech,3,A,Thursday,09:00,09:50,Data Structure and Algorithms,Dr. Ashish Jain,EB2-004,,CS1131,L,,,EB2-004,Needs Review
+BTech,3,A,Thursday,10:00,10:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,EB2-004,Needs Review
+BTech,3,A,Thursday,11:00,11:50,Computer Organization & Architecture,DR. ROHIT SINGH / Dr. Pranab Roy,TB105,,CS1134,P,,,EB2-004,Needs Review
+BTech,3,A,Thursday,12:00,12:50,Computer Organization & Architecture,DR. ROHIT SINGH / Dr. Pranab Roy,TB105,,CS1134,P,,,EB2-004,Needs Review
+BTech,3,A,Thursday,14:00,14:50,Perspectives on Contemporary Issues,Mr. Afreen Gani Faridi,EB2-004,,CC1103,L,,,EB2-004,Needs Review
+BTech,3,A,Thursday,15:00,15:50,Coding Hours,,EB2-004,,,,,,EB2-004,Needs Review
+BTech,3,A,Thursday,16:00,16:50,Coding Hours,,EB2-004,,,,,,EB2-004,Needs Review
+BTech,3,A,Friday,09:00,09:50,Computer Organization & Architecture,DR. ROHIT SINGH,EB2-004,,CS1134,L,,,EB2-004,Needs Review
+BTech,3,A,Friday,10:00,10:50,Discrete Mathematics,Dr. Manushi Gupta,EB2-004,,CS1142,L,,,EB2-004,Needs Review
+BTech,3,A,Friday,11:00,11:50,Database Management Systems,Dr. S Taruna,EB2-004,,CS1133,L,,,EB2-004,Needs Review
+BTech,3,A,Friday,12:00,12:50,Perspectives on Contemporary Issues,Mr. Afreen Gani Faridi,EB2-004,,CC1103,L,,,EB2-004,Needs Review
+BTech,3,B,Monday,09:00,09:50,Database Management Systems,DR. ROHIT SINGH,LRC007,,CS1133,P,B1,,EB2-206,Needs Review
+BTech,3,B,Monday,10:00,10:50,Database Management Systems,DR. ROHIT SINGH,LRC007,,CS1133,P,B1,,EB2-206,Needs Review
+BTech,3,B,Monday,10:00,10:50,Discrete Mathematics,Dr. Sushant Pokhriyal,EB2-206,,CS1142,T,B2,,EB2-206,Needs Review
+BTech,3,B,Monday,11:00,11:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,EB2-206,Needs Review
+BTech,3,B,Monday,12:00,12:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,EB2-206,Needs Review
+BTech,3,B,Monday,14:00,14:50,Data Structure and Algorithms,Dr. Ashish Jain,EB2-206,,CS1131,L,,,EB2-206,Needs Review
+BTech,3,B,Tuesday,09:00,09:50,Computer Organization & Architecture,DR. ROHIT SINGH / Mr. Ashutosh Kumar,TB105,,CS1134,P,,,EB2-206,Needs Review
+BTech,3,B,Tuesday,10:00,10:50,Computer Organization & Architecture,DR. ROHIT SINGH / Mr. Ashutosh Kumar,TB105,,CS1134,P,,,EB2-206,Needs Review
+BTech,3,B,Tuesday,11:00,11:50,Discrete Mathematics,Dr. Manushi Gupta,EB2-206,,CS1142,L,,,EB2-206,Needs Review
+BTech,3,B,Tuesday,12:00,12:50,Computer Organization & Architecture,DR. ROHIT SINGH,EB2-206,,CS1134,L,,,EB2-206,Needs Review
+BTech,3,B,Tuesday,14:00,14:50,Data Structure and Algorithms,Dr. Ashish Jain,EB2-206,,CS1131,L,,,EB2-206,Needs Review
+BTech,3,B,Tuesday,15:00,15:50,Database Management Systems,Dr. S Taruna,EB2-206,,CS1133,L,,,EB2-206,Needs Review
+BTech,3,B,Tuesday,16:00,16:50,Perspectives on Contemporary Issues,Ms. Shiva Singh,EB2-206,,CC1103,L,,,EB2-206,Needs Review
+BTech,3,B,Wednesday,10:00,10:50,Computer Organization & Architecture,DR. ROHIT SINGH,EB2-206,,CS1134,L,,,EB2-206,Needs Review
+BTech,3,B,Wednesday,12:00,12:50,Database Management Systems,Dr. S Taruna,EB2-206,,CS1133,L,,,EB2-206,Needs Review
+BTech,3,B,Wednesday,14:00,14:50,Data Structure and Algorithms,Dr. Ashish Jain,EB2-206,,CS1131,L,,,EB2-206,Needs Review
+BTech,3,B,Wednesday,15:00,15:50,Database Management Systems,DR. ROHIT SINGH,LRC007,,CS1133,P,B2,,EB2-206,Needs Review
+BTech,3,B,Wednesday,15:00,15:50,Discrete Mathematics,Dr. Manushi Gupta,EB2-206,,CS1142,T,B1,,EB2-206,Needs Review
+BTech,3,B,Wednesday,16:00,16:50,Database Management Systems,DR. ROHIT SINGH,LRC007,,CS1133,P,B2,,EB2-206,Needs Review
+BTech,3,B,Thursday,09:00,09:50,Discrete Mathematics,Dr. Manushi Gupta,EB2-206,,CS1142,L,,,EB2-206,Needs Review
+BTech,3,B,Thursday,10:00,10:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,EB2-206,Needs Review
+BTech,3,B,Thursday,11:00,11:50,Data Structure and Algorithms,Dr. Ashish Jain,TB106,,CS1131,P,,,EB2-206,Needs Review
+BTech,3,B,Thursday,12:00,12:50,Data Structure and Algorithms,Dr. Ashish Jain,TB106,,CS1131,P,,,EB2-206,Needs Review
+BTech,3,B,Thursday,14:00,14:50,Perspectives on Contemporary Issues,Mr. Shiva Singh,EB2-206,,CC1103,L,,,EB2-206,Needs Review
+BTech,3,B,Thursday,15:00,15:50,Coding Hours,,EB2-206,,,,,,EB2-206,Needs Review
+BTech,3,B,Thursday,16:00,16:50,Coding Hours,,EB2-206,,,,,,EB2-206,Needs Review
+BTech,3,B,Friday,11:00,11:50,Computer Organization & Architecture,DR. ROHIT SINGH,EB2-206,,CS1134,L,,,EB2-206,Needs Review
+BTech,3,B,Friday,12:00,12:50,Discrete Mathematics,Dr. Manushi Gupta,EB2-206,,CS1142,L,,,EB2-206,Needs Review
+BTech,3,B,Friday,15:00,15:50,Database Management Systems,Dr. S Taruna,EB2-206,,CS1133,L,,,EB2-206,Needs Review
+BTech,3,B,Friday,16:00,16:50,Perspectives on Contemporary Issues,Ms. Shiva Singh,EB2-206,,CC1103,L,,,EB2-206,Needs Review
+BTech,3,C,Monday,09:00,09:50,Discrete Mathematics,Dr. Umesh Gupta,TB-104,,CS1142,L,,,TB-104,Needs Review
+BTech,3,C,Monday,10:00,10:50,Data Structure and Algorithms,Dr. Satveer Singh,TB-104,,CS1131,L,,,TB-104,Needs Review
+BTech,3,C,Monday,11:00,11:50,Database Management Systems,Dr. Deepika Prakash,TB-104,,CS1133,L,,,TB-104,Needs Review
+BTech,3,C,Monday,14:00,14:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,TB-104,Needs Review
+BTech,3,C,Monday,15:00,15:50,Computer Organization & Architecture,Dr. Pranab Roy,TB-104,,CS1134,L,,,TB-104,Needs Review
+BTech,3,C,Monday,16:00,16:50,Perspectives on Contemporary Issues,Mr. Afreen Gani Faridi,TB-104,,CC1103,L,,,TB-104,Needs Review
+BTech,3,C,Tuesday,09:00,09:50,Database Management Systems,Dr. Deepika Prakash,LRC007,,CS1133,P,C1,,TB-104,Needs Review
+BTech,3,C,Tuesday,09:00,09:50,Discrete Mathematics,Dr. Anshu Yadav,TB-104,,CS1142,T,C2,,TB-104,Needs Review
+BTech,3,C,Tuesday,10:00,10:50,Database Management Systems,Dr. Deepika Prakash,LRC007,,CS1133,P,C1,,TB-104,Needs Review
+BTech,3,C,Tuesday,11:00,11:50,Discrete Mathematics,Dr. Umesh Gupta,TB-104,,CS1142,L,,,TB-104,Needs Review
+BTech,3,C,Tuesday,12:00,12:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,TB-104,Needs Review
+BTech,3,C,Wednesday,10:00,10:50,Computer Organization & Architecture,Dr. Pranab Roy,TB-104,,CS1134,L,,,TB-104,Needs Review
+BTech,3,C,Wednesday,11:00,11:50,Database Management Systems,Dr. Deepika Prakash,TB-104,,CS1133,L,,,TB-104,Needs Review
+BTech,3,C,Wednesday,12:00,12:50,Perspectives on Contemporary Issues,Mr. Afreen Gani Faridi,TB-104,,CC1103,L,,,TB-104,Needs Review
+BTech,3,C,Wednesday,14:00,14:50,Data Structure and Algorithms,Dr. Satveer Singh,TB-104,,CS1131,L,,,TB-104,Needs Review
+BTech,3,C,Thursday,09:00,09:50,Data Structure and Algorithms,Dr. Satveer Singh,TB105,,CS1131,P,,,TB-104,Needs Review
+BTech,3,C,Thursday,10:00,10:50,Data Structure and Algorithms,Dr. Satveer Singh,TB105,,CS1131,P,,,TB-104,Needs Review
+BTech,3,C,Thursday,11:00,11:50,Database Management Systems,Dr. Deepika Prakash,TB-104,,CS1133,L,,,TB-104,Needs Review
+BTech,3,C,Thursday,12:00,12:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,TB-104,Needs Review
+BTech,3,C,Thursday,14:00,14:50,Discrete Mathematics,Dr. Umesh Gupta,TB-104,,CS1142,L,,,TB-104,Needs Review
+BTech,3,C,Thursday,15:00,15:50,Coding Hours,,TB-104,,,,,,TB-104,Needs Review
+BTech,3,C,Thursday,16:00,16:50,Coding Hours,,TB-104,,,,,,TB-104,Needs Review
+BTech,3,C,Friday,09:00,09:50,Database Management Systems,Dr. Deepika Prakash,LRC007,,CS1133,P,C2,,TB-104,Needs Review
+BTech,3,C,Friday,09:00,09:50,Discrete Mathematics,Dr. Suprita Talnikar,TB-104,,CS1142,T,C1,,TB-104,Needs Review
+BTech,3,C,Friday,10:00,10:50,Database Management Systems,Dr. Deepika Prakash,LRC007,,CS1133,P,C2,,TB-104,Needs Review
+BTech,3,C,Friday,11:00,11:50,Perspectives on Contemporary Issues,Mr. Afreen Gani Faridi,TB-104,,CC1103,L,,,TB-104,Needs Review
+BTech,3,C,Friday,12:00,12:50,Computer Organization & Architecture,Dr. Pranab Roy,TB-104,,CS1134,L,,,TB-104,Needs Review
+BTech,3,C,Friday,14:00,14:50,Data Structure and Algorithms,Dr. Satveer Singh,TB-104,,CS1131,L,,,TB-104,Needs Review
+BTech,3,C,Friday,15:00,15:50,Computer Organization & Architecture,Dr. Pranab Roy / Mr. Ashutosh Kumar,TB105,,CS1134,P,,,TB-104,Needs Review
+BTech,3,C,Friday,16:00,16:50,Computer Organization & Architecture,Dr. Pranab Roy / Mr. Ashutosh Kumar,TB105,,CS1134,P,,,TB-104,Needs Review
+BTech,3,D,Monday,09:00,09:50,Perspectives on Contemporary Issues,Mr. Afreen Gani Faridi,TB-107,,CC1103,L,,,TB-107,Needs Review
+BTech,3,D,Monday,10:00,10:50,Database Management Systems,Ms. Supriya Mishra,TB-107,,CS1133,L,,,TB-107,Needs Review
+BTech,3,D,Monday,11:00,11:50,Database Management Systems,Ms. Supriya Mishra,LRC007,,CS1133,P,D1,,TB-107,Needs Review
+BTech,3,D,Monday,12:00,12:50,Database Management Systems,Ms. Supriya Mishra,LRC007,,CS1133,P,D1,,TB-107,Needs Review
+BTech,3,D,Monday,12:00,12:50,Discrete Mathematics,Dr. Sushant Pokhriyal,TB-107,,CS1142,T,D2,,TB-107,Needs Review
+BTech,3,D,Monday,14:00,14:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,TB-107,Needs Review
+BTech,3,D,Monday,15:00,15:50,Data Structure and Algorithms,Dr. Anamika Satrawala,TB-107,,CS1131,L,,,TB-107,Needs Review
+BTech,3,D,Tuesday,11:00,11:50,Discrete Mathematics,Dr. Sushant Pokhriyal,TB-107,,CS1142,L,,,TB-107,Needs Review
+BTech,3,D,Tuesday,12:00,12:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,TB-107,Needs Review
+BTech,3,D,Tuesday,14:00,14:50,Perspectives on Contemporary Issues,Mr. Afreen Gani Faridi,TB-107,,CC1103,L,,,TB-107,Needs Review
+BTech,3,D,Tuesday,15:00,15:50,Computer Organization & Architecture,Mr. Divyanshu Jain / Mr. Ashutosh Kumar,TB105,,CS1134,P,,,TB-107,Needs Review
+BTech,3,D,Tuesday,16:00,16:50,Computer Organization & Architecture,Mr. Divyanshu Jain / Mr. Ashutosh Kumar,TB105,,CS1134,P,,,TB-107,Needs Review
+BTech,3,D,Wednesday,11:00,11:50,Data Structure and Algorithms,Dr. Anamika Satrawala,TB106,,CS1131,P,,,TB-107,Needs Review
+BTech,3,D,Wednesday,12:00,12:50,Data Structure and Algorithms,Dr. Anamika Satrawala,TB106,,CS1131,P,,,TB-107,Needs Review
+BTech,3,D,Wednesday,14:00,14:50,Computer Organization & Architecture,Mr. Divyanshu Jain,TB-107,,CS1134,L,,,TB-107,Needs Review
+BTech,3,D,Wednesday,15:00,15:50,Data Structure and Algorithms,Dr. Anamika Satrawala,TB-107,,CS1131,L,,,TB-107,Needs Review
+BTech,3,D,Wednesday,16:00,16:50,Database Management Systems,Ms. Supriya Mishra,TB-107,,CS1133,L,,,TB-107,Needs Review
+BTech,3,D,Thursday,11:00,11:50,Computer Organization & Architecture,Mr. Divyanshu Jain,TB-107,,CS1134,L,,,TB-107,Needs Review
+BTech,3,D,Thursday,12:00,12:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,TB-107,Needs Review
+BTech,3,D,Thursday,14:00,14:50,Discrete Mathematics,Dr. Sushant Pokhriyal,TB-107,,CS1142,L,,,TB-107,Needs Review
+BTech,3,D,Thursday,15:00,15:50,Coding Hours,,TB-107,,,,,,TB-107,Needs Review
+BTech,3,D,Thursday,16:00,16:50,Coding Hours,,TB-107,,,,,,TB-107,Needs Review
+BTech,3,D,Friday,09:00,09:50,Discrete Mathematics,Dr. Sushant Pokhriyal,TB-107,,CS1142,L,,,TB-107,Needs Review
+BTech,3,D,Friday,10:00,10:50,Computer Organization & Architecture,Mr. Divyanshu Jain,TB-107,,CS1134,L,,,TB-107,Needs Review
+BTech,3,D,Friday,11:00,11:50,Database Management Systems,Ms. Supriya Mishra,LRC002,,CS1133,P,D2,,TB-107,Needs Review
+BTech,3,D,Friday,12:00,12:50,Database Management Systems,Ms. Supriya Mishra,LRC002,,CS1133,P,D2,,TB-107,Needs Review
+BTech,3,D,Friday,12:00,12:50,Discrete Mathematics,Dr. Sushant Pokhriyal,TB-107,,CS1142,T,D1,,TB-107,Needs Review
+BTech,3,D,Friday,14:00,14:50,Perspectives on Contemporary Issues,Mr. Afreen Gani Faridi,TB-107,,CC1103,L,,,TB-107,Needs Review
+BTech,3,D,Friday,15:00,15:50,Database Management System,Ms. Supriya Mishra,TB-107,,CS1133,L,,,TB-107,Needs Review
+BTech,3,D,Friday,16:00,16:50,Data Structure and Algorithms,Dr. Anamika Satrawala,TB-107,,CS1131,L,,,TB-107,Needs Review
+BTech,3,E,Monday,10:00,10:50,Data Structure and Algorithms,Dr. Anamika Satrawala,TB-109,,CS1131,L,,,TB-109,Needs Review
+BTech,3,E,Monday,12:00,12:50,Perspectives on Contemporary Issues,Mr. Afreen Gani Faridi,TB-109,,CC1103,L,,,TB-109,Needs Review
+BTech,3,E,Monday,14:00,14:50,Computer Organization & Architecture,Dr. Rajnish Kumar,TB-109,,CS1134,L,,,TB-109,Needs Review
+BTech,3,E,Monday,15:00,15:50,Computer Organization & Architecture,Dr. Rajnish Kumar / Mr. Ashutosh Kumar,TB105,,CS1134,P,,,TB-109,Needs Review
+BTech,3,E,Monday,16:00,16:50,Computer Organization & Architecture,Dr. Rajnish Kumar / Mr. Ashutosh Kumar,TB105,,CS1134,P,,,TB-109,Needs Review
+BTech,3,E,Tuesday,09:00,09:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,TB-109,Needs Review
+BTech,3,E,Tuesday,10:00,10:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,TB-109,Needs Review
+BTech,3,E,Tuesday,11:00,11:50,Database Management Systems,Ms. Supriya Mishra,LRC007,,CS1133,P,E1,,TB-109,Needs Review
+BTech,3,E,Tuesday,12:00,12:50,Database Management Systems,Ms. Supriya Mishra,LRC007,,CS1133,P,E1,,TB-109,Needs Review
+BTech,3,E,Tuesday,12:00,12:50,Discrete Mathematics,Dr. Anshu Yadav,TB-109,,CS1142,T,E2,,TB-109,Needs Review
+BTech,3,E,Tuesday,14:00,14:50,Data Structure and Algorithms,Dr. Anamika Satrawala,TB-109,,CS1131,L,,,TB-109,Needs Review
+BTech,3,E,Tuesday,15:00,15:50,Database Management Systems,Ms. Supriya Mishra,LRC002,,CS1133,P,E2,,TB-109,Needs Review
+BTech,3,E,Tuesday,15:00,15:50,Discrete Mathematics,Dr. Anshu Yadav,TB-109,,CS1142,T,E1,,TB-109,Needs Review
+BTech,3,E,Tuesday,16:00,16:50,Database Management Systems,Ms. Supriya Mishra,LRC002,,CS1133,P,E2,,TB-109,Needs Review
+BTech,3,E,Wednesday,10:00,10:50,Perspectives on Contemporary Issues,Mr. Afreen Gani Faridi,TB-109,,CC1103,L,,,TB-109,Needs Review
+BTech,3,E,Wednesday,11:00,11:50,Database Management Systems,Ms. Supriya Mishra,TB-109,,CS1133,L,,,TB-109,Needs Review
+BTech,3,E,Wednesday,12:00,12:50,Discrete Mathematics,Dr. Anshu Yadav,TB-109,,CS1142,L,,,TB-109,Needs Review
+BTech,3,E,Thursday,09:00,09:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,TB-109,Needs Review
+BTech,3,E,Thursday,10:00,10:50,Perspectives on Contemporary Issues,Mr. Afreen Gani Faridi,TB-109,,CC1103,L,,,TB-109,Needs Review
+BTech,3,E,Thursday,11:00,11:50,Computer Organization & Architecture,Dr. Rajnish Kumar,TB-109,,CS1134,L,,,TB-109,Needs Review
+BTech,3,E,Thursday,12:00,12:50,Database Management Systems,Ms. Supriya Mishra,TB-109,,CS1133,L,,,TB-109,Needs Review
+BTech,3,E,Thursday,14:00,14:50,Discrete Mathematics,Dr. Anshu Yadav,TB-109,,CS1142,L,,,TB-109,Needs Review
+BTech,3,E,Thursday,15:00,15:50,Coding Hours,,TB-109,,,,,,TB-109,Needs Review
+BTech,3,E,Thursday,16:00,16:50,Coding Hours,,TB-109,,,,,,TB-109,Needs Review
+BTech,3,E,Friday,09:00,09:50,Discrete Mathematics,Dr. Anshu Yadav,TB-109,,CS1142,L,,,TB-109,Needs Review
+BTech,3,E,Friday,10:00,10:50,Computer Organization & Architecture,Dr. Rajnish Kumar,TB-109,,CS1134,L,,,TB-109,Needs Review
+BTech,3,E,Friday,11:00,11:50,Data Structure and Algorithms,Dr. Anamika Satrawala,TB106,,CS1131,P,,,TB-109,Needs Review
+BTech,3,E,Friday,12:00,12:50,Data Structure and Algorithms,Dr. Anamika Satrawala,TB106,,CS1131,P,,,TB-109,Needs Review
+BTech,3,E,Friday,14:00,14:50,Database Management Systems,Ms. Supriya Mishra,TB-109,,CS1133,L,,,TB-109,Needs Review
+BTech,3,E,Friday,15:00,15:50,Data Structure and Algorithms,Dr. Anamika Satrawala,TB-109,,CS1131,L,,,TB-109,Needs Review
+BTech,3,F,Monday,10:00,10:50,Perspectives on Contemporary Issues,Mr. Shiva Singh,EB1-002,,CC1103,L,,,EB1-002,Needs Review
+BTech,3,F,Monday,11:00,11:50,Data Structure and Algorithms,Dr. Anamika Satrawal,TB106,,CS1131,P,,,EB1-002,Needs Review
+BTech,3,F,Monday,12:00,12:50,Data Structure and Algorithms,Dr. Anamika Satrawal,TB106,,CS1131,P,,,EB1-002,Needs Review
+BTech,3,F,Monday,14:00,14:50,Data Structure and Algorithms,Dr. Sonali Vyas,EB1-002,,CS1131,L,,,EB1-002,Needs Review
+BTech,3,F,Tuesday,09:00,09:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,EB1-002,Needs Review
+BTech,3,F,Tuesday,10:00,10:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,EB1-002,Needs Review
+BTech,3,F,Tuesday,11:00,11:50,Electronic Devices,Dr. Gaurav Mani Khanal,TB-112,,EE1126,P,,,EB1-002,Needs Review
+BTech,3,F,Tuesday,12:00,12:50,Electronic Devices,Dr. Gaurav Mani Khanal,TB-112,,EE1126,P,,,EB1-002,Needs Review
+BTech,3,F,Tuesday,14:00,14:50,Digital Systems Design,Dr. Gaurav Mani Khanal,EB1-002,,EE1110,L,,,EB1-002,Needs Review
+BTech,3,F,Tuesday,15:00,15:50,Signal and Systems,Dr. Vijaysekhar Chellaboina / Dr. H. P. Agarwal,EB1-002,,EE1122,L,,,EB1-002,Needs Review
+BTech,3,F,Wednesday,09:00,09:50,Electronic Devices,Dr. Gaurav Mani Khanal,EB1-002,,EE1126,L,,,EB1-002,Needs Review
+BTech,3,F,Wednesday,10:00,10:50,Data Structure and Algorithms,Dr. Sonali Vyas,EB1-002,,CS1131,L,,,EB1-002,Needs Review
+BTech,3,F,Wednesday,11:00,11:50,Digital Systems Design,Dr. Gaurav Mani Khanal,EB1-002,,EE1110,L,,,EB1-002,Needs Review
+BTech,3,F,Wednesday,14:00,14:50,Signal and Systems,Dr. Vijaysekhar Chellaboina / Dr. H. P. Agarwal,EB1-002,,EE1122,L,,,EB1-002,Needs Review
+BTech,3,F,Wednesday,15:00,15:50,Perspectives on Contemporary Issues,Mr. Shiva Singh,EB1-002,,CC1103,L,,,EB1-002,Needs Review
+BTech,3,F,Thursday,09:00,09:50,Essentials of Business Management,Dr. Neeti Kasliwal,IET Amphitheatre,,LS1108,L,,,EB1-002,Needs Review
+BTech,3,F,Thursday,10:00,10:50,Signal and Systems,Dr. Vijaysekhar Chellaboina / Dr. H. P. Agarwal,EB1-002,,EE1122,L,,,EB1-002,Needs Review
+BTech,3,F,Thursday,11:00,11:50,Digital Systems Design,Dr. Gaurav Mani Khanal,EB1-002,,EE1110,L,,,EB1-002,Needs Review
+BTech,3,F,Thursday,12:00,12:50,Data Structure and Algorithms,Dr. Sonali Vyas,EB1-002,,CS1131,L,,,EB1-002,Needs Review
+BTech,3,F,Thursday,14:00,14:50,Electronic Devices,Dr. Gaurav Mani Khanal,EB1-002,,EE1126,L,,,EB1-002,Needs Review
+BTech,3,F,Thursday,15:00,15:50,Coding Hours,,EB1-002,,,,,,EB1-002,Needs Review
+BTech,3,F,Thursday,16:00,16:50,Coding Hours,,EB1-002,,,,,,EB1-002,Needs Review
+BTech,3,F,Friday,09:00,09:50,Digital Systems Design,Dr. Gaurav Mani Khanal,TB-102,,EE1110,P,,,EB1-002,Needs Review
+BTech,3,F,Friday,10:00,10:50,Digital Systems Design,Dr. Gaurav Mani Khanal,TB-102,,EE1110,P,,,EB1-002,Needs Review
+BTech,3,F,Friday,11:00,11:50,Signal and Systems,Dr. Vijaysekhar Chellaboina / Dr. H. P. Agarwal,EB1-002,,EE1122,L,,,EB1-002,Needs Review
+BTech,3,F,Friday,12:00,12:50,Electronic Devices,Dr. Gaurav Mani Khanal,EB1-002,,EE1126,L,,,EB1-002,Needs Review
+BTech,3,F,Friday,14:00,14:50,Perspectives on Contemporary Issues,Mr. Shiva Singh,EB1-002,,CC1103,L,,,EB1-002,Needs Review
+BTech,5,A,Monday,09:00,09:50,Computer Network,Mr. Devendra Bhavsar,TB105,,CS1140,P,,,,Needs Review
+BTech,5,A,Monday,10:00,10:50,Computer Network,Mr. Devendra Bhavsar,TB105,,CS1140,P,,,,Needs Review
+BTech,5,A,Monday,11:00,11:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,L,,,,Needs Review
+BTech,5,A,Monday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,EB1-101,,,L,,,,Needs Review
+BTech,5,A,Monday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,A,Monday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,A,Monday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,EB2-105,,,L,,,,Needs Review
+BTech,5,A,Monday,12:00,12:50,Computational Finance,Dr. Vijaysekhar Chellaboina,EB2-004,,,L,,,,Needs Review
+BTech,5,A,Monday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,A,Monday,14:00,14:50,Understanding & Managing Conflicts,Dr. Aman Mishra,TB-104,,,L,,,,Needs Review
+BTech,5,A,Monday,15:00,15:50,Discrete Mathematics,Dr. Jaya Gupta,EB2-205,,,L,,,,Needs Review
+BTech,5,A,Monday,16:00,16:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,EB2-205,,,L,,,,Needs Review
+BTech,5,A,Monday,16:00,16:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,L,,,,Needs Review
+BTech,5,A,Monday,16:00,16:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,EB1-002,,,L,,,,Needs Review
+BTech,5,A,Monday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB114,,,L,,,,Needs Review
+BTech,5,A,Tuesday,09:00,09:50,Computer Network,Mr. Devendra Bhavsar,EB2-206,,CS1140,L,,,,Needs Review
+BTech,5,A,Tuesday,10:00,10:50,Discrete Mathematics,Dr. Jaya Gupta,TB-104,,,L,,,,Needs Review
+BTech,5,A,Tuesday,11:00,11:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,L,,,,Needs Review
+BTech,5,A,Tuesday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,EB1-101,,,L,,,,Needs Review
+BTech,5,A,Tuesday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,A,Tuesday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,A,Tuesday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,EB2-105,,,L,,,,Needs Review
+BTech,5,A,Tuesday,12:00,12:50,Computational Finance,Dr. Vijaysekhar Chellaboina,EB2-004,,,L,,,,Needs Review
+BTech,5,A,Tuesday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,A,Tuesday,14:00,14:50,Artificial Intelligence,Dr. Akshat Agarwal,IET Amphitheatre,,,L,,,,Needs Review
+BTech,5,A,Tuesday,15:00,15:50,Understanding & Managing Conflicts,Dr. Aman Mishra,TB-104,,,L,,,,Needs Review
+BTech,5,A,Tuesday,16:00,16:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,EB2-205,,,L,,,,Needs Review
+BTech,5,A,Tuesday,16:00,16:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,L,,,,Needs Review
+BTech,5,A,Tuesday,16:00,16:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,EB1-002,,,L,,,,Needs Review
+BTech,5,A,Tuesday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB-114,,,L,,,,Needs Review
+BTech,5,A,Wednesday,09:00,09:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,P,,,,Needs Review
+BTech,5,A,Wednesday,10:00,10:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,P,,,,Needs Review
+BTech,5,A,Wednesday,11:00,11:50,Advanced Stats,Dr. Jaya Gupta,TB-105,,,P,,,,Needs Review
+BTech,5,A,Wednesday,11:00,11:50,Digital Image Processing,Dr. Tapas Kumar,BYOD,,,P,,,,Needs Review
+BTech,5,A,Wednesday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,A,Wednesday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,A,Wednesday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,A,Wednesday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,TB-105,,,P,,,,Needs Review
+BTech,5,A,Wednesday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,BYOD,,,P,,,,Needs Review
+BTech,5,A,Wednesday,14:00,14:50,Artificial Intelligence,Dr. Akshat Agarwal,IET Amphitheatre,,,L,,,,Needs Review
+BTech,5,A,Wednesday,15:00,15:50,Discrete Mathematics,Dr. Suprita Talnikar,TB-104,,,T,A2,,,Needs Review
+BTech,5,A,Wednesday,16:00,16:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,EB2-202,,,L,,,,Needs Review
+BTech,5,A,Wednesday,16:00,16:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,L,,,,Needs Review
+BTech,5,A,Wednesday,16:00,16:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,EB1-002,,,L,,,,Needs Review
+BTech,5,A,Wednesday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB114,,,L,,,,Needs Review
+BTech,5,A,Thursday,09:00,09:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,L,,,,Needs Review
+BTech,5,A,Thursday,10:00,10:50,COMPUTER NETWORK,Mr. Devendra Bhavsar,EB2-206,,CS1140,L,,,,Needs Review
+BTech,5,A,Thursday,11:00,11:50,Artificial Intelligence,Dr. Akshat Agarwal,IET Amphi,,,L,,,,Needs Review
+BTech,5,A,Thursday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,EB1-101,,,L,,,,Needs Review
+BTech,5,A,Thursday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,A,Thursday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,A,Thursday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,EB2-105,,,L,,,,Needs Review
+BTech,5,A,Thursday,12:00,12:50,Computational Finance,Dr. Vijaysekhar Chellaboina,EB2-004,,,L,,,,Needs Review
+BTech,5,A,Thursday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,A,Thursday,14:00,14:50,Discrete Mathematics,Dr. Jaya Gupta,EB2-205,,,T,A1,,,Needs Review
+BTech,5,A,Thursday,15:00,15:50,Coding Hours,,,,,,,,,Needs Review
+BTech,5,A,Thursday,16:00,16:50,Coding Hours,,,,,,,,,Needs Review
+BTech,5,A,Friday,09:00,09:50,COMPUTER NETWORK,Mr. Devendra Bhavsar,EB2-202,,CS1140,L,,,,Needs Review
+BTech,5,A,Friday,10:00,10:50,Discrete Mathematics,Dr. Jaya Gupta,EB2-205,,,L,,,,Needs Review
+BTech,5,A,Friday,11:00,11:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,TB105,,,P,,,,Needs Review
+BTech,5,A,Friday,11:00,11:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,P,,,,Needs Review
+BTech,5,A,Friday,11:00,11:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,TB109,,,P,,,,Needs Review
+BTech,5,A,Friday,11:00,11:50,Principles of Cloud Computing,Dr. Satveer Singh,BYOD,,,P,,,,Needs Review
+BTech,5,A,Friday,12:00,12:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,TB105,,,P,,,,Needs Review
+BTech,5,A,Friday,12:00,12:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,P,,,,Needs Review
+BTech,5,A,Friday,12:00,12:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,TB109,,,P,,,,Needs Review
+BTech,5,A,Friday,12:00,12:50,Principles of Cloud Computing,Dr. Satveer Singh,BYOD,,,P,,,,Needs Review
+BTech,5,A,Friday,15:00,15:50,Artificial Intelligence,Dr. Akshat Agarwal / Dr. Ashish Jain,IET Amphitheatre,,,P,,,,Needs Review
+BTech,5,A,Friday,16:00,16:50,Artificial Intelligence,Dr. Akshat Agarwal / Dr. Ashish Jain,IET Amphitheatre,,,P,,,,Needs Review
+BTech,5,B,Monday,09:00,09:50,Understanding & Managing Conflicts,Dr. Vijaylakshmi,TB114,,,L,,,,Needs Review
+BTech,5,B,Monday,10:00,10:50,Discrete Mathematics,Dr. Jaya Gupta,EB1-104,,,L,,,,Needs Review
+BTech,5,B,Monday,11:00,11:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,L,,,,Needs Review
+BTech,5,B,Monday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,EB1-101,,,L,,,,Needs Review
+BTech,5,B,Monday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,B,Monday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,B,Monday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,EB2-105,,,L,,,,Needs Review
+BTech,5,B,Monday,12:00,12:50,Computational Finance,Dr. Vijaysekhar Chellaboina,EB2-004,,,L,,,,Needs Review
+BTech,5,B,Monday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,B,Monday,14:00,14:50,COMPUTER NETWORK,Mr. Devendra Bhavsar,EB2-205,,CS1140,L,,,,Needs Review
+BTech,5,B,Monday,15:00,15:50,Discrete Mathematics,Dr. Suprita Talnikar,EB2-204,,,T,B1,,,Needs Review
+BTech,5,B,Monday,16:00,16:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,EB2-205,,,L,,,,Needs Review
+BTech,5,B,Monday,16:00,16:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,L,,,,Needs Review
+BTech,5,B,Monday,16:00,16:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,EB1-002,,,L,,,,Needs Review
+BTech,5,B,Monday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB114,,,L,,,,Needs Review
+BTech,5,B,Tuesday,09:00,09:50,Discrete Mathematics,Dr. Suprita Talnikar,TB114,,,T,B2,,,Needs Review
+BTech,5,B,Tuesday,11:00,11:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,L,,,,Needs Review
+BTech,5,B,Tuesday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,EB1-101,,,L,,,,Needs Review
+BTech,5,B,Tuesday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,B,Tuesday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,B,Tuesday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,EB2-105,,,L,,,,Needs Review
+BTech,5,B,Tuesday,12:00,12:50,Computational Finance,Dr. Vijaysekhar Chellaboina,EB2-004,,,L,,,,Needs Review
+BTech,5,B,Tuesday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,B,Tuesday,14:00,14:50,Artificial Intelligence,Dr. Akshat Agarwal,IET Amphi,,,L,,,,Needs Review
+BTech,5,B,Tuesday,15:00,15:50,COMPUTER NETWORK,Mr. Devendra Bhavsar,EB2-202,,CS1140,L,,,,Needs Review
+BTech,5,B,Tuesday,16:00,16:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,EB2-205,,,L,,,,Needs Review
+BTech,5,B,Tuesday,16:00,16:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,L,,,,Needs Review
+BTech,5,B,Tuesday,16:00,16:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,EB1-002,,,L,,,,Needs Review
+BTech,5,B,Tuesday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB114,,,L,,,,Needs Review
+BTech,5,B,Wednesday,09:00,09:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,P,,,,Needs Review
+BTech,5,B,Wednesday,10:00,10:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,P,,,,Needs Review
+BTech,5,B,Wednesday,11:00,11:50,Advanced Stats,Dr. Jaya Gupta,TB-105,,,P,,,,Needs Review
+BTech,5,B,Wednesday,11:00,11:50,Digital Image Processing,Dr. Tapas Kumar,BYOD,,,P,,,,Needs Review
+BTech,5,B,Wednesday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,B,Wednesday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,B,Wednesday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,B,Wednesday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,TB-105,,,P,,,,Needs Review
+BTech,5,B,Wednesday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,BYOD,,,P,,,,Needs Review
+BTech,5,B,Wednesday,14:00,14:50,Artificial Intelligence,Dr. Akshat Agarwal,IET Amphi,,,L,,,,Needs Review
+BTech,5,B,Wednesday,15:00,15:50,COMPUTER NETWORK,Mr. Devendra Bhavsar,EB2-202,,CS1140,L,,,,Needs Review
+BTech,5,B,Wednesday,16:00,16:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,EB2-202,,,L,,,,Needs Review
+BTech,5,B,Wednesday,16:00,16:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,L,,,,Needs Review
+BTech,5,B,Wednesday,16:00,16:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,EB1-002,,,L,,,,Needs Review
+BTech,5,B,Wednesday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB114,,,L,,,,Needs Review
+BTech,5,B,Thursday,09:00,09:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,L,,,,Needs Review
+BTech,5,B,Thursday,10:00,10:50,Discrete Mathematics,Dr. Jaya Gupta,EB1-104,,,L,,,,Needs Review
+BTech,5,B,Thursday,11:00,11:50,Artificial Intelligence,Dr. Akshat Agarwal,IET Amphi,,,L,,,,Needs Review
+BTech,5,B,Thursday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,EB1-101,,,L,,,,Needs Review
+BTech,5,B,Thursday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,B,Thursday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,B,Thursday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,EB2-105,,,L,,,,Needs Review
+BTech,5,B,Thursday,12:00,12:50,Computational Finance,Dr. Vijaysekhar Chellaboina,EB2-004,,,L,,,,Needs Review
+BTech,5,B,Thursday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,B,Thursday,14:00,14:50,Understanding & Managing Conflicts,Dr. Vijaylakshmi,TB114,,,L,,,,Needs Review
+BTech,5,B,Thursday,15:00,15:50,Coding Hours,,,,,,,,,Needs Review
+BTech,5,B,Thursday,16:00,16:50,Coding Hours,,,,,,,,,Needs Review
+BTech,5,B,Friday,09:00,09:50,Computer Network Lab,Dr. Ankush Soni,TB105,,CS1140,P,,,,Needs Review
+BTech,5,B,Friday,10:00,10:50,Computer Network Lab,Dr. Ankush Soni,TB105,,CS1140,P,,,,Needs Review
+BTech,5,B,Friday,11:00,11:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,TB105,,,P,,,,Needs Review
+BTech,5,B,Friday,11:00,11:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,P,,,,Needs Review
+BTech,5,B,Friday,11:00,11:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,TB109,,,P,,,,Needs Review
+BTech,5,B,Friday,11:00,11:50,Principles of Cloud Computing,Dr. Satveer Singh,BYOD,,,P,,,,Needs Review
+BTech,5,B,Friday,12:00,12:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,TB105,,,P,,,,Needs Review
+BTech,5,B,Friday,12:00,12:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,P,,,,Needs Review
+BTech,5,B,Friday,12:00,12:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,TB109,,,P,,,,Needs Review
+BTech,5,B,Friday,12:00,12:50,Principles of Cloud Computing,Dr. Satveer Singh,BYOD,,,P,,,,Needs Review
+BTech,5,B,Friday,14:00,14:50,Discrete Mathematics,Dr. Jaya Gupta,EB1-104,,,L,,,,Needs Review
+BTech,5,B,Friday,15:00,15:50,Artificial Intelligence,Dr. Akshat Agarwal / Dr. Ashish Jain,IET Amphi,,,P,,,,Needs Review
+BTech,5,B,Friday,16:00,16:50,Artificial Intelligence,Dr. Akshat Agarwal / Dr. Ashish Jain,IET Amphi,,,P,,,,Needs Review
+BTech,5,C,Monday,09:00,09:50,Deep Learning,Dr. Akshat Agrawal,BYOD,,,P,,,,Needs Review
+BTech,5,C,Monday,10:00,10:50,Deep Learning,Dr. Akshat Agrawal,BYOD,,,P,,,,Needs Review
+BTech,5,C,Monday,11:00,11:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,L,,,,Needs Review
+BTech,5,C,Monday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,EB1-101,,,L,,,,Needs Review
+BTech,5,C,Monday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,C,Monday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,C,Monday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,EB2-105,,,L,,,,Needs Review
+BTech,5,C,Monday,12:00,12:50,Computational Finance,Dr. Vijaysekhar Chellaboina,EB2-004,,,L,,,,Needs Review
+BTech,5,C,Monday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,C,Monday,14:00,14:50,Discrete Mathematics,Dr. Suprita Talnikar,EB2-105,,,L,,,,Needs Review
+BTech,5,C,Monday,15:00,15:50,Understanding & Managing Conflicts,Dr. Aman Mishra,TB-109,,,L,,,,Needs Review
+BTech,5,C,Monday,16:00,16:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,EB2-205,,,L,,,,Needs Review
+BTech,5,C,Monday,16:00,16:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,L,,,,Needs Review
+BTech,5,C,Monday,16:00,16:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,EB1-002,,,L,,,,Needs Review
+BTech,5,C,Monday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB114,,,L,,,,Needs Review
+BTech,5,C,Tuesday,09:00,09:50,Artificial Intelligence,Dr. Devisha Tiwari,EB2-105,,,L,,,,Needs Review
+BTech,5,C,Tuesday,10:00,10:50,Understanding & Managing Conflicts,Dr. Aman Mishra,TB-109,,,L,,,,Needs Review
+BTech,5,C,Tuesday,11:00,11:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,L,,,,Needs Review
+BTech,5,C,Tuesday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,EB1-101,,,L,,,,Needs Review
+BTech,5,C,Tuesday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,C,Tuesday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,C,Tuesday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,EB2-105,,,L,,,,Needs Review
+BTech,5,C,Tuesday,12:00,12:50,Computational Finance,Dr. Vijaysekhar Chellaboina,EB2-004,,,L,,,,Needs Review
+BTech,5,C,Tuesday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,C,Tuesday,14:00,14:50,Discrete Mathematics,Dr. Suprita Talnikar,EB2-204,,,L,,,,Needs Review
+BTech,5,C,Tuesday,15:00,15:50,Deep Learning,Dr. Akshat Agrawal,EB1-103,,,L,,,,Needs Review
+BTech,5,C,Tuesday,16:00,16:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,EB2-205,,,L,,,,Needs Review
+BTech,5,C,Tuesday,16:00,16:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,L,,,,Needs Review
+BTech,5,C,Tuesday,16:00,16:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,EB1-002,,,L,,,,Needs Review
+BTech,5,C,Tuesday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB114,,,L,,,,Needs Review
+BTech,5,C,Wednesday,09:00,09:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,P,,,,Needs Review
+BTech,5,C,Wednesday,10:00,10:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,P,,,,Needs Review
+BTech,5,C,Wednesday,11:00,11:50,Advanced Stats,Dr. Jaya Gupta,TB-05,,,P,,,,Needs Review
+BTech,5,C,Wednesday,11:00,11:50,Digital Image Processing,Dr. Tapas Kumar,BYOD,,,P,,,,Needs Review
+BTech,5,C,Wednesday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,C,Wednesday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,C,Wednesday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,C,Wednesday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,TB-105,,,P,,,,Needs Review
+BTech,5,C,Wednesday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,BYOD,,,P,,,,Needs Review
+BTech,5,C,Wednesday,14:00,14:50,Artificial Intelligence,Dr. Devisha Tiwari,EB2-105,,,L,,,,Needs Review
+BTech,5,C,Wednesday,15:00,15:50,Deep Learning,Dr. Akshat Agrawal,EB1-103,,,L,,,,Needs Review
+BTech,5,C,Wednesday,16:00,16:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,EB2-202,,,L,,,,Needs Review
+BTech,5,C,Wednesday,16:00,16:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,L,,,,Needs Review
+BTech,5,C,Wednesday,16:00,16:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,EB1-002,,,L,,,,Needs Review
+BTech,5,C,Wednesday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB114,,,L,,,,Needs Review
+BTech,5,C,Thursday,09:00,09:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,L,,,,Needs Review
+BTech,5,C,Thursday,10:00,10:50,Artificial Intelligence,Dr. Devisha Tiwari / Mr. Ashutosh Kumar,BYOD,,,P,,,,Needs Review
+BTech,5,C,Thursday,11:00,11:50,Artificial Intelligence,Dr. Devisha Tiwari / Mr. Ashutosh Kumar,BYOD,,,P,,,,Needs Review
+BTech,5,C,Thursday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,EB1-101,,,L,,,,Needs Review
+BTech,5,C,Thursday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,C,Thursday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,C,Thursday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,EB2-105,,,L,,,,Needs Review
+BTech,5,C,Thursday,12:00,12:50,Computational Finance,Dr. Vijaysekhar Chellaboina,EB2-004,,,L,,,,Needs Review
+BTech,5,C,Thursday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,C,Thursday,14:00,14:50,Discrete Mathematics,Dr. Suprita Talnikar,EB2-105,,,L,,,,Needs Review
+BTech,5,C,Thursday,15:00,15:50,Coding Hours,,,,,,,,,Needs Review
+BTech,5,C,Thursday,16:00,16:50,Coding Hours,,,,,,,,,Needs Review
+BTech,5,C,Friday,09:00,09:50,Deep Learning,Dr. Akshat Agrawal,EB1-104,,,L,,,,Needs Review
+BTech,5,C,Friday,10:00,10:50,Discrete Mathematics,Dr. Anshu Yadav,EB2-106,,,T,C1,,,Needs Review
+BTech,5,C,Friday,11:00,11:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,TB105,,,P,,,,Needs Review
+BTech,5,C,Friday,11:00,11:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,P,,,,Needs Review
+BTech,5,C,Friday,11:00,11:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,TB109,,,P,,,,Needs Review
+BTech,5,C,Friday,11:00,11:50,Principles of Cloud Computing,Dr. Satveer Singh,BYOD,,,P,,,,Needs Review
+BTech,5,C,Friday,12:00,12:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,TB105,,,P,,,,Needs Review
+BTech,5,C,Friday,12:00,12:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,P,,,,Needs Review
+BTech,5,C,Friday,12:00,12:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,TB109,,,P,,,,Needs Review
+BTech,5,C,Friday,12:00,12:50,Principles of Cloud Computing,Dr. Satveer Singh,BYOD,,,P,,,,Needs Review
+BTech,5,C,Friday,14:00,14:50,Discrete Mathematics,Dr. Suprita Talnikar,EB2-105,,,T,C2,,,Needs Review
+BTech,5,C,Friday,15:00,15:50,Artificial Intelligence,Dr. Devisha Tiwari,EB2-105,,,L,,,,Needs Review
+BTech,5,D,Monday,09:00,09:50,Deep Learning,Dr. Mayank Kundalwal,EB2-206,,,L,,,,Needs Review
+BTech,5,D,Monday,10:00,10:50,Discrete Mathematics,Dr. Richa Sharma,TB114,,,L,,,,Needs Review
+BTech,5,D,Monday,11:00,11:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,L,,,,Needs Review
+BTech,5,D,Monday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,EB1-101,,,L,,,,Needs Review
+BTech,5,D,Monday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,D,Monday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,D,Monday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,EB2-105,,,L,,,,Needs Review
+BTech,5,D,Monday,12:00,12:50,Computational Finance,Dr. Vijaysekhar Chellaboina,EB2-004,,,L,,,,Needs Review
+BTech,5,D,Monday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,D,Monday,14:00,14:50,Deep Learning,Dr. Mayank Kundalwal,BYOD,,,P,,,,Needs Review
+BTech,5,D,Monday,15:00,15:50,Deep Learning,Dr. Mayank Kundalwal,BYOD,,,P,,,,Needs Review
+BTech,5,D,Monday,16:00,16:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,EB2-205,,,L,,,,Needs Review
+BTech,5,D,Monday,16:00,16:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,L,,,,Needs Review
+BTech,5,D,Monday,16:00,16:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,EB1-002,,,L,,,,Needs Review
+BTech,5,D,Monday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB114,,,L,,,,Needs Review
+BTech,5,D,Tuesday,10:00,10:50,Discrete Mathematics,Dr. Richa Sharma,EB2-206,,,L,,,,Needs Review
+BTech,5,D,Tuesday,11:00,11:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,L,,,,Needs Review
+BTech,5,D,Tuesday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,EB1-101,,,L,,,,Needs Review
+BTech,5,D,Tuesday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,D,Tuesday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,D,Tuesday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,EB2-105,,,L,,,,Needs Review
+BTech,5,D,Tuesday,12:00,12:50,Computational Finance,Dr. Vijaysekhar Chellaboina,EB2-004,,,L,,,,Needs Review
+BTech,5,D,Tuesday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,D,Tuesday,14:00,14:50,Artificial Intelligence,Dr. Akshat Agarwal,IET Amphi,,,L,,,,Needs Review
+BTech,5,D,Tuesday,15:00,15:50,Discrete Mathematics,Dr. Richa Sharma,EB1-104,,,T,D1,,,Needs Review
+BTech,5,D,Tuesday,16:00,16:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,EB2-205,,,L,,,,Needs Review
+BTech,5,D,Tuesday,16:00,16:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,L,,,,Needs Review
+BTech,5,D,Tuesday,16:00,16:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,EB1-002,,,L,,,,Needs Review
+BTech,5,D,Tuesday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB-114,,,L,,,,Needs Review
+BTech,5,D,Wednesday,09:00,09:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,P,,,,Needs Review
+BTech,5,D,Wednesday,10:00,10:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,P,,,,Needs Review
+BTech,5,D,Wednesday,11:00,11:50,Advanced Stats,Dr. Jaya Gupta,TB-105,,,P,,,,Needs Review
+BTech,5,D,Wednesday,11:00,11:50,Digital Image Processing,Dr. Tapas Kumar,BYOD,,,P,,,,Needs Review
+BTech,5,D,Wednesday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,D,Wednesday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,D,Wednesday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,D,Wednesday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,TB-105,,,P,,,,Needs Review
+BTech,5,D,Wednesday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,BYOD,,,P,,,,Needs Review
+BTech,5,D,Wednesday,14:00,14:50,Artificial Intelligence,Dr. Akshat Agarwal,IET Amphi,,,L,,,,Needs Review
+BTech,5,D,Wednesday,15:00,15:50,Understanding & Managing Conflicts,Dr. Vijaylakshmi,TB114,,,L,,,,Needs Review
+BTech,5,D,Wednesday,16:00,16:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,EB2-202,,,L,,,,Needs Review
+BTech,5,D,Wednesday,16:00,16:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,L,,,,Needs Review
+BTech,5,D,Wednesday,16:00,16:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,EB1-002,,,L,,,,Needs Review
+BTech,5,D,Wednesday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB114,,,L,,,,Needs Review
+BTech,5,D,Thursday,09:00,09:50,Full Stack Development,Mr. Gaurav Raj,TB114,,,L,,,,Needs Review
+BTech,5,D,Thursday,10:00,10:50,Understanding & Managing Conflicts,Dr. Vijaylakshmi,TB114,,,L,,,,Needs Review
+BTech,5,D,Thursday,11:00,11:50,Artificial Intelligence,Dr. Akshat Agarwal,IET Amphi,,,L,,,,Needs Review
+BTech,5,D,Thursday,12:00,12:50,Advanced Stats,Dr. Jaya Gupta,EB1-101,,,L,,,,Needs Review
+BTech,5,D,Thursday,12:00,12:50,Matrix Computations,Dr. Rabia Kamra,EB1-102,,,L,,,,Needs Review
+BTech,5,D,Thursday,12:00,12:50,Advanced Differential Equation,Dr. Anant Pratap Singh,EB1-103,,,L,,,,Needs Review
+BTech,5,D,Thursday,12:00,12:50,Digital Image Processing,Dr. Tapas Kumar,EB2-105,,,L,,,,Needs Review
+BTech,5,D,Thursday,12:00,12:50,Computational Finance,Dr. Vijaysekhar Chellaboina,EB2-004,,,L,,,,Needs Review
+BTech,5,D,Thursday,12:00,12:50,Entrepreneurship Development,Dr. Monika Soni,EB2-101,,,L,,,,Needs Review
+BTech,5,D,Thursday,14:00,14:50,Deep Learning,Dr. Mayank Kundalwal,EB1-102,,,L,,,,Needs Review
+BTech,5,D,Thursday,15:00,15:50,Coding Hours,,,,,,,,,Needs Review
+BTech,5,D,Thursday,16:00,16:50,Coding Hours,,,,,,,,,Needs Review
+BTech,5,D,Friday,09:00,09:50,Deep Learning,Dr. Mayank Kundalwal,EB2-206,,,L,,,,Needs Review
+BTech,5,D,Friday,10:00,10:50,Discrete Mathematics,Dr. Richa Sharma,EB2-206,,,L,,,,Needs Review
+BTech,5,D,Friday,11:00,11:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,TB105,,,P,,,,Needs Review
+BTech,5,D,Friday,11:00,11:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,P,,,,Needs Review
+BTech,5,D,Friday,11:00,11:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,TB109,,,P,,,,Needs Review
+BTech,5,D,Friday,11:00,11:50,Principles of Cloud Computing,Dr. Satveer Singh,BYOD,,,P,,,,Needs Review
+BTech,5,D,Friday,12:00,12:50,Introduction to Cyber Security,Mr. Devendra Bhavsar,TB105,,,P,,,,Needs Review
+BTech,5,D,Friday,12:00,12:50,Introduction to Data Science,DR. MANJU RANA,IET Amphi,,,P,,,,Needs Review
+BTech,5,D,Friday,12:00,12:50,Big Data Analytics with Hadoop & Spark,Dr. Deepika Prakash,TB109,,,P,,,,Needs Review
+BTech,5,D,Friday,12:00,12:50,Principles of Cloud Computing,Dr. Satveer Singh,BYOD,,,P,,,,Needs Review
+BTech,5,D,Friday,14:00,14:50,Discrete Mathematics,Dr. Richa Sharma,TB-110,,,T,D2,,,Needs Review
+BTech,5,D,Friday,15:00,15:50,Artificial Intelligence,Dr. Akshat Agarwal / Dr. Ashish Jain,IET Amphi,,,P,,,,Needs Review
+BTech,5,D,Friday,16:00,16:50,Artificial Intelligence,Dr. Akshat Agarwal / Dr. Ashish Jain,IET Amphi,,,P,,,,Needs Review
+BTech,7,A,Monday,09:00,09:50,Large Language Model,Dr. Kshitiz,EB2-106,,,,,,,Needs Review
+BTech,7,A,Monday,10:00,10:50,Sustainable E-waste Management,Dr. Shahnawaz Khan,EB2-004,,,T,,,,Needs Review
+BTech,7,A,Monday,12:00,12:50,Graph Theory,Dr. Umesh Gupta,EB1-104,,,L,,,,Needs Review
+BTech,7,A,Monday,12:00,12:50,Business Model to Market Fit,Dr. Sheetal Mundra,EB2-104,,,L,,,,Needs Review
+BTech,7,A,Monday,14:00,14:50,Advanced Data Structures,Dr. Pranab,EB2-202,,,L,,,,Needs Review
+BTech,7,A,Monday,14:00,14:50,Security Engineering,Dr. Devika,EB2-106,,,L,,,,Needs Review
+BTech,7,A,Monday,15:00,15:50,Operation Research,Dr. Richa Sharma,EB1-101,,,L,,,,Needs Review
+BTech,7,A,Monday,15:00,15:50,System Design & Devops,Mr. Gaurav Raj,EB2-105,,,L,,,,Needs Review
+BTech,7,A,Monday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB-114,,,L,,,,Needs Review
+BTech,7,A,Monday,16:00,16:50,AI in Health Care Systems,Dr. Sonali Vyas,EB2-004,,,L,,,,Needs Review
+BTech,7,A,Tuesday,09:00,09:50,Advanced Data Structures lab,Dr. Pranab,BYOD,,,,,,,Needs Review
+BTech,7,A,Tuesday,09:00,09:50,Security Engineering lab,Dr. Devika,LRC002,,,,,,,Needs Review
+BTech,7,A,Tuesday,10:00,10:50,Advanced Data Structures lab,Dr. Pranab,BYOD,,,,,,,Needs Review
+BTech,7,A,Tuesday,10:00,10:50,Security Engineering lab,Dr. Devika,LRC002,,,,,,,Needs Review
+BTech,7,A,Tuesday,12:00,12:50,Graph Theory,Dr. Umesh Gupta,EB1-104,,,L,,,,Needs Review
+BTech,7,A,Tuesday,12:00,12:50,Business Model to Market Fit,Dr. Sheetal Mundra,EB2-104,,,L,,,,Needs Review
+BTech,7,A,Tuesday,14:00,14:50,Advanced Data Structures,Dr. Pranab,EB2-104,,,L,,,,Needs Review
+BTech,7,A,Tuesday,14:00,14:50,Security Engineering,Dr. Devika,EB2-106,,,L,,,,Needs Review
+BTech,7,A,Tuesday,15:00,15:50,Sustainable E-waste Management,Dr. Shahnawaz Khan,EB2-106,,,L,,,,Needs Review
+BTech,7,A,Tuesday,15:00,15:50,System Design & Devops,,TB-107,,,,,,,Needs Review
+BTech,7,A,Tuesday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB-114,,,L,,,,Needs Review
+BTech,7,A,Tuesday,16:00,16:50,AI in Health Care Systems,Dr. Sonali Vyas,EB2-004,,,L,,,,Needs Review
+BTech,7,A,Wednesday,09:00,09:50,Operation Research lab,Dr. Richa Sharma,LRC002,,,P,,,,Needs Review
+BTech,7,A,Wednesday,10:00,10:50,Operation Research lab,Dr. Richa Sharma,LRC002,,,P,,,,Needs Review
+BTech,7,A,Wednesday,12:00,12:50,Graph Theory,Dr. Umesh Gupta,EB1-104,,,L,,,,Needs Review
+BTech,7,A,Wednesday,12:00,12:50,Business Model to Market Fit,Dr. Sheetal Mundra,EB2-104,,,L,,,,Needs Review
+BTech,7,A,Wednesday,14:00,14:50,Advanced Data Structures,Dr. Pranab,EB2-104,,,L,,,,Needs Review
+BTech,7,A,Wednesday,14:00,14:50,Security Engineering,Dr. Devika,EB2-202,,,L,,,,Needs Review
+BTech,7,A,Wednesday,15:00,15:50,Sustainable E-waste Management,Dr. Shahnawaz Khan,EB2-205,,,L,,,,Needs Review
+BTech,7,A,Wednesday,15:00,15:50,System Design & Devops,Mr. Gaurav Raj,EB2-104,,,L,,,,Needs Review
+BTech,7,A,Wednesday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB-114,,,L,,,,Needs Review
+BTech,7,A,Wednesday,16:00,16:50,AI in Health Care Systems,Dr. Sonali Vyas,EB2-004,,,L,,,,Needs Review
+BTech,7,A,Thursday,09:00,09:50,Large Language Model,Dr. Kshitiz,EB2-106,,,,,,,Needs Review
+BTech,7,A,Thursday,10:00,10:50,Operation Research,Dr. Richa Sharma,EB1-102,,,L,,,,Needs Review
+BTech,7,A,Thursday,10:00,10:50,Sustainable E-waste Management,Dr. Shahnawaz Khan,EB2-004,,,L,,,,Needs Review
+BTech,7,A,Thursday,12:00,12:50,Lunch,,,,,,,,,Needs Review
+BTech,7,A,Thursday,14:00,14:50,Principles of Cloud Computing,Dr. Satveer Singh,LRC007,,,P,,,,Needs Review
+BTech,7,A,Thursday,14:00,14:50,AI in Health Care Systems,Dr. Sonali Vyas,EB1-103,,,T,,,,Needs Review
+BTech,7,A,Thursday,15:00,15:50,Coding Hours,,,,,,,,,Needs Review
+BTech,7,A,Thursday,16:00,16:50,Coding Hours,,,,,,,,,Needs Review
+BTech,7,A,Friday,09:00,09:50,Large Language Model,Dr. Kshitiz,EB2-104,,,,,,,Needs Review
+BTech,7,A,Friday,10:00,10:50,Large Language Model,Dr. Kshitiz,EB2-104,,,,,,,Needs Review
+BTech,7,A,Friday,12:00,12:50,Graph Theory,Dr. Umesh Gupta,EB1-104,,,T,,,,Needs Review
+BTech,7,A,Friday,12:00,12:50,Business Model to Market Fit,Dr. Sheetal Mundra,EB2-104,,,L,,,,Needs Review
+BTech,7,A,Friday,14:00,14:50,System Design & Devops,Mr. Gaurav Raj,BYOD,,,P,,,,Needs Review
+BTech,7,A,Friday,15:00,15:50,System Design & Devops,Mr. Gaurav Raj,BYOD,,,P,,,,Needs Review
+BTech,7,A,Friday,16:00,16:50,Operation Research,Dr. Richa Sharma,EB1-101,,,L,,,,Needs Review
+BTech,7,B,Monday,09:00,09:50,Large Language Model,Dr. Kshitiz,EB2-106,,,,,,,Needs Review
+BTech,7,B,Monday,10:00,10:50,Sustainable E-waste Management,Dr. Shahnawaz Khan,EB2-004,,,T,,,,Needs Review
+BTech,7,B,Monday,12:00,12:50,Business Model to Market Fit,Dr. Sheetal Mundra,EB2-104,,,L,,,,Needs Review
+BTech,7,B,Monday,14:00,14:50,Advanced Data Structures,Dr. Pranab,EB2-202,,,L,,,,Needs Review
+BTech,7,B,Monday,14:00,14:50,Security Engineering,Dr. Devika,EB2-106,,,L,,,,Needs Review
+BTech,7,B,Monday,15:00,15:50,Sustainable E-waste Management,Dr. Shahnawaz Khan,EB2-206,,,L,,,,Needs Review
+BTech,7,B,Monday,15:00,15:50,System Design & Devops,Mr. Gaurav Raj,EB2-105,,,L,,,,Needs Review
+BTech,7,B,Monday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB-114,,,L,,,,Needs Review
+BTech,7,B,Monday,16:00,16:50,AI in Health Care Systems,Dr. Sonali Vyas,EB2-004,,,L,,,,Needs Review
+BTech,7,B,Tuesday,09:00,09:50,Advanced Data Structures lab,Dr. Pranab,BYOD,,,,,,,Needs Review
+BTech,7,B,Tuesday,09:00,09:50,Security Engineering lab,Dr. Devika,LRC002,,,,,,,Needs Review
+BTech,7,B,Tuesday,10:00,10:50,Advanced Data Structures lab,Dr. Pranab,BYOD,,,,,,,Needs Review
+BTech,7,B,Tuesday,10:00,10:50,Security Engineering lab,Dr. Devika,LRC002,,,,,,,Needs Review
+BTech,7,B,Tuesday,12:00,12:50,Business Model to Market Fit,Dr. Sheetal Mundra,EB2-104,,,L,,,,Needs Review
+BTech,7,B,Tuesday,14:00,14:50,Advanced Data Structures,Dr. Pranab,EB2-104,,,L,,,,Needs Review
+BTech,7,B,Tuesday,14:00,14:50,Security Engineering,Dr. Devika,EB2-106,,,L,,,,Needs Review
+BTech,7,B,Tuesday,15:00,15:50,Sustainable E-waste Management,Dr. Shahnawaz Khan,EB2-106,,,L,,,,Needs Review
+BTech,7,B,Tuesday,15:00,15:50,System Design & Devops,,TB-107,,,,,,,Needs Review
+BTech,7,B,Tuesday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB-114,,,L,,,,Needs Review
+BTech,7,B,Tuesday,16:00,16:50,AI in Health Care Systems,Dr. Sonali Vyas,EB2-004,,,L,,,,Needs Review
+BTech,7,B,Wednesday,12:00,12:50,Business Model to Market Fit,Dr. Sheetal Mundra,EB2-104,,,L,,,,Needs Review
+BTech,7,B,Wednesday,14:00,14:50,Advanced Data Structures,Dr. Pranab,EB2-104,,,L,,,,Needs Review
+BTech,7,B,Wednesday,14:00,14:50,Security Engineering,Dr. Devika,EB2-202,,,L,,,,Needs Review
+BTech,7,B,Wednesday,15:00,15:50,Sustainable E-waste Management,Dr. Shahnawaz Khan,EB2-205,,,L,,,,Needs Review
+BTech,7,B,Wednesday,15:00,15:50,System Design & Devops,Mr. Gaurav Raj,EB2-104,,,L,,,,Needs Review
+BTech,7,B,Wednesday,16:00,16:50,Principles of Cloud Computing,Dr. Satveer Singh,TB-114,,,L,,,,Needs Review
+BTech,7,B,Wednesday,16:00,16:50,AI in Health Care Systems,Dr. Sonali Vyas,EB2-004,,,L,,,,Needs Review
+BTech,7,B,Thursday,09:00,09:50,Large Language Model,Dr. Kshitiz,EB2-106,,,,,,,Needs Review
+BTech,7,B,Thursday,10:00,10:50,Sustainable E-waste Management,Dr. Shahnawaz Khan,EB2-004,,,L,,,,Needs Review
+BTech,7,B,Thursday,12:00,12:50,Lunch,,,,,,,,,Needs Review
+BTech,7,B,Thursday,14:00,14:50,Principles of Cloud Computing,Dr. Satveer Singh,LRC007,,,P,,,,Needs Review
+BTech,7,B,Thursday,14:00,14:50,AI in Health Care Systems,Dr. Sonali Vyas,EB1-103,,,,,,,Needs Review
+BTech,7,B,Thursday,15:00,15:50,Coding Hours,,,,,,,,,Needs Review
+BTech,7,B,Thursday,16:00,16:50,Coding Hours,,,,,,,,,Needs Review
+BTech,7,B,Friday,09:00,09:50,Large Language Model,Dr. Kshitiz,EB2-104,,,,,,,Needs Review
+BTech,7,B,Friday,10:00,10:50,Large Language Model,Dr. Kshitiz,EB2-104,,,,,,,Needs Review
+BTech,7,B,Friday,12:00,12:50,Business Model to Market Fit,Dr. Sheetal Mundra,EB2-104,,,L,,,,Needs Review
+BTech,7,B,Friday,14:00,14:50,System Design & Devops,Mr. Gaurav Raj,BYOD,,,P,,,,Needs Review
+BTech,7,B,Friday,15:00,15:50,System Design & Devops,Mr. Gaurav Raj,BYOD,,,P,,,,Needs Review
+BTech,7,A,Monday,10:00,10:50,Sustainable E-waste Management,Dr. Shahnawaz Khan,EB2-004,,,T,,,,Needs Review
+BTech,7,A,Monday,12:00,12:50,Graph Theory,Dr. Umesh Gupta,EB1-104,,,L,,,,Needs Review
+BTech,7,A,Monday,12:00,12:50,Business Model to Market Fit,Dr. Sheetal Mundra,EB2-104,,,L,,,,Needs Review
+BTech,7,A,Monday,15:00,15:50,Operation Research,Dr. Richa Sharma,EB1-101,,,L,,,,Needs Review
+BTech,7,A,Monday,15:00,15:50,Sustainable E-waste Management,Dr. Shahnawaz Khan,EB2-206,,,L,,,,Needs Review
+BTech,7,A,Monday,15:00,15:50,System Design & Devops,Mr. Gaurav Raj,EB2-105,,,L,,,,Needs Review
+BTech,7,A,Tuesday,12:00,12:50,Graph Theory,Dr. Umesh Gupta,EB1-104,,,L,,,,Needs Review
+BTech,7,A,Tuesday,12:00,12:50,Business Model to Market Fit,Dr. Sheetal Mundra,EB2-104,,,L,,,,Needs Review
+BTech,7,A,Tuesday,14:00,14:50,DSD,,EB1-002,,,,,,,Needs Review
+BTech,7,A,Tuesday,15:00,15:50,Sustainable E-waste Management,Dr. Shahnawaz Khan,EB2-106,,,L,,,,Needs Review
+BTech,7,A,Tuesday,15:00,15:50,System Design & Devops,,TB-107,,,,,,,Needs Review
+BTech,7,A,Wednesday,09:00,09:50,Operation Research lab,Dr. Richa Sharma,LRC002,,,P,,,,Needs Review
+BTech,7,A,Wednesday,10:00,10:50,Operation Research lab,Dr. Richa Sharma,LRC002,,,P,,,,Needs Review
+BTech,7,A,Wednesday,11:00,11:50,DSD,,EB1-002,,,,,,,Needs Review
+BTech,7,A,Wednesday,12:00,12:50,Graph Theory,Dr. Umesh Gupta,EB1-104,,,L,,,,Needs Review
+BTech,7,A,Wednesday,12:00,12:50,Business Model to Market Fit,Dr. Sheetal Mundra,EB2-104,,,L,,,,Needs Review
+BTech,7,A,Wednesday,15:00,15:50,Sustainable E-waste Management,Dr. Shahnawaz Khan,EB2-205,,,L,,,,Needs Review
+BTech,7,A,Wednesday,15:00,15:50,System Design & Devops,Mr. Gaurav Raj,EB2-104,,,L,,,,Needs Review
+BTech,7,A,Thursday,10:00,10:50,Operation Research,Dr. Richa Sharma,EB1-102,,,L,,,,Needs Review
+BTech,7,A,Thursday,10:00,10:50,Sustainable E-waste Management,Dr. Shahnawaz Khan,EB2-004,,,L,,,,Needs Review
+BTech,7,A,Thursday,11:00,11:50,DSD,,EB1-002),,,,,,,Needs Review
+BTech,7,A,Thursday,15:00,15:50,Coding Hours,,,,,,,,,Needs Review
+BTech,7,A,Thursday,16:00,16:50,Coding Hours,,,,,,,,,Needs Review
+BTech,7,A,Friday,09:00,09:50,DSD Lab,,TB-102,,,,,,,Needs Review
+BTech,7,A,Friday,10:00,10:50,DSD Lab,,TB-102,,,,,,,Needs Review
+BTech,7,A,Friday,12:00,12:50,Graph Theory,Dr. Umesh Gupta,EB1-104,,,T,,,,Needs Review
+BTech,7,A,Friday,12:00,12:50,Business Model to Market Fit,Dr. Sheetal Mundra,EB2-104,,,L,,,,Needs Review
+BTech,7,A,Friday,14:00,14:50,System Design & Devops Lab,,BYOD,,,,,,,Needs Review
+BTech,7,A,Friday,15:00,15:50,System Design & Devops Lab,,BYOD,,,,,,,Needs Review
+BTech,7,A,Friday,16:00,16:50,Operation Research,Dr. Richa Sharma,EB1-101,,,L,,,,Needs Review
+BBA,1,A,Monday,09:00,09:50,FA1134 - Financial Accounting Dr. Riya Sureka,Dr. Riya Sureka,EB2-006,1,FA1134,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Monday,10:00,10:50,EP1105 -Microeconomics Dr. Sheetal Mundra,Dr. Sheetal Mundra,EB2-006,1,EP1105,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Monday,11:00,11:50,CC1110 -Fund. of Professional Communication CCCT (Dr. Anusha Hegde),Dr. Anusha Hegde,EB2-006,1,CC1110,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Monday,12:00,12:50,LS1111 -Fundamentals of Business Management Dr. Punam Mishra,Dr. Punam Mishra,EB2-006,1,LS1111,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Monday,14:00,14:50,ID1104 - Business Mathematics Dr. Azhar Ahmed Sheikh,Dr. Azhar Ahmed Sheikh,EB2-006,1,ID1104,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,,B,Monday,09:00,09:50,EP1105 -Microeconomics Dr. Shubham Ranjan,Dr. Shubham Ranjan,EB2-001,1,EP1105,Lecture,,,EB2-001,Needs Review
+BBA,,B,Monday,10:00,10:50,FA1134 -Financial Accounting Dr. Riya Sureka,Dr. Riya Sureka,EB2-001,1,FA1134,Lecture,,,EB2-001,Needs Review
+BBA,,B,Monday,11:00,11:50,LS1111- Fundamentals of Business Management Dr. Punam Mishra,Dr. Punam Mishra,EB2-001,1,LS1111,Lecture,,,EB2-001,Needs Review
+BBA,,B,Monday,12:00,12:50,CC1110 -Fund. of Professional Communication CCCT (Dr. Anusha Hegde),Dr. Anusha Hegde,EB2-001,1,CC1110,Lecture,,,EB2-001,Needs Review
+BBA,,B,Monday,14:00,14:50,ID1105 -Introduction to Excel Dr. Ashwini Sharma,Dr. Ashwini Sharma,EB2-001,1,ID1105,Lecture,,,EB2-001,Needs Review
+BBA,,C,Monday,09:00,09:50,Mentoring Session Interaction with your Mentors,,EB2-005,1,,Mentoring,,,EB2-005,Needs Review
+BBA,,C,Monday,10:00,10:50,ID1105 -Introduction to Excel Dr. Ashwini Sharma,Dr. Ashwini Sharma,EB2-005,1,ID1105,Lecture,,,EB2-005,Needs Review
+BBA,,C,Monday,11:00,11:50,LS1111- Fundamentals of Business Management Dr. Shubham Ranjan,Dr. Shubham Ranjan,EB2-005,1,LS1111,Lecture,,,EB2-005,Needs Review
+BBA,,C,Monday,12:00,12:50,FA1134 -Financial Accounting Dr. Riya Sureka,Dr. Riya Sureka,EB2-005,1,FA1134,Lecture,,,EB2-005,Needs Review
+BBA,,C,Monday,14:00,14:50,CC1110 -Fund. of Professional Communication CCCT (Dr. Anusha Hegde),Dr. Anusha Hegde,EB2-005,1,CC1110,Lecture,,,EB2-005,Needs Review
+BBA,,C,Monday,15:00,15:50,FA1135 -Introduction to Fintech Dr. Lokanath Mishra Venue Aug : IET Amphi| Sep Onwards: IM Amphi,Dr. Lokanath Mishra Venue Aug,EB2-005,1,FA1135,Lecture,,,EB2-005,Needs Review
+BBA,3,General,Monday,09:00,09:50,BS1107 -Managing Human Behavior in Orgs Dr. Monika Soni,Dr. Monika Soni,EB2-102,1,BS1107,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Monday,10:00,10:50,OP1101 -Operations Management Dr. Shivram Choudhary,Dr. Shivram Choudhary,EB2-102,1,OP1101,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Monday,11:00,11:50,FA1103 -Financial Management Dr. Lokanath Mishra,Dr. Lokanath Mishra,EB2-102,1,FA1103,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Monday,12:00,12:50,ID1118 -Advanced Excel Dr. Shubham Ranjan,Dr. Shubham Ranjan,EB2-102,1,ID1118,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Monday,13:00,14:00,Lunch for Entr. Students,,EB2-102,1,,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Monday,14:00,14:50,ED1112 -Entrepreneurship Development Dr. Monika Soni,Dr. Monika Soni,EB2-102,1,ED1112,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,Fintech,Monday,09:00,09:50,Mentoring Session Interaction with your Mentors,,EB2-101,1,,Mentoring,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Monday,10:00,10:50,FA1103 -Financial Management Dr. Lokanath Mishra,Dr. Lokanath Mishra,EB2-101,1,FA1103,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Monday,11:00,11:50,FA1139 -Banking and Insurance Operations Dr. Azhar Ahmed Sheikh,Dr. Azhar Ahmed Sheikh,EB2-101,1,FA1139,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Monday,12:00,12:50,ED1112 - Open Elective-I (b) - Ent. Development Dr. Monika Soni,Dr. Monika Soni,EB2-101,1,ED1112,Elective,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Monday,14:00,14:50,ID1118 -Advanced Excel Dr. Shubham Ranjan,Dr. Shubham Ranjan,EB2-101,1,ID1118,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Monday,16:00,16:50,CC1103 -Perspectives on Contemporary Issues CCCT (Ms. Shiva),Ms. Shiva,EB2-101,1,CC1103,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,5,General,Monday,10:00,10:50,CC105 -Understanding & Managing Conflict CCCT (Dr. Vijaylakshmi),Dr. Vijaylakshmi,IM-106,1,CC105,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Monday,11:00,11:50,ST1103 - Business Strategy Dr. Shivram Choudhary,Dr. Shivram Choudhary,IM-106,1,ST1103,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Monday,12:00,12:50,"FA1129 -Banking, Securities & Collection Ops Dr. Azhar Ahmed Sheikh -Room No.106 ED1103 -Business Model to Product Mkt Fit Dr. Sheetal Mundra-Room No. 102",Dr. Azhar Ahmed Sheikh -Room No.,106,1,FA1129,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Monday,14:00,14:50,MA 1104 -Brand Management- Dr. Shivram Choudhary Room No. AIC-004 / IL1222 -Agentic AI Ent. - Dr. Dr. Devisha Arunadevi -IET - Room No. AIC- 003,Dr. Shivram Choudhary Room No. AIC-,AIC-004,1,MA 1104,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Monday,15:00,15:50,MA1103 -Consumer Behaviour (b) - Dr. Punam Mishra Room No. 106,Dr. Punam Mishra Room No.,106,1,MA1103,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,1,A,Tuesday,09:00,09:50,Mentoring Session Interaction with your Mentors,,EB2-006,1,,Mentoring,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Tuesday,10:00,10:50,LS1111- Fundamentals of Business Management Dr. Punam Mishra,Dr. Punam Mishra,EB2-006,1,LS1111,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Tuesday,11:00,11:50,EP1105 -Microeconomics Dr. Sheetal Mundra,Dr. Sheetal Mundra,EB2-006,1,EP1105,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Tuesday,12:00,12:50,IL1107 -IKS CCCT (Dr. Nitya Pawar),Dr. Nitya Pawar,EB2-006,1,IL1107,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Tuesday,14:00,14:50,FA1134 -Financial Accounting Dr. Riya Sureka,Dr. Riya Sureka,EB2-006,1,FA1134,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,,B,Tuesday,09:00,09:50,EP1105 -Microeconomics Dr. Shubham Ranjan,Dr. Shubham Ranjan,EB2-001,1,EP1105,Lecture,,,EB2-001,Needs Review
+BBA,,B,Tuesday,10:00,10:50,FA1134 -Financial Accounting Dr. Riya Sureka,Dr. Riya Sureka,EB2-001,1,FA1134,Lecture,,,EB2-001,Needs Review
+BBA,,B,Tuesday,11:00,11:50,LS1111- Fundamentals of Business Management Dr. Punam Mishra,Dr. Punam Mishra,EB2-001,1,LS1111,Lecture,,,EB2-001,Needs Review
+BBA,,B,Tuesday,12:00,12:50,CC1110 -Fund. of Professional Communication CCCT (Dr. Anusha Hegde),Dr. Anusha Hegde,EB2-001,1,CC1110,Lecture,,,EB2-001,Needs Review
+BBA,,B,Tuesday,14:00,14:50,ID1104 - Business Mathematics Dr. Azhar Ahmed Sheikh,Dr. Azhar Ahmed Sheikh,EB2-001,1,ID1104,Lecture,,,EB2-001,Needs Review
+BBA,,C,Tuesday,10:00,10:50,ID1104 - Business Mathematics Dr. Azhar Ahmed Sheikh,Dr. Azhar Ahmed Sheikh,EB2-005,1,ID1104,Lecture,,,EB2-005,Needs Review
+BBA,,C,Tuesday,11:00,11:50,FA1134 -Financial Accounting Dr. Riya Sureka,Dr. Riya Sureka,EB2-005,1,FA1134,Lecture,,,EB2-005,Needs Review
+BBA,,C,Tuesday,14:00,14:50,LS1111- Fundamentals of Business Management Dr. Shubham Ranjan,Dr. Shubham Ranjan,EB2-005,1,LS1111,Lecture,,,EB2-005,Needs Review
+BBA,,C,Tuesday,15:00,15:50,FA1135 -Introduction to Fintech Dr. Lokanath Mishra Venue Aug : IET Amphi| Sep Onwards: IM Amphi,Dr. Lokanath Mishra Venue Aug,EB2-005,1,FA1135,Lecture,,,EB2-005,Needs Review
+BBA,3,General,Tuesday,09:00,09:50,BS1107 - Managing Human Behavior in Orgs Dr. Monika Soni,Dr. Monika Soni,EB2-102,1,BS1107,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Tuesday,10:00,10:50,OP1101 -Operations Management Dr. Shivram Choudhary,Dr. Shivram Choudhary,EB2-102,1,OP1101,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Tuesday,11:00,11:50,FA1103 -Financial Management Dr. Lokanath Mishra,Dr. Lokanath Mishra,EB2-102,1,FA1103,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Tuesday,12:00,12:50,CC1103 -Perspectives on Contemporary Issues CCCT (Ms. Shiva),Ms. Shiva,EB2-102,1,CC1103,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Tuesday,14:00,14:50,ED1112 -Entrepreneurship Development Dr. Monika Soni,Dr. Monika Soni,EB2-102,1,ED1112,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,Fintech,Tuesday,09:00,09:50,CC1103 -Perspectives on Contemporary Issues CCCT (Ms. Shiva),Ms. Shiva,EB2-101,1,CC1103,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Tuesday,10:00,10:50,FA1103 -Financial Management Dr. Lokanath Mishra,Dr. Lokanath Mishra,EB2-101,1,FA1103,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Tuesday,11:00,11:50,CC1104 -Communication And Identity CCCT (Ms. Shiva),Ms. Shiva,EB2-101,1,CC1104,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Tuesday,12:00,12:50,ED1112 - Open Elective-I (b) - Ent. Development Dr. Monika Soni,Dr. Monika Soni,EB2-101,1,ED1112,Elective,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Tuesday,14:00,14:50,Consumer Behaviour (b) - Dr. Punam Mishra,Dr. Punam Mishra,EB2-101,1,,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,5,General,Tuesday,10:00,10:50,ID 1106 -Business Analytics (a) Dr. Ashwini Sharma w.e.f 17-Aug-26,Dr. Ashwini Sharma w.e.f,IM-106,1,ID 1106,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Tuesday,11:00,11:50,ST1103 - Business Strategy Dr. Shivram Choudhary,Dr. Shivram Choudhary,IM-106,1,ST1103,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Tuesday,12:00,12:50,"FA1129 -Banking, Securities & Collection Ops Dr. Azhar Ahmed Sheikh -Room No.106 ED1103 -Business Model to Product Mkt Fit Dr. Sheetal Mundra-Room No. 102",Dr. Azhar Ahmed Sheikh -Room No.,106,1,FA1129,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Tuesday,14:00,14:50,Room No. 102 Business Analytics (a) - Dr. Ashwini Sharma Room No. 106,Dr. Ashwini Sharma Room No.,102,1,,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,1,A,Wednesday,09:00,09:50,CC1110 -Fund. of Professional Communication CCCT (Dr. Anusha Hegde),Dr. Anusha Hegde,EB2-006,1,CC1110,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Wednesday,10:00,10:50,LS1111- Fundamentals of Business Management Dr. Punam Mishra,Dr. Punam Mishra,EB2-006,1,LS1111,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Wednesday,11:00,11:50,ID1105 -Introduction to Excel Dr. Ashwini Sharma,Dr. Ashwini Sharma,EB2-006,1,ID1105,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Wednesday,12:00,12:50,FA1134 -Financial Accounting Dr. Riya Sureka,Dr. Riya Sureka,EB2-006,1,FA1134,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Wednesday,14:00,14:50,EP1105 - Microeconomics Dr. Sheetal Mundra / Dr. Shubham Ranjan,Dr. Sheetal Mundra,EB2-006,1,EP1105,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,,B,Wednesday,09:00,09:50,IL1107 -IKS CCCT (Dr. Nitya Pawar),Dr. Nitya Pawar,EB2-001,1,IL1107,Lecture,,,EB2-001,Needs Review
+BBA,,B,Wednesday,10:00,10:50,FA1134 -Financial Accounting Dr. Riya Sureka,Dr. Riya Sureka,EB2-001,1,FA1134,Lecture,,,EB2-001,Needs Review
+BBA,,B,Wednesday,11:00,11:50,LS1111- Fundamentals of Business Management Dr. Punam Mishra,Dr. Punam Mishra,EB2-001,1,LS1111,Lecture,,,EB2-001,Needs Review
+BBA,,B,Wednesday,12:00,12:50,EP1105- Microeconomics Dr. Shubham Ranjan,Dr. Shubham Ranjan,EB2-001,1,EP1105,Lecture,,,EB2-001,Needs Review
+BBA,,B,Wednesday,14:00,14:50,ID1105 -Introduction to Excel Dr. Ashwini Sharma,Dr. Ashwini Sharma,EB2-001,1,ID1105,Lecture,,,EB2-001,Needs Review
+BBA,,C,Wednesday,10:00,10:50,ID1104 - Business Mathematics Dr. Azhar Ahmed Sheikh,Dr. Azhar Ahmed Sheikh,EB2-005,1,ID1104,Lecture,,,EB2-005,Needs Review
+BBA,,C,Wednesday,11:00,11:50,LS1111- Fundamentals of Business Management Dr. Shubham Ranjan,Dr. Shubham Ranjan,EB2-005,1,LS1111,Lecture,,,EB2-005,Needs Review
+BBA,,C,Wednesday,12:00,12:50,CC1110 -Fund. of Professional Communication CCCT (Dr. Anusha Hegde),Dr. Anusha Hegde,EB2-005,1,CC1110,Lecture,,,EB2-005,Needs Review
+BBA,,C,Wednesday,14:00,14:50,FA1134 -Financial Accounting Dr. Riya Sureka,Dr. Riya Sureka,EB2-005,1,FA1134,Lecture,,,EB2-005,Needs Review
+BBA,,C,Wednesday,15:00,15:50,FA1135 -Introduction to Fintech Dr. Lokanath Mishra Venue Aug : IET Amphi| Sep Onwards: IM Amphi,Dr. Lokanath Mishra Venue Aug,EB2-005,1,FA1135,Lecture,,,EB2-005,Needs Review
+BBA,3,General,Wednesday,09:00,09:50,OP1101 -Operations Management Dr. Shivram Choudhary,Dr. Shivram Choudhary,EB2-102,1,OP1101,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Wednesday,10:00,10:50,FA1103 -Financial Management Dr. Lokanath Mishra,Dr. Lokanath Mishra,EB2-102,1,FA1103,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Wednesday,11:00,11:50,ED1112 -Entrepreneurship Development Dr. Monika Soni,Dr. Monika Soni,EB2-102,1,ED1112,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Wednesday,12:00,12:50,CC1103 -Perspectives on Contemporary Issues CCCT (Ms. Shiva),Ms. Shiva,EB2-102,1,CC1103,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Wednesday,13:00,14:00,Lunch for Entr. Students,,EB2-102,1,,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,Fintech,Wednesday,09:00,09:50,FA1139 -Banking and Insurance Operations Dr. Azhar Ahmed Sheikh,Dr. Azhar Ahmed Sheikh,EB2-101,1,FA1139,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Wednesday,10:00,10:50,CC1104 -Communication And Identity CCCT (Ms. Shiva),Ms. Shiva,EB2-101,1,CC1104,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Wednesday,11:00,11:50,FA1103 -Financial Management Dr. Lokanath Mishra,Dr. Lokanath Mishra,EB2-101,1,FA1103,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Wednesday,12:00,12:50,ED1112 - Open Elective-I (b) - Ent. Development Dr. Monika Soni,Dr. Monika Soni,EB2-101,1,ED1112,Elective,BBA Sem 3,,EB2-101,Needs Review
+BBA,5,General,Wednesday,09:00,09:50,Mentoring Session Interaction with your Mentors,,IM-106,1,,Mentoring,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Wednesday,10:00,10:50,CC105 -Understanding & Managing Conflict CCCT (Dr. Vijaylakshmi),Dr. Vijaylakshmi,IM-106,1,CC105,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Wednesday,11:00,11:50,ST1103 - Business Strategy Dr. Shivram Choudhary,Dr. Shivram Choudhary,IM-106,1,ST1103,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Wednesday,12:00,12:50,"FA1129 -Banking, Securities & Collection Ops Dr. Azhar Ahmed Sheikh -Room No.106 ED1103 -Business Model to Product Mkt Fit Dr. Sheetal Mundra-Room No. 102",Dr. Azhar Ahmed Sheikh -Room No.,106,1,FA1129,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Wednesday,14:00,14:50,Consumer Behaviour (b) - Dr. Punam Mishra Room No. 106,Dr. Punam Mishra Room No.,106,1,,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Wednesday,13:00,14:00,FA1108- SK- Room No. EB-006 (IET),,EB-006,1,FA1108,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,1,A,Thursday,10:00,10:50,FA1134 -Financial Accounting Dr. Riya Sureka,Dr. Riya Sureka,EB2-006,2,FA1134,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Thursday,11:00,11:50,EP1105 -Microeconomics Dr. Sheetal Mundra / Dr. Shubham Ranjan,Dr. Sheetal Mundra,EB2-006,2,EP1105,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Thursday,12:00,12:50,LS1111- Fundamentals of Business Management Dr. Punam Mishra,Dr. Punam Mishra,EB2-006,2,LS1111,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Thursday,13:00,14:00,FA1108- SK- Room No. EB-006 (IET),,EB-006,2,FA1108,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Thursday,14:00,14:50,ID1104 - Business Mathematics Dr. Azhar Ahmed Sheikh,Dr. Azhar Ahmed Sheikh,EB2-006,2,ID1104,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,,B,Thursday,09:00,09:50,FA1135 -Introduction to Fintech Dr. Lokanath Mishra Venue IM Amphi,Dr. Lokanath Mishra Venue IM Amphi,EB2-001,2,FA1135,Lecture,,,EB2-001,Needs Review
+BBA,,B,Thursday,10:00,10:50,ID1104 - Business Mathematics Dr. Azhar Ahmed Sheikh,Dr. Azhar Ahmed Sheikh,EB2-001,2,ID1104,Lecture,,,EB2-001,Needs Review
+BBA,,B,Thursday,11:00,11:50,LS1111- Fundamentals of Business Management Dr. Punam Mishra,Dr. Punam Mishra,EB2-001,2,LS1111,Lecture,,,EB2-001,Needs Review
+BBA,,B,Thursday,12:00,12:50,EP1105- Microeconomics Dr. Shubham Ranjan,Dr. Shubham Ranjan,EB2-001,2,EP1105,Lecture,,,EB2-001,Needs Review
+BBA,,B,Thursday,14:00,14:50,ID1105 -Introduction to Excel Dr. Ashwini Sharma,Dr. Ashwini Sharma,EB2-001,2,ID1105,Lecture,,,EB2-001,Needs Review
+BBA,,C,Thursday,10:00,10:50,IL1107 -IKS CCCT (Dr. Nitya Pawar),Dr. Nitya Pawar,EB2-005,2,IL1107,Lecture,,,EB2-005,Needs Review
+BBA,,C,Thursday,11:00,11:50,LS1111- Fundamentals of Business Management Dr. Shubham Ranjan,Dr. Shubham Ranjan,EB2-005,2,LS1111,Lecture,,,EB2-005,Needs Review
+BBA,3,General,Thursday,09:00,09:50,BS1107 -Managing Human Behavior in Orgs Dr. Monika Soni,Dr. Monika Soni,EB2-102,2,BS1107,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Thursday,10:00,10:50,ED1112 -Entrepreneurship Development Dr. Monika Soni,Dr. Monika Soni,EB2-102,2,ED1112,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Thursday,11:00,11:50,FA1103 -Financial Management Dr. Lokanath Mishra,Dr. Lokanath Mishra,EB2-102,2,FA1103,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Thursday,13:00,14:00,FA1137 -Business Model in Digital Financial Services Open Elective-I (a) - Dr. Riya Sureka,Dr. Riya Sureka,EB2-102,2,FA1137,Elective,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Thursday,14:00,14:50,FA1137 -Business Model in Digital Financial Services Open Elective-I (a) - Dr. Riya Sureka,Dr. Riya Sureka,EB2-102,2,FA1137,Elective,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Thursday,15:00,15:50,OP1101 -Operations Management Dr. Shivram Choudhary,Dr. Shivram Choudhary,EB2-102,2,OP1101,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,Fintech,Thursday,09:00,09:50,CC1104 -Communication & Identity CCCT (Ms. Shiva),Ms. Shiva,EB2-101,2,CC1104,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Thursday,10:00,10:50,CC1103 -Perspectives on Contemporary Issues CCCT (Ms. Shiva),Ms. Shiva,EB2-101,2,CC1103,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Thursday,11:00,11:50,FA1139 -Banking and Insurance Operations Dr. Azhar Ahmed Sheikh,Dr. Azhar Ahmed Sheikh,EB2-101,2,FA1139,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Thursday,12:00,12:50,ED1112 - Open Elective-I (b) - Ent. Development Dr. Monika Soni,Dr. Monika Soni,EB2-101,2,ED1112,Elective,BBA Sem 3,,EB2-101,Needs Review
+BBA,5,General,Thursday,09:00,09:50,Mentoring Session Interaction with your Mentors,,IM-106,2,,Mentoring,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Thursday,10:00,10:50,ID 1106 -Business Analytics (a) Dr. Ashwini Sharma,Dr. Ashwini Sharma,IM-106,2,ID 1106,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Thursday,11:00,11:50,ID 1106 -Business Analytics (a) Dr. Ashwini Sharma,Dr. Ashwini Sharma,IM-106,2,ID 1106,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Thursday,12:00,12:50,ST1103 - Business Strategy Dr. Shivram Choudhary,Dr. Shivram Choudhary,IM-106,2,ST1103,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Thursday,14:00,14:50,Consumer Behaviour (b) - Dr. Punam Mishra Room No. 106,Dr. Punam Mishra Room No.,106,2,,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Thursday,13:00,14:00,FA1108- SK- Room No. EB-006 (IET),,EB-006,2,FA1108,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,1,A,Friday,09:00,09:50,ID1105 -Introduction to Excel Dr. Ashwini Sharma,Dr. Ashwini Sharma,EB2-006,2,ID1105,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Friday,10:00,10:50,ID1105 -Introduction to Excel Dr. Ashwini Sharma,Dr. Ashwini Sharma,EB2-006,2,ID1105,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Friday,11:00,11:50,CC1110 -Fund. of Professional Communication CCCT (Dr. Anusha Hegde),Dr. Anusha Hegde,EB2-006,2,CC1110,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,1,A,Friday,12:00,12:50,IL1107 -IKS CCCT (Dr. Nitya Pawar),Dr. Nitya Pawar,EB2-006,2,IL1107,Lecture,BBA Sem 1,,EB2-006,Needs Review
+BBA,,B,Friday,10:00,10:50,CC1110 -Fund. of Professional Communication CCCT (Dr. Anusha Hegde),Dr. Anusha Hegde,EB2-001,2,CC1110,Lecture,,,EB2-001,Needs Review
+BBA,,B,Friday,11:00,11:50,FA1134 -Financial Accounting Dr. Riya Sureka,Dr. Riya Sureka,EB2-001,2,FA1134,Lecture,,,EB2-001,Needs Review
+BBA,,B,Friday,12:00,12:50,Mentoring Session Interaction with your Mentors,,EB2-001,2,,Mentoring,,,EB2-001,Needs Review
+BBA,,B,Friday,14:00,14:50,IL1107 -IKS CCCT (Dr. Nitya Pawar),Dr. Nitya Pawar,EB2-001,2,IL1107,Lecture,,,EB2-001,Needs Review
+BBA,,C,Friday,09:00,09:50,IL1107 -IKS CCCT (Dr. Nitya Pawar),Dr. Nitya Pawar,EB2-005,2,IL1107,Lecture,,,EB2-005,Needs Review
+BBA,,C,Friday,10:00,10:50,FA1134 -Financial Accounting Dr. Riya Sureka,Dr. Riya Sureka,EB2-005,2,FA1134,Lecture,,,EB2-005,Needs Review
+BBA,,C,Friday,12:00,12:50,CC1110 -Fund. of Professional Communication CCCT (Dr. Anusha Hegde),Dr. Anusha Hegde,EB2-005,2,CC1110,Lecture,,,EB2-005,Needs Review
+BBA,,C,Friday,14:00,14:50,ID1105 -Introduction to Excel Dr. Ashwini Sharma,Dr. Ashwini Sharma,EB2-005,2,ID1105,Lecture,,,EB2-005,Needs Review
+BBA,,C,Friday,15:00,15:50,ID1105 -Introduction to Excel Dr. Ashwini Sharma,Dr. Ashwini Sharma,EB2-005,2,ID1105,Lecture,,,EB2-005,Needs Review
+BBA,3,General,Friday,10:00,10:50,Mentoring Session Interaction with your Mentors,,EB2-102,2,,Mentoring,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Friday,11:00,11:50,BS1107 -Managing Human Behavior in Orgs Dr. Monika Soni,Dr. Monika Soni,EB2-102,2,BS1107,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Friday,12:00,12:50,CC1103 -Perspectives on Contemporary Issues CCCT (Ms. Shiva),Ms. Shiva,EB2-102,2,CC1103,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Friday,13:00,14:00,Lunch for Entr. Students,,EB2-102,2,,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Friday,14:00,14:50,ID1118 Advanced Excel Dr. Shubham Ranjan,Dr. Shubham Ranjan,EB2-102,2,ID1118,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,General,Friday,15:00,15:50,ID1118 Advanced Excel Dr. Shubham Ranjan,Dr. Shubham Ranjan,EB2-102,2,ID1118,Lecture,BBA Sem 3,,EB2-102,Needs Review
+BBA,3,Fintech,Friday,09:00,09:50,FA1139 -Banking and Insurance Operations Dr. Azhar Ahmed Sheikh,Dr. Azhar Ahmed Sheikh,EB2-101,2,FA1139,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Friday,10:00,10:50,ID1118 Advanced Excel Dr. Shubham Ranjan,Dr. Shubham Ranjan,EB2-101,2,ID1118,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Friday,11:00,11:50,ID1118 Advanced Excel Dr. Shubham Ranjan,Dr. Shubham Ranjan,EB2-101,2,ID1118,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,3,Fintech,Friday,12:00,12:50,FA1103 -Financial Management Dr. Lokanath Mishra,Dr. Lokanath Mishra,EB2-101,2,FA1103,Lecture,BBA Sem 3,,EB2-101,Needs Review
+BBA,5,General,Friday,10:00,10:50,MA 1104 -Brand Management- Dr. Shivram Choudhary Room No. AIC-004 / IL1222 -Agentic AI Ent. - Dr. Dr. Devisha Arunadevi -IET - Room No. AIC- 003,Dr. Shivram Choudhary Room No. AIC-,AIC-004,2,MA 1104,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Friday,11:00,11:50,MA 1104 -Brand Management- Dr. Shivram Choudhary Room No. AIC-004 / IL1222 -Agentic AI Ent. - Dr. Dr. Devisha Arunadevi -IET - Room No. AIC- 003,Dr. Shivram Choudhary Room No. AIC-,AIC-004,2,MA 1104,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Friday,12:00,12:50,"FA1129 -Banking, Securities & Collection Ops Dr. Azhar Ahmed Sheikh -Room No.106 ED1103 -Business Model to Product Mkt Fit Dr. Sheetal Mundra-Room No. 102",Dr. Azhar Ahmed Sheikh -Room No.,106,2,FA1129,Lecture,BBA Sem 5,,IM-106,Needs Review
+BBA,5,General,Friday,13:00,14:00,FA1108- SK- Room No. EB-006 (IET),,EB-006,2,FA1108,Lecture,BBA Sem 5,,IM-106,Needs Review
