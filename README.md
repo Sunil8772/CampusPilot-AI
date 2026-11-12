@@ -14,7 +14,7 @@ This branch combines the Member 4 Streamlit interface, Member 1 timetable engine
 ## Local setup
 1. Use Python 3.11+ and create/activate a virtual environment.
 2. Install dependencies: `pip install -r requirements.txt`.
-3. Copy `.env.example` to `.env`. Set `GEMINI_API_KEY` from Google AI Studio and a working PostgreSQL `DATABASE_URL`. Never commit `.env`.
+3. Copy `.env.example` to `.env`. Set `CAMPUSPILOT_DEMO_MODE=true` only for a local synthetic-data demo, then set `GEMINI_API_KEY` from Google AI Studio and a working PostgreSQL `DATABASE_URL`. Never commit `.env`. Do not enable demo mode on a public deployment; real authentication is not included.
 4. Create an empty PostgreSQL database and ensure the database user can create the `btree_gist` extension.
 5. Run `python init_db.py`.
 6. Seed synthetic demo records: `python seed_demo.py`.
@@ -23,9 +23,9 @@ This branch combines the Member 4 Streamlit interface, Member 1 timetable engine
 ## Data and safety notes
 - The committed master timetable contains 995 extracted rows, but every row is marked `Needs Review`. It is unverified sample input, not an authoritative live JKLU timetable.
 - Source Excel/PDF timetable files are not committed. Parser scripts need source files in `data/timetables/`.
-- The frontend role selector is a demo selector, not authentication. Backend functions enforce database roles, but a real login/identity provider is needed before production.
-- AI parses requests and requests backend availability checks. It is not the source of truth and must not approve or confirm bookings.
-- The current AI assistant can check resource availability and ask for missing details. Booking submission, authenticated user mapping, admin approval UI wiring, and full timetable upload/publish UI wiring remain to be completed.
+- The frontend profile selector is available only when `CAMPUSPILOT_DEMO_MODE=true`. It selects fixed synthetic users and is not authentication. Do not enable this mode on a public deployment. A real login/identity provider and verified user-to-database mapping are required before production.
+- AI parses requests and requests backend availability checks. PostgreSQL is the source of truth. The agent does not approve bookings; only an authorized admin action can approve a request, and the UI verifies the stored status before displaying the decision.
+- The AI assistant checks resource availability and carries recent user turns into clarification requests. For a `book_resources` intent, the user must select a returned resource and explicitly confirm before a pending booking request is created. The Admin Panel reads pending requests from PostgreSQL, calls backend approval/rejection functions, and reads the decision back from the database. The UI still uses synthetic profiles and is demo-only. Full timetable upload/parse/review/publish and database-backed resource inventory UI remain incomplete.
 - Guest-house and parking resources are individual bookable resources. Their capacities represent room/slot capacity, not necessarily event participant capacity.
 - Use synthetic/mock records only. Do not connect real student personal data or live campus systems for the buildathon demo.
 
