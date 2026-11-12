@@ -138,3 +138,18 @@ def cancel_booking(booking_id,user_id):
         updated = cur.fetchone()
         log_action(user_id,"booking_cancelled","booking",booking_id,{},cur)
     return result(True,"Booking cancelled.",booking=updated,status="cancelled")
+
+def get_booking_by_id(booking_id, actor_id):
+    """Fetch a booking for an authorized admin to verify a decision in PostgreSQL."""
+    require_role(actor_id, ["admin"])
+    with get_cursor() as cur:
+        cur.execute(
+            """SELECT b.*,r.name AS resource_name,r.resource_type,
+                      u.full_name,u.email
+               FROM bookings b
+               JOIN resources r ON r.id=b.resource_id
+               JOIN users u ON u.id=b.user_id
+               WHERE b.id=%s""",
+            (booking_id,),
+        )
+        return cur.fetchone()
