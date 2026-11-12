@@ -16,6 +16,7 @@ from services.booking import (
     reject_booking,
     get_booking_by_id,
 )
+from services.resources import get_resources, add_resource, update_resource
 
 load_dotenv()
 
@@ -638,363 +639,116 @@ elif page == "Admin Panel":
         st.error(f"Could not load or update database booking requests: {type(exc).__name__}: {exc}")
         st.info("Check DATABASE_URL, run init_db.py and seed_demo.py, then retry.")
 
-    # Management sections
-    st.subheader("⚙️ Campus Management")
-
-    col1, col2 = st.columns(2)
-
-    with col1:
-        with st.container(border=True):
-            st.markdown("### 📅 Timetable Management")
-            st.write("Upload and review semester timetables.")
-
-            st.info(
-                "Timetable parsing and database publishing are not yet connected to this page. "
-                "Only validated synthetic timetable rows should be published for the demo."
-            )
-
-    with col2:
-        with st.container(border=True):
-            st.markdown("### 🏫 Resource Management")
-            st.write("Manage classrooms, labs and parking.")
-
-            st.info(
-                "Resource inventory management remains a demo-only section. "
-                "Booking approvals above use the PostgreSQL backend."
-            )
-    
-    # ----------------------------------
-    # TIMETABLE MANAGEMENT
-    # ----------------------------------
-
+    # Timetable publishing is a separate reviewed workflow; keep this clear in the demo.
+    st.divider()
     st.subheader("📅 Timetable Management")
-
-    st.write(
-        "Upload and manage semester-wise campus timetables."
-    )
-
-    with st.container(border=True):
-
-        st.markdown("### 📤 Upload New Timetable")
-
-        col1, col2 = st.columns(2)
-
-        with col1:
-            semester = st.selectbox(
-                "Select Semester",
-                [1, 2, 3, 4, 5, 6, 7, 8],
-                key="timetable_semester"
-            )
-
-        with col2:
-            academic_year = st.text_input(
-                "Academic Year",
-                value="2026-27",
-                key="timetable_academic_year"
-            )
-
-        uploaded_file = st.file_uploader(
-            "Upload Timetable",
-            type=["pdf", "xlsx", "xls", "csv"],
-            help="Supported formats: PDF, Excel and CSV",
-            key="timetable_file"
-        )
-
-        if uploaded_file is not None:
-
-            st.success("File selected successfully!")
-
-            st.write(f"**File name:** {uploaded_file.name}")
-            st.write(
-                f"**File size:** "
-                f"{uploaded_file.size / 1024:.2f} KB"
-            )
-
-            if st.button(
-                "📥 Submit Timetable for Parsing",
-                use_container_width=True,
-                key="submit_timetable"
-            ):
-
-                if not academic_year.strip():
-                    st.error("Please enter the academic year.")
-
-                elif "-" not in academic_year:
-                    st.error(
-                        "Enter academic year in format 2026-27."
-                    )
-
-                else:
-                    st.session_state["timetable_upload"] = {
-                        "file_name": uploaded_file.name,
-                        "semester": semester,
-                        "academic_year": academic_year.strip(),
-                        "file_size": uploaded_file.size,
-                        "status": "Uploaded - awaiting parser integration"
-                    }
-
-                    st.success(
-                        "Timetable upload details saved successfully!"
-                    )
-
-        else:
-            st.info("Please select a timetable file to continue.")
-
-    st.divider()
-
-    # ----------------------------------
-    # UPLOAD STATUS AND REVIEW
-    # ----------------------------------
-
-    st.subheader("📋 Timetable Import Status")
-
-    timetable_upload = st.session_state.get(
-        "timetable_upload"
-    )
-
-    if timetable_upload:
-
-        with st.container(border=True):
-
-            st.write(
-                f"**File:** {timetable_upload['file_name']}"
-            )
-
-            st.write(
-                f"**Semester:** "
-                f"{timetable_upload['semester']}"
-            )
-
-            st.write(
-                f"**Academic Year:** "
-                f"{timetable_upload['academic_year']}"
-            )
-
-            st.warning(
-                "Waiting for Member 1's timetable parser. "
-                "Extracted records and validation results "
-                "will appear here after integration."
-            )
-
-            st.write(
-                f"**Status:** {timetable_upload['status']}"
-            )
-
-    else:
-        st.info("No timetable has been submitted yet.")
-
-    st.divider()
-
-    # ----------------------------------
-    # TIMETABLE VERSION HISTORY
-    # ----------------------------------
-
-    st.subheader("🗂️ Timetable Version History")
-
     st.info(
-        "Member 2 will connect the database here to display "
-        "published timetable versions, upload dates and "
-        "the active version for each semester."
+        "Timetable parser review and publishing are available in the backend. "
+        "The upload/review screen is not yet connected. The demo uses the synthetic "
+        "published timetable created by seed_demo.py; do not publish unverified institutional rows."
     )
 
-    st.caption(
-        "Only validated and admin-reviewed timetables "
-        "should be published. Previous versions must be preserved."
-    )
-  
-
+    # Database-backed resource inventory.
     st.divider()
-    # ----------------------------------
-    # RESOURCE MANAGEMENT
-    # ----------------------------------
+    st.subheader("🏫 Resource Management — PostgreSQL")
+    try:
+        admin_user = get_demo_user("Admin")
+        admin_id = admin_user["id"]
 
-    st.divider()
-
-    st.subheader("🏫 Resource Management")
-
-    st.write(
-        "Add, view and manage campus classrooms, "
-        "labs, event venues, guest house rooms and parking."
-    )
-
-    # Initialize demo resources
-    if "campus_resources" not in st.session_state:
-        st.session_state.campus_resources = [
-            {
-                "id": "R001",
-                "name": "EB1-101",
-                "type": "Classroom",
-                "location": "EB1",
-                "capacity": 60,
-                "status": "Active"
-            },
-            {
-                "id": "R002",
-                "name": "Amphitheatre 1",
-                "type": "Amphitheatre",
-                "location": "Main Campus",
-                "capacity": 200,
-                "status": "Active"
-            },
-            {
-                "id": "R003",
-                "name": "Computer Lab 1",
-                "type": "Lab",
-                "location": "Academic Block",
-                "capacity": 40,
-                "status": "Active"
-            }
-        ]
-
-    resources = st.session_state.campus_resources
-
-    # Add new resource
-    with st.container(border=True):
-
-        st.markdown("### ➕ Add New Resource")
-
-        with st.form("add_resource_form"):
-
-            col1, col2 = st.columns(2)
-
-            with col1:
-                resource_name = st.text_input(
-                    "Resource Name",
-                    placeholder="Example: EB1-102"
+        with st.form("db_add_resource_form"):
+            st.markdown("#### Add a campus resource")
+            form_col1, form_col2 = st.columns(2)
+            with form_col1:
+                resource_code = st.text_input("Unique resource code", placeholder="DEMO-ROOM-03")
+                resource_name = st.text_input("Resource name", placeholder="Seminar Room 3")
+                resource_type_label = st.selectbox(
+                    "Resource type",
+                    ["Classroom", "Lab", "Amphitheatre", "Guest House", "Parking"],
                 )
-
-                resource_type = st.selectbox(
-                    "Resource Type",
-                    [
-                        "Classroom",
-                        "Amphitheatre",
-                        "Lab",
-                        "Guest House",
-                        "Parking"
-                    ]
-                )
-
-            with col2:
-                location = st.text_input(
-                    "Location",
-                    placeholder="Example: Academic Block"
-                )
-
-                capacity = st.number_input(
-                    "Capacity (people, beds or slots)",
+            with form_col2:
+                resource_location = st.text_input("Location", placeholder="Academic Block")
+                resource_capacity = st.number_input(
+                    "Capacity (people / beds / slots)",
                     min_value=1,
                     max_value=1000,
-                    value=50
+                    value=30,
                 )
-
-            add_resource = st.form_submit_button(
-                "➕ Add Resource",
-                use_container_width=True
+            add_resource_clicked = st.form_submit_button(
+                "Add resource to PostgreSQL",
+                use_container_width=True,
             )
 
-            if add_resource:
-
-                if not resource_name.strip():
-                    st.error("Please enter a resource name.")
-
-                elif not location.strip():
-                    st.error("Please enter the resource location.")
-
-                elif any(
-                    r["name"].lower() == resource_name.strip().lower()
-                    for r in resources
-                ):
-                    st.error("This resource already exists.")
-
-                else:
-                    new_resource = {
-                        "id": f"R{len(resources) + 1:03d}",
-                        "name": resource_name.strip(),
-                        "type": resource_type,
-                        "location": location.strip(),
-                        "capacity": int(capacity),
-                        "status": "Active"
-                    }
-
-                    st.session_state.campus_resources.append(
-                        new_resource
-                    )
-
-                    st.success("Resource added successfully!")
+        if add_resource_clicked:
+            if not resource_code.strip() or not resource_name.strip():
+                st.warning("Resource code and name are required.")
+            else:
+                created = add_resource(
+                    resource_code.strip(),
+                    resource_name.strip(),
+                    resource_type_label.lower().replace(" ", "_"),
+                    int(resource_capacity),
+                    resource_location.strip() or None,
+                    actor_id=admin_id,
+                )
+                if created.get("success"):
+                    st.success("Resource saved in PostgreSQL.")
                     st.rerun()
+                else:
+                    st.error(created.get("message", "Resource could not be saved."))
 
-    st.divider()
+        resource_filter = st.selectbox(
+            "Filter inventory",
+            ["All", "Classroom", "Lab", "Amphitheatre", "Guest House", "Parking"],
+            key="db_resource_filter",
+        )
+        filter_value = (
+            None if resource_filter == "All"
+            else resource_filter.lower().replace(" ", "_")
+        )
+        inventory = get_resources(resource_type=filter_value, include_inactive=True)
 
-    # View resources
-    st.subheader("📋 Campus Resource Inventory")
-
-    filter_type = st.selectbox(
-        "Filter by Resource Type",
-        [
-            "All",
-            "Classroom",
-            "Amphitheatre",
-            "Lab",
-            "Guest House",
-            "Parking"
-        ],
-        key="resource_filter"
-    )
-
-    if filter_type == "All":
-        filtered_resources = resources
-    else:
-        filtered_resources = [
-            r for r in resources
-            if r["type"] == filter_type
-        ]
-
-    st.write(f"**Total resources displayed:** {len(filtered_resources)}")
-
-    if filtered_resources:
-
-        for resource in filtered_resources:
-
-            with st.container(border=True):
-
-                col1, col2 = st.columns([3, 1])
-
-                with col1:
-                    st.markdown(f"### {resource['name']}")
-                    st.write(f"**Resource ID:** {resource['id']}")
-                    st.write(f"**Type:** {resource['type']}")
-                    st.write(f"**Location:** {resource['location']}")
-                    st.write(f"**Capacity:** {resource['capacity']}")
-
-                with col2:
-                    st.write("**Status**")
-
-                    if resource["status"] == "Active":
-                        st.success("Active")
-                    else:
-                        st.error("Inactive")
-
-                    if st.button(
-                        "Deactivate" if resource["status"] == "Active"
-                        else "Activate",
-                        key=f"toggle_{resource['id']}"
-                    ):
-                        resource["status"] = (
-                            "Inactive"
-                            if resource["status"] == "Active"
-                            else "Active"
+        if not inventory:
+            st.info("No resources found. Add synthetic demo resources above.")
+        else:
+            for resource in inventory:
+                with st.container(border=True):
+                    left, right = st.columns([4, 1])
+                    with left:
+                        st.markdown(f"**{resource['name']}**")
+                        st.caption(
+                            f"Code: {resource['resource_code']} · "
+                            f"Type: {resource['resource_type'].replace('_', ' ').title()} · "
+                            f"Capacity: {resource['capacity']} · "
+                            f"Location: {resource.get('location') or 'Not listed'}"
                         )
-                        st.rerun()
+                    with right:
+                        is_active = bool(resource["is_active"])
+                        st.success("Active") if is_active else st.warning("Inactive")
+                        if st.button(
+                            "Deactivate" if is_active else "Activate",
+                            key=f"toggle_db_resource_{resource['id']}",
+                            use_container_width=True,
+                        ):
+                            changed = update_resource(
+                                resource["id"], admin_id, is_active=not is_active
+                            )
+                            if changed.get("success"):
+                                st.session_state["resource_action_message"] = (
+                                    f"{resource['name']} status saved in PostgreSQL."
+                                )
+                            else:
+                                st.session_state["resource_action_message"] = changed.get(
+                                    "message", "Resource update failed."
+                                )
+                            st.rerun()
 
-    else:
-        st.info("No resources found.")
+        if st.session_state.get("resource_action_message"):
+            st.info(st.session_state.pop("resource_action_message"))
 
-    st.caption(
-        "Demonstration data only. Member 2 will connect "
-        "resource management to PostgreSQL."
-    )
-    
-    # ----------------------------------
+    except Exception as exc:
+        st.error(f"Could not load or update PostgreSQL resources: {type(exc).__name__}: {exc}")
+        st.info("Check DATABASE_URL, run init_db.py and seed_demo.py, then retry.")
+
     # REPORTS AND ANALYTICS
     # ----------------------------------
 
