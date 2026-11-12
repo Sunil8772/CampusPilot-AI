@@ -1,37 +1,68 @@
+"""Backend adapters used by the Gemini request orchestrator.
+
+PostgreSQL is the source of truth for resource availability. The extracted CSV
+is intentionally not cross-checked here because its rows are marked Needs Review.
+"""
 from datetime import datetime
 from zoneinfo import ZoneInfo
-from availability_engine import check_room_availability
+
 from services.availability import find_available_resources
 
+CAMPUS_TZ = ZoneInfo("Asia/Kolkata")
+_ALLOWED_TYPES = {"classroom", "lab", "amphitheatre", "guest_house", "parking"}
+_TYPE_ALIASES = {
+    "classrooms": "classroom",
+    "lecture hall": "classroom",
+    "lecture halls": "classroom",
+    "amphitheater": "amphitheatre",
+    "amphitheaters": "amphitheatre",
+    "guest house": "guest_house",
+    "guest houses": "guest_house",
+    "guesthouse": "guest_house",
+    "guesthouses": "guest_house",
+    "parking slot": "parking",
+    "parking slots": "parking",
+    "parking space": "parking",
+    "parking spaces": "parking",
+}
+
+
+def normalize_resource_type(value):
+    """Convert natural-language resource labels to the database enum."""
+    key = str(value or "").strip().lower().replace("-", " ").replace("_", " ")
+    normalized = _TYPE_ALIASES.get(key, key.replace(" ", "_"))
+    if normalized not in _ALLOWED_TYPES:
+        raise ValueError(f"Unsupported resource type: {value!r}")
+    return normalized
+
+
 def _iso_datetime(day, clock):
-    date_value = datetime.strptime(day, "%Y-%m-%d").date()
-    time_value = datetime.strptime(clock, "%H:%M").time()
-    return datetime.combine(date_value, time_value).replace(tzinfo=ZoneInfo("Asia/Kolkata")).isoformat()
+    date_value = datetime.strptime(str(day), "%Y-%m-%d").date()
+    time_value = datetime.strptime(str(clock), "%H:%M").time()
+    return datetime.combine(date_value, time_value, tzinfo=CAMPUS_TZ).isoformat()
+
 
 def check_resource_availability(request):
-    day, start, end = request["date"], request["start_time"], request["end_time"]
-    if datetime.strptime(start, "%H:%M").time() >= datetime.strptime(end, "%H:%M").time():
+    """Check published timetable, blocked periods and bookings in PostgreSQL."""
+    for field in ("date", "start_time", "end_time", "resource_type"):
+        if request.get(field) in (None, ""):
+            raise ValueError(f"Missing required availability field: {field}")
+
+    start = datetime.strptime(str(request["start_time"]), "%H:%M").time()
+    end = datetime.strptime(str(request["end_time"]), "%H:%M").time()
+    if start >= end:
         raise ValueError("End time must be after start time.")
-    resource_type = request.get("resource_type")
-    result = find_available_resources({
-        "resource_type": resource_type,
-        "start_datetime": _iso_datetime(day, start),
-        "end_datetime": _iso_datetime(day, end),
-        "capacity": int(request.get("capacity") or 1),
-    })
-    if not result.get("success"):
-        return result
-    candidates = result.get("available_resources", [])
-    if resource_type in ("classroom", "lab", "amphitheatre"):
-        still_free = []
-        for item in candidates:
-            room = item.get("name") or item.get("resource_code")
-            try:
-                check = check_room_availability(datetime.strptime(day, "%Y-%m-%d").strftime("%A"), room, start, end)
-                if check["available"]:
-                    still_free.append(item)
-            except FileNotFoundError:
-                still_free.append(item)
-        result["available_resources"] = still_free
-        result["message"] = "Checked database availability and available CSV timetable data."
-    return result
+
+    capacity = int(request.get("capacity") or 1)
+    if capacity < 1:
+        raise ValueError("Capacity must be at least 1.")
+
+    backend_request = {
+        "resource_type": normalize_resource_type(request["resource_type"]),
+        "start_datetime": _iso_datetime(request["date"], request["start_time"]),
+        "end_datetime": _iso_datetime(request["date"], request["end_time"]),
+        "capacity": capacity,
+    }
+    # Do not filter again against the unverified extracted CSV. The published
+    # PostgreSQL timetable is the authoritative source for this application.
+    return find_available_resources(backend_request)
